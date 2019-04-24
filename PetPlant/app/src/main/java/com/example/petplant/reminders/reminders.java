@@ -20,7 +20,9 @@ public class reminders extends AppCompatActivity {
         setContentView(R.layout.activity_reminders);
         Toolbar toolbar =  findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle(null);
+        }
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setItemIconTintList(null);
@@ -34,10 +36,6 @@ public class reminders extends AppCompatActivity {
             }
         });
 
-        setSupportActionBar(toolbar);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle(null);
-        }
     }
 
 
