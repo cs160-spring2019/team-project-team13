@@ -1,5 +1,6 @@
 package com.example.petplant;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -26,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.navigation_notifications:
                     mTextMessage.setText(R.string.title_notifications);
                     return true;
+                case R.id.navigation_expert:
+                    // Lichen's code start from here
+                    Intent intentExpert = new Intent(MainActivity.this, Activity_Expert.class);
+                    startActivity(intentExpert);
+                    break;
             }
             return false;
         }
