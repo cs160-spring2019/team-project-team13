@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.format.DateFormat;
 import android.view.View;
+import android.widget.TextView;
 
 import com.example.petplant.R;
 
@@ -17,7 +18,9 @@ import butterknife.OnClick;
 public class CreateEditReminder extends AppCompatActivity {
 
 
-
+    @BindView(R.id.time)
+    TextView timeText;
+    @BindView(R.id.date) TextView dateText;
     private Calendar calendar;
 
 
