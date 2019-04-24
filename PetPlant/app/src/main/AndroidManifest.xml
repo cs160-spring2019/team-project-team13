@@ -28,8 +28,8 @@
             android:theme="@style/StartTheme"/>
         <activity
             android:name=".reminders.CreateEditReminder"
-            android:label="@string/title_activity_createedit"/>
-
+            android:label="@string/title_activity_createedit"
+        android:theme="@style/StartTheme"/>
     </application>
 
 </manifest>

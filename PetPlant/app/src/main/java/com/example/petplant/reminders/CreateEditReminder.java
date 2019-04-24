@@ -25,16 +25,17 @@ public class CreateEditReminder extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reminders);
-       /* Toolbar toolbar = findViewById(R.id.toolbar);
+        setContentView(R.layout.activity_create);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         setSupportActionBar(toolbar);
+        ButterKnife.bind(this);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle(null);
         }
 
         calendar = Calendar.getInstance();
-    }
+   }
 
     @OnClick(R.id.time_row)
     public void timePicker() {
@@ -59,6 +60,6 @@ public class CreateEditReminder extends AppCompatActivity {
                 //dateText.setText(DateAndTimeUtil.toStringReadableDate(calendar));
             }
         }, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
-        DatePicker.show();*/
+        DatePicker.show();
     }
 }
