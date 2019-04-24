@@ -3,4 +3,16 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="error">#da1b21</color>
+    <color name="primary">#92CD00</color>
+    <color name="primaryDark">#2D6700</color>
+    <color name="accent">#88C191</color>
+    <color name="accentLight">#87BF91</color>
+    <color name="text">#979797</color>
+    <color name="lightGray">#e6e6e6</color>
+    <color name="textLightGray">#8f8f8f</color>
+    <color name="default_colour_grey">#8e8e8e</color>
+    <color name="background">#eeeeee</color>
+    <color name="NotificationTitle">#ffffff</color>
+    <color name="iconTint">#8E8E8E</color>
 </resources>

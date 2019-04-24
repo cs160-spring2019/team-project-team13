@@ -9,10 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".Reminders"
-            android:label="@string/title_activity_reminders"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
@@ -22,6 +19,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".reminders.calendar"
+            android:label="@string/title_activity_calendar"/>
+        <activity
+            android:name=".reminders.reminders"
+            android:label="@string/title_activity_reminders"
+            android:theme="@style/StartTheme"/>
+        <activity
+            android:name=".reminders.CreateEditReminder"
+            android:label="@string/title_activity_createedit"/>
+
     </application>
 
 </manifest>
