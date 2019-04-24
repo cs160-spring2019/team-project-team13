@@ -18,10 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Experts.Activity_Expert">
-            android:name=".Experts.main"
+        <activity
+            android:name=".Experts.Activity_Expert"
             android:label="expert_main"/>
-        </activity>
         <activity
             android:name=".reminders.calendar"
             android:label="@string/title_activity_calendar"/>
