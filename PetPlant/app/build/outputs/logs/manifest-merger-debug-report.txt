@@ -1,0 +1,209 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:2:1-38:12
+MERGED from [com.android.support:design:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/23264d70c69c3801cc8c48f24d0a0e30/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/1c3de7cbefe984cf01de648fc18fbdbf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/26e19842093dcee85cd496657910569e/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/d7c6e630db058e0181376be271c7f0f8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/ab7519e7e457673cdca4ecaa516368c2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton:butterknife:8.1.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/a3013d27f26198211ac1491d3243fd02/AndroidManifest.xml:2:1-7:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/5dcaf24e2e79e12959f80055cf1d126c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/f3a60025376e94ba8d679e946b21e3cf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/4993125eeec6cfde32a29715b6209646/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/872765186c3ff41c6d97ea220021e2aa/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/892cfabb730b4c51e971cf6f6dcd24da/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/b9af03c9c3475980d961c53910ef9a44/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/911c937675654b873f893b985666e965/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/a2008d095e277ee2f78f69935131666a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/7d8142fb25f7d05d76220292de5309a9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/fad2e8d9178446d6587438037c40958d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/f6a0db332667fbefa44aff8c670c0cdf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/327ea7988adba8a95a72d1021c6b9995/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/e3721332c223ca2a51db10763a8edbcb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/a094472eb1f51ec8c909dc1857635914/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/0b01a3b8f915d67c8842070e7460809c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/249bb3030c15524e851820e9c82426c1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/fc98f1c6a1e6f39841bb8e332f5bdb63/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/1e862bd58bbcfee73feccc48d66b08db/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/e5e0307bf8be2112e669ea8333f7e8e0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/c7fcc870535282b2a6c68e91845e9996/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/8b7184d6fbb5708f9410dd2519c1127f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/243607ed0684c5cc2b2656571f495c79/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/0a39902ec9a659cde49a88f7117432ab/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/af1060834e66509b60ff8ad312c1d8bb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/2825f0e78b4712e0dce249ab5a1c9e6b/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/3b77d9587369b3acc315aa4b7f2b90fe/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/836725457178b70c877fc7f65305ed60/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/4d0693bd487c4586896d011b09950b22/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:2:1-38:12
+	package
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:3:5-35
+		INJECTED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:2:1-38:12
+		INJECTED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:2:1-38:12
+		INJECTED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:5:5-36:19
+MERGED from [com.android.support:design:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/23264d70c69c3801cc8c48f24d0a0e30/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/23264d70c69c3801cc8c48f24d0a0e30/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/26e19842093dcee85cd496657910569e/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/26e19842093dcee85cd496657910569e/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/249bb3030c15524e851820e9c82426c1/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/249bb3030c15524e851820e9c82426c1/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/fc98f1c6a1e6f39841bb8e332f5bdb63/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/fc98f1c6a1e6f39841bb8e332f5bdb63/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/249bb3030c15524e851820e9c82426c1/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.example.petplant.MainActivity
+ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:12:9-20:20
+	android:label
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:14:13-45
+	android:name
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:13:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:15:13-19:29
+action#android.intent.action.MAIN
+ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:16:17-69
+	android:name
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:18:27-74
+activity#com.example.petplant.Experts.ExpertMain
+ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:21:9-24:48
+	android:label
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:23:13-40
+	android:theme
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:24:13-46
+	android:name
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:22:13-47
+activity#com.example.petplant.reminders.calendar
+ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:25:9-27:62
+	android:label
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:27:13-60
+	android:name
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:26:13-47
+activity#com.example.petplant.reminders.reminders
+ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:28:9-31:48
+	android:label
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:30:13-61
+	android:theme
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:31:13-46
+	android:name
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:29:13-48
+activity#com.example.petplant.reminders.CreateEditReminder
+ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:32:9-35:44
+	android:label
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:34:13-62
+	android:theme
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:35:9-42
+	android:name
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:33:13-57
+uses-sdk
+INJECTED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
+INJECTED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/23264d70c69c3801cc8c48f24d0a0e30/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/23264d70c69c3801cc8c48f24d0a0e30/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/1c3de7cbefe984cf01de648fc18fbdbf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/1c3de7cbefe984cf01de648fc18fbdbf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/26e19842093dcee85cd496657910569e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/26e19842093dcee85cd496657910569e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/d7c6e630db058e0181376be271c7f0f8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/d7c6e630db058e0181376be271c7f0f8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/ab7519e7e457673cdca4ecaa516368c2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/ab7519e7e457673cdca4ecaa516368c2/AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton:butterknife:8.1.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/a3013d27f26198211ac1491d3243fd02/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.1.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/a3013d27f26198211ac1491d3243fd02/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/5dcaf24e2e79e12959f80055cf1d126c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/5dcaf24e2e79e12959f80055cf1d126c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/f3a60025376e94ba8d679e946b21e3cf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/f3a60025376e94ba8d679e946b21e3cf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/4993125eeec6cfde32a29715b6209646/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/4993125eeec6cfde32a29715b6209646/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/872765186c3ff41c6d97ea220021e2aa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/872765186c3ff41c6d97ea220021e2aa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/892cfabb730b4c51e971cf6f6dcd24da/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/892cfabb730b4c51e971cf6f6dcd24da/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/b9af03c9c3475980d961c53910ef9a44/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/b9af03c9c3475980d961c53910ef9a44/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/911c937675654b873f893b985666e965/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/911c937675654b873f893b985666e965/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/a2008d095e277ee2f78f69935131666a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/a2008d095e277ee2f78f69935131666a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/7d8142fb25f7d05d76220292de5309a9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/7d8142fb25f7d05d76220292de5309a9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/fad2e8d9178446d6587438037c40958d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/fad2e8d9178446d6587438037c40958d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/f6a0db332667fbefa44aff8c670c0cdf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/f6a0db332667fbefa44aff8c670c0cdf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/327ea7988adba8a95a72d1021c6b9995/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/327ea7988adba8a95a72d1021c6b9995/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/e3721332c223ca2a51db10763a8edbcb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/e3721332c223ca2a51db10763a8edbcb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/a094472eb1f51ec8c909dc1857635914/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/a094472eb1f51ec8c909dc1857635914/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/0b01a3b8f915d67c8842070e7460809c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/0b01a3b8f915d67c8842070e7460809c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/249bb3030c15524e851820e9c82426c1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/249bb3030c15524e851820e9c82426c1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/fc98f1c6a1e6f39841bb8e332f5bdb63/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/fc98f1c6a1e6f39841bb8e332f5bdb63/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/1e862bd58bbcfee73feccc48d66b08db/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/1e862bd58bbcfee73feccc48d66b08db/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/e5e0307bf8be2112e669ea8333f7e8e0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/e5e0307bf8be2112e669ea8333f7e8e0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/c7fcc870535282b2a6c68e91845e9996/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/c7fcc870535282b2a6c68e91845e9996/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/8b7184d6fbb5708f9410dd2519c1127f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/8b7184d6fbb5708f9410dd2519c1127f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/243607ed0684c5cc2b2656571f495c79/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/243607ed0684c5cc2b2656571f495c79/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/0a39902ec9a659cde49a88f7117432ab/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/0a39902ec9a659cde49a88f7117432ab/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/af1060834e66509b60ff8ad312c1d8bb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/af1060834e66509b60ff8ad312c1d8bb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/2825f0e78b4712e0dce249ab5a1c9e6b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/2825f0e78b4712e0dce249ab5a1c9e6b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/3b77d9587369b3acc315aa4b7f2b90fe/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/3b77d9587369b3acc315aa4b7f2b90fe/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/836725457178b70c877fc7f65305ed60/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/836725457178b70c877fc7f65305ed60/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/4d0693bd487c4586896d011b09950b22/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/arjenw/.gradle/caches/transforms-2/files-2.1/4d0693bd487c4586896d011b09950b22/AndroidManifest.xml:20:5-44
+INJECTED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
+INJECTED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
+		ADDED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
