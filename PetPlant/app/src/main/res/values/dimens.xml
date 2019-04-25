@@ -20,4 +20,10 @@
     <dimen name="line_separator_height">0.5dp</dimen>
     <dimen name="line_separator_margin_side_large">64dp</dimen>
     <dimen name="line_separator_margin_side">8dp</dimen>
+    <dimen name="row_padding">10dp</dimen>
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="thumbnail">50dp</dimen>
+    <dimen name="contact_name">16dp</dimen>
+    <dimen name="contact_title">12dp</dimen>
+    <dimen name="contact_specialties">12dp</dimen>
 </resources>

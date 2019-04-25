@@ -10,14 +10,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.petplant.Experts.Activity_Expert;
+import com.example.petplant.Experts.ExpertMain;
 import com.example.petplant.reminders.reminders;
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +33,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button buttonExpert = findViewById(R.id.expertb);
+        buttonExpert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ExpertMain.class);
+
+                startActivity(intent);
+            }
+        });
+
 
     }
 

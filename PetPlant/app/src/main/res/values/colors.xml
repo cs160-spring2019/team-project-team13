@@ -12,7 +12,9 @@
     <color name="lightGray">#e6e6e6</color>
     <color name="textLightGray">#8f8f8f</color>
     <color name="default_colour_grey">#8e8e8e</color>
-    <color name="background">#eeeeee</color>
+    <color name="background">#FFFFFF</color>
     <color name="NotificationTitle">#ffffff</color>
     <color name="iconTint">#8E8E8E</color>
+    <color name="contact_name">#333333</color>
+    <color name="contact_title">#008846</color>
 </resources>

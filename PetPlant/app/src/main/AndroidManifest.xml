@@ -19,8 +19,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Experts.Activity_Expert"
-            android:label="expert_main"/>
+            android:name=".Experts.ExpertMain"
+            android:label="expert_main"
+            android:theme="@style/StartTheme"/>
         <activity
             android:name=".reminders.calendar"
             android:label="@string/title_activity_calendar"/>
