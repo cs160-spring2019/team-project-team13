@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_myplants"
+        android:icon="@drawable/ic_myplants_24dp"
+
+        android:title="@string/title_myplants" />
+    <item
+        android:id="@+id/navigation_reminders"
+        android:icon="@drawable/ic_reminders_24dp"
+        android:title="@string/title_reminders" />
+    <item
+        android:id="@+id/navigation_scan"
+        android:icon="@drawable/ic_scan_24dp"
+        android:title="@string/title_scan" />
+
+    <item
+        android:id="@+id/navigation_expert"
+        android:icon="@drawable/ic_expert_24dp"
+        android:title="@string/title_expert" />
+
+    <item
+        android:id="@+id/navigation_expert"
+        android:icon="@drawable/ic_experts_black_24dp"
+        android:title="@string/title_expert" />
+
+</menu>
