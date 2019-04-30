@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.petplant.camera.widget.CameraSurfaceView
+        android:id="@+id/cameraSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp"/>
+
+    <com.example.petplant.camera.widget.CameraFocusView
+        android:id="@+id/cameraFocusView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp" />
+
+    <ImageView
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_app_bar" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/color_00"
+        android:src="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:textColor="@color/color_white"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12.5dp"
+        android:layout_marginLeft="80dp"
+        android:text="Scanning" />
+
+    <!-- 顶部按钮-->
+    <include layout="@layout/layout_shoot_title" />
+
+    <RelativeLayout
+        android:id="@+id/cameraBottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:animateLayoutChanges="true">
+
+        <ImageView
+            android:id="@+id/cancelBtn"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="65dp"
+            android:background="@drawable/camera_cancle"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/takePhotoBtn"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_shape_camera" />
+
+        <ImageView
+            android:id="@+id/okBtn"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="65dp"
+            android:background="@drawable/camera_ok"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</FrameLayout>

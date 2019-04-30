@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml",
+            "outputFile": "/Users/arjenw/Documents/bcourses/cs260/team-project-team13-9aa6efc90472373bec09066cb4a2e4ddfcab3d67/PetPlant/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml",
             "map": [
                 {
                     "source": "/Users/arjenw/.gradle/caches/transforms-2/files-2.1/249bb3030c15524e851820e9c82426c1/res/values-ja/values-ja.xml",
