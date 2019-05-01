@@ -11,6 +11,7 @@ import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.example.petplant.R;
 
@@ -53,6 +54,14 @@ public class ExpertMain extends AppCompatActivity implements SearchView.OnQueryT
         toolbar = findViewById(R.id.toolbarExpert);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
         setTitle("Experts");
 
     }
@@ -88,7 +97,7 @@ public class ExpertMain extends AppCompatActivity implements SearchView.OnQueryT
             for(int i = 0; i < jsonArray.length();i++){
                 JSONObject obj = jsonArray.getJSONObject(i);
                 int drawableId = getResources().getIdentifier(obj.getString("expert_img_filename"), "drawable", getPackageName());
-                listExperts.add(new OneExpert(drawableId, obj.getString("expert_name"), obj.getString("expert_title"), obj.getString("expert_specialties")));
+                listExperts.add(new OneExpert(drawableId, obj.getString("expert_name"), obj.getString("expert_title"), obj.getString("expert_specialties"), obj.getString("expert_img_filename")));
             }
 
         } catch (IOException e) {

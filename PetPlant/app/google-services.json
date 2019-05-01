@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "794792918615",
+    "firebase_url": "https://petplant-a0500.firebaseio.com",
+    "project_id": "petplant-a0500",
+    "storage_bucket": "petplant-a0500.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794792918615:android:99b724f738b028a6",
+        "android_client_info": {
+          "package_name": "com.example.petplant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794792918615-7md2v1emo6sav0sc4cc1e2mcgfven19l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.petplant",
+            "certificate_hash": "1f8e8d02d456379b04873df51de8e0d8585fe528"
+          }
+        },
+        {
+          "client_id": "794792918615-lb3dr8klpdvs85lc0eq8pie4351sn8mi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG_53xLRFBjTgzJQvlNzlTLJ9iDkygJhU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "794792918615-lb3dr8klpdvs85lc0eq8pie4351sn8mi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

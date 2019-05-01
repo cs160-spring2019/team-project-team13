@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/arjenw/Documents/bcourses/cs260/team-project-team13-9aa6efc90472373bec09066cb4a2e4ddfcab3d67/PetPlant/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml",
+            "outputFile": "/Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "/Users/arjenw/.gradle/caches/transforms-2/files-2.1/1c3de7cbefe984cf01de648fc18fbdbf/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "source": "/Users/arjenw/.gradle/caches/transforms-2/files-2.1/28dff16d90eea2755d202af8318ca2cb/res/values-xlarge-v4/values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",
