@@ -20,26 +20,26 @@ public class CreateEditReminder$$ViewBinder<T extends CreateEditReminder> implem
   protected static class InnerUnbinder<T extends CreateEditReminder> implements Unbinder {
     protected T target;
 
-    private View view2131230986;
+    private View view2131230987;
 
-    private View view2131230799;
+    private View view2131230800;
 
     protected InnerUnbinder(final T target, Finder finder, Object source) {
       this.target = target;
 
       View view;
-      target.timeText = finder.findRequiredViewAsType(source, 2131230984, "field 'timeText'", TextView.class);
-      target.dateText = finder.findRequiredViewAsType(source, 2131230798, "field 'dateText'", TextView.class);
-      view = finder.findRequiredView(source, 2131230986, "method 'timePicker'");
-      view2131230986 = view;
+      target.timeText = finder.findRequiredViewAsType(source, 2131230985, "field 'timeText'", TextView.class);
+      target.dateText = finder.findRequiredViewAsType(source, 2131230799, "field 'dateText'", TextView.class);
+      view = finder.findRequiredView(source, 2131230987, "method 'timePicker'");
+      view2131230987 = view;
       view.setOnClickListener(new DebouncingOnClickListener() {
         @Override
         public void doClick(View p0) {
           target.timePicker();
         }
       });
-      view = finder.findRequiredView(source, 2131230799, "method 'datePicker'");
-      view2131230799 = view;
+      view = finder.findRequiredView(source, 2131230800, "method 'datePicker'");
+      view2131230800 = view;
       view.setOnClickListener(new DebouncingOnClickListener() {
         @Override
         public void doClick(View p0) {
@@ -56,10 +56,10 @@ public class CreateEditReminder$$ViewBinder<T extends CreateEditReminder> implem
       target.timeText = null;
       target.dateText = null;
 
-      view2131230986.setOnClickListener(null);
-      view2131230986 = null;
-      view2131230799.setOnClickListener(null);
-      view2131230799 = null;
+      view2131230987.setOnClickListener(null);
+      view2131230987 = null;
+      view2131230800.setOnClickListener(null);
+      view2131230800 = null;
 
       this.target = null;
     }

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ca/values-ca.xml",
+            "outputFile": "D:\\jvtran\\Github\\CS160\\Final Project\\team-project-team13\\PetPlant\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ca\\values-ca.xml",
             "map": [
                 {
-                    "source": "/Users/arjenw/.gradle/caches/transforms-2/files-2.1/62d532eb632a44e9e79f471c039cc4aa/res/values-ca/values.xml",
+                    "source": "C:\\Users\\jvtran\\.gradle\\caches\\transforms-2\\files-2.1\\ed4664b7ae0428fcb81d86ad11a70c00\\res\\values-ca\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/arjenw/.gradle/caches/transforms-2/files-2.1/28dff16d90eea2755d202af8318ca2cb/res/values-ca/values-ca.xml",
+                    "source": "C:\\Users\\jvtran\\.gradle\\caches\\transforms-2\\files-2.1\\c7b139fdacec9233f1db344d00741e0a\\res\\values-ca\\values-ca.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/arjenw/.gradle/caches/transforms-2/files-2.1/b5cd3cfd8d1167101711a64e51268dcb/res/values-ca/values.xml",
+                    "source": "C:\\Users\\jvtran\\.gradle\\caches\\transforms-2\\files-2.1\\4a92dafb6a2165a23bbb5209ba9f5470\\res\\values-ca\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -55,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "/Users/arjenw/.gradle/caches/transforms-2/files-2.1/8457737662312fbf4151c6d5ce1af41e/res/values-ca/values-ca.xml",
+                    "source": "C:\\Users\\jvtran\\.gradle\\caches\\transforms-2\\files-2.1\\1ec3e234348c2f63e395cacc96713027\\res\\values-ca\\values-ca.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

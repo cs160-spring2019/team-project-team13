@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.petplant.Experts.ExpertMain;
+import com.example.petplant.addplant.MyPlants;
 import com.example.petplant.reminders.reminders;
 import com.example.petplant.scanDiseases.CameraDemoApp;
 import com.example.petplant.camera.model.PermissionsModel;
@@ -38,7 +39,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
             }
         });
+        Button buttonadd = findViewById(R.id.add_plantb);
+        buttonadd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MyPlants.class);
 
+                startActivity(intent);
+            }
+        });
         Button buttonExpert = findViewById(R.id.expertb);
         buttonExpert.setOnClickListener(new View.OnClickListener() {
             @Override

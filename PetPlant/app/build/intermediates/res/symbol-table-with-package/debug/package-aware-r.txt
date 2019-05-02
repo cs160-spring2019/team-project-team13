@@ -1235,6 +1235,7 @@ id container
 id content
 id contentPanel
 id coordinator
+id coordinatorLayout
 id create_coordinator
 id custom
 id customPanel
@@ -1509,10 +1510,12 @@ layout activity_create
 layout activity_expert
 layout activity_main
 layout activity_message
+layout activity_my_plants
 layout activity_reminders
 layout activity_take_photo
 layout chat_item_left
 layout chat_item_right
+layout content_my_plants
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
