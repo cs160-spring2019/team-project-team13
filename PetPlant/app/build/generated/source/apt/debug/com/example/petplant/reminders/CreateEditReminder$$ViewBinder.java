@@ -20,7 +20,7 @@ public class CreateEditReminder$$ViewBinder<T extends CreateEditReminder> implem
   protected static class InnerUnbinder<T extends CreateEditReminder> implements Unbinder {
     protected T target;
 
-    private View view2131230987;
+    private View view2131230988;
 
     private View view2131230800;
 
@@ -28,10 +28,10 @@ public class CreateEditReminder$$ViewBinder<T extends CreateEditReminder> implem
       this.target = target;
 
       View view;
-      target.timeText = finder.findRequiredViewAsType(source, 2131230985, "field 'timeText'", TextView.class);
+      target.timeText = finder.findRequiredViewAsType(source, 2131230986, "field 'timeText'", TextView.class);
       target.dateText = finder.findRequiredViewAsType(source, 2131230799, "field 'dateText'", TextView.class);
-      view = finder.findRequiredView(source, 2131230987, "method 'timePicker'");
-      view2131230987 = view;
+      view = finder.findRequiredView(source, 2131230988, "method 'timePicker'");
+      view2131230988 = view;
       view.setOnClickListener(new DebouncingOnClickListener() {
         @Override
         public void doClick(View p0) {
@@ -56,8 +56,8 @@ public class CreateEditReminder$$ViewBinder<T extends CreateEditReminder> implem
       target.timeText = null;
       target.dateText = null;
 
-      view2131230987.setOnClickListener(null);
-      view2131230987 = null;
+      view2131230988.setOnClickListener(null);
+      view2131230988 = null;
       view2131230800.setOnClickListener(null);
       view2131230800 = null;
 

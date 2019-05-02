@@ -35,6 +35,14 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="com.example.petplant.addplant.PlantProfile"
+            android:label="@string/title_activity_plant_profile"
+            android:theme="@style/StartTheme" />
+        <activity
+            android:name="com.example.petplant.addplant.AddPlantActivity"
+            android:label="@string/title_activity_add_plant"
+            android:theme="@style/StartTheme" />
+        <activity
             android:name="com.example.petplant.addplant.MyPlants"
             android:label="@string/title_myplants"
             android:theme="@style/StartTheme" />

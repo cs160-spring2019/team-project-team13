@@ -20,4 +20,6 @@
     <string name="times">times</string>
     <string name="one" translatable="false">1</string>
     <string name="time_now">Now</string>
+    <string name="title_activity_add_plant">AddPlantActivity</string>
+    <string name="title_activity_plant_profile">PlantProfile</string>
 </resources>

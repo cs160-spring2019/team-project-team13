@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\jvtran\\Github\\CS160\\Final Project\\team-project-team13\\PetPlant\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "/Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jvtran\\.gradle\\caches\\transforms-2\\files-2.1\\1ec3e234348c2f63e395cacc96713027\\res\\values-v16\\values-v16.xml",
+                    "source": "/Users/jvtran/.gradle/caches/transforms-2/files-2.1/b471d372f28aa0e559576b541399c5bd/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\jvtran\\.gradle\\caches\\transforms-2\\files-2.1\\c7b139fdacec9233f1db344d00741e0a\\res\\values-v16\\values-v16.xml",
+                    "source": "/Users/jvtran/.gradle/caches/transforms-2/files-2.1/4f89e6251df6ec64a85e54d0b206529f/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

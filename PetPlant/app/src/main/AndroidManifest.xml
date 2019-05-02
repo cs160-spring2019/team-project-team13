@@ -18,6 +18,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".addplant.PlantProfile"
+            android:label="@string/title_activity_plant_profile"
+            android:theme="@style/StartTheme" />
+        <activity
+            android:name=".addplant.AddPlantActivity"
+            android:label="@string/title_activity_add_plant"
+            android:theme="@style/StartTheme" />
+        <activity
             android:name=".addplant.MyPlants"
             android:label="@string/title_myplants"
             android:theme="@style/StartTheme" />

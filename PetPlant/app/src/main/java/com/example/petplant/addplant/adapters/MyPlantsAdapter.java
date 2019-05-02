@@ -1,80 +1,86 @@
 package com.example.petplant.addplant.adapters;
 
-import android.support.v7.widget.RecyclerView;
 
+import android.content.Context;
+import android.content.Intent;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.petplant.Experts.Chat;
-import com.example.petplant.Experts.MessageViewHolder;
 import com.example.petplant.R;
+import com.example.petplant.addplant.AddPlantActivity;
 
-import java.util.Calendar;
+
+import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
+class MyPlantsHolder extends RecyclerView.ViewHolder{
 
-public class MyPlantsAdapter extends RecyclerView.ViewHolder{
+    public ImageView imageView;
+    public TextView textName;
+    public TextView textTitle;
+    public RelativeLayout plantcard;
 
-    public TextView show_message;
-    public ImageView profile_image;
-
-    public MessageViewHolder(View itemView) {
+    public MyPlantsHolder(View itemView) {
         super(itemView);
-        show_message = itemView.findViewById(R.id.show_message);
-        profile_image = itemView.findViewById(R.id.profile_image);
+        imageView = (ImageView)itemView.findViewById(R.id.thumbnail);
+        textName = (TextView)itemView.findViewById(R.id.name);
+        textTitle = (TextView)itemView.findViewById(R.id.title);
+        plantcard = (RelativeLayout) itemView.findViewById(R.id.plantcard);
+
+        plantcard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Context mContext = view.getContext();
+                Intent i = new Intent(mContext, AddPlantActivity.class);
+                i.putExtra("myplant",  textName.getText());
+                mContext.startActivity(i);
+            }
+        });
+
     }
 }
 
-public class MessageViewAdapter extends RecyclerView.Adapter<MessageViewHolder>{
 
-    public static final int MSG_TYPE_LEFT = 0;
-    public static final int MSG_TYPE_RIGHT = 1;
+public class MyPlantsAdapter extends RecyclerView.Adapter<MyPlantsHolder> {
 
-    private List<Chat> mChat;
+    private List<PlantProfileCard> listPlants;
 
+    public MyPlantsAdapter(List<PlantProfileCard> listPlants) {
 
-    public MessageViewAdapter(List<Chat> listChats){
-        this.mChat = listChats;
+        this.listPlants = listPlants;
+
     }
 
     @Override
-    public MessageViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-
+    public MyPlantsHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-
-        if (viewType == MSG_TYPE_RIGHT) {
-            View oneMessage = inflater.inflate(R.layout.chat_item_right, parent, false);
-            return new MessageViewHolder(oneMessage);
-        } else {
-            View oneMessage = inflater.inflate(R.layout.chat_item_left, parent, false);
-            return new MessageViewHolder(oneMessage);
-        }
+        View bearCard = inflater.inflate(R.layout.expertcard, parent, false);
+        return new MyPlantsHolder(bearCard);
     }
 
     @Override
-    public void onBindViewHolder(MessageViewHolder holder, int position) {
-
-        Chat chat = mChat.get(position);
-        holder.show_message.setText(chat.getMessage());
-        holder.profile_image.setImageResource(chat.getImage());
+    public void onBindViewHolder(MyPlantsHolder holder, int position) {
+        holder.imageView.setImageResource(listPlants.get(position).getPicture());
+        holder.textName.setText(listPlants.get(position).getName());
+        holder.textTitle.setText(listPlants.get(position).getTitle());
     }
 
     @Override
     public int getItemCount() {
-        return mChat.size();
+        return listPlants.size();
     }
 
-    @Override
-    public int getItemViewType(int position) {
-        if (mChat.get(position).getSender().equals("TestUser")){
-            return MSG_TYPE_RIGHT;
-        }else {
-            return MSG_TYPE_LEFT;
-        }
+    public void updateList(List<PlantProfileCard> newList) {
+        listPlants = new ArrayList<PlantProfileCard>();
+        listPlants.addAll(newList);
+        notifyDataSetChanged();
     }
+
+
 }
+

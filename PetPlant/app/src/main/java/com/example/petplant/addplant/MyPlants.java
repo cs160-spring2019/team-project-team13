@@ -30,7 +30,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyPlants extends AppCompatActivity implements MyPlantsAdapter.RecyclerListener {
+public class MyPlants extends AppCompatActivity implements SearchView.OnQueryTextListener {
 
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
@@ -59,7 +59,7 @@ public class MyPlants extends AppCompatActivity implements MyPlantsAdapter.Recyc
         return true;
     }
 
-    private void initExperts() {
+    private void initPlants() {
         //https://www.youtube.com/watch?v=h71Ia9iFWfI
         String json;
         try {
