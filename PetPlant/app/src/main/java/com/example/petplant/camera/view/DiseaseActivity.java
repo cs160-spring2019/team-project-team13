@@ -3,6 +3,11 @@ package com.example.petplant.camera.view;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffXfermode;
 import android.hardware.Camera;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -60,8 +65,8 @@ public class DiseaseActivity extends Activity{
                     progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
                     progress.setIndeterminate(false);
                     progress.setCancelable(true);
-                    progress.setTitle("Analyzing");
-                    progress.setMessage("Please wait");
+                    progress.setTitle("Analyzing, please wait...");
+                    progress.setMessage("Want faster speed? Join our membership NOW for only $28.88/month!");
 
                     analyze.execute(paths);
 
@@ -83,6 +88,29 @@ public class DiseaseActivity extends Activity{
         });
     }
 
+    private Bitmap createCircleBitmap(Bitmap resource)
+    {
+        //获取图片的宽度
+        int width = resource.getWidth();
+        Paint paint = new Paint();
+        //设置抗锯齿
+        paint.setAntiAlias(true);
+
+        //创建一个与原bitmap一样宽度的正方形bitmap
+        Bitmap circleBitmap = Bitmap.createBitmap(width, width, Bitmap.Config.ARGB_8888);
+        //以该bitmap为低创建一块画布
+        Canvas canvas = new Canvas(circleBitmap);
+        //以（width/2, width/2）为圆心，width/2为半径画一个圆
+        canvas.drawCircle(width/2, width/2, width/2, paint);
+
+        //设置画笔为取交集模式
+        paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
+        //裁剪图片
+        canvas.drawBitmap(resource, 0, 0, paint);
+
+        return circleBitmap;
+    }
+
     private class analyzeTask extends AsyncTask<String, Void, String> {
 
         @Override
@@ -94,7 +122,8 @@ public class DiseaseActivity extends Activity{
         @Override
         protected void onPostExecute(String path) {
             super.onPostExecute(path);
-            diseaseImg.setImageBitmap(BitmapUtil.getBitmap(path));
+            Bitmap bitmap = BitmapUtil.getBitmap(path);
+            diseaseImg.setImageBitmap(createCircleBitmap(bitmap));
             progress.dismiss();
 
 //            if (!DiseaseActivity.this.isFinishing() && progress != null) {
