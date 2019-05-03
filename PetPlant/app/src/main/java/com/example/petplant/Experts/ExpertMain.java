@@ -41,7 +41,7 @@ public class ExpertMain extends AppCompatActivity implements SearchView.OnQueryT
         initExperts();
 
         // recyclerView
-        recyclerView = findViewById(R.id.recyclerView);
+        recyclerView = findViewById(R.id.plant_recycler);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         adapter = new RecyclerViewAdapter(listExperts);

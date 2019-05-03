@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
+            "outputFile": "D:\\jvtran\\Github\\CS160\\Final Project\\team-project-team13\\PetPlant\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/jvtran/.gradle/caches/transforms-2/files-2.1/4f89e6251df6ec64a85e54d0b206529f/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "source": "C:\\Users\\jvtran\\.gradle\\caches\\transforms-2\\files-2.1\\c7b139fdacec9233f1db344d00741e0a\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

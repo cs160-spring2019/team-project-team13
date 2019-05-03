@@ -22,4 +22,5 @@
     <color name="color_gray">#cccccc</color>
     <color name="contact_name">#333333</color>
     <color name="contact_title">#008846</color>
+    <color name="emptyColour">#bababa</color>
 </resources>

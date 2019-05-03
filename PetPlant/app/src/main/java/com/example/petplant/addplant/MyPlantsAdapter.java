@@ -1,4 +1,4 @@
-package com.example.petplant.addplant.adapters;
+package com.example.petplant.addplant;
 
 
 import android.content.Context;
@@ -12,7 +12,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.petplant.R;
-import com.example.petplant.addplant.AddPlantActivity;
 
 
 import java.util.ArrayList;
@@ -30,8 +29,8 @@ class MyPlantsHolder extends RecyclerView.ViewHolder{
         imageView = (ImageView)itemView.findViewById(R.id.thumbnail);
         textName = (TextView)itemView.findViewById(R.id.name);
         textTitle = (TextView)itemView.findViewById(R.id.title);
-        plantcard = (RelativeLayout) itemView.findViewById(R.id.plantcard);
-
+        plantcard =  itemView.findViewById(R.id.plantcard);
+/*
         plantcard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,18 +39,18 @@ class MyPlantsHolder extends RecyclerView.ViewHolder{
                 i.putExtra("myplant",  textName.getText());
                 mContext.startActivity(i);
             }
-        });
+        });*/
 
     }
 }
 
 
 public class MyPlantsAdapter extends RecyclerView.Adapter<MyPlantsHolder> {
-
+    public static Context mContext;
     private List<PlantProfileCard> listPlants;
 
-    public MyPlantsAdapter(List<PlantProfileCard> listPlants) {
-
+    public MyPlantsAdapter(Context context, List<PlantProfileCard> listPlants) {
+        mContext = context;
         this.listPlants = listPlants;
 
     }
@@ -68,6 +67,7 @@ public class MyPlantsAdapter extends RecyclerView.Adapter<MyPlantsHolder> {
         holder.imageView.setImageResource(listPlants.get(position).getPicture());
         holder.textName.setText(listPlants.get(position).getName());
         holder.textTitle.setText(listPlants.get(position).getTitle());
+
     }
 
     @Override
@@ -75,11 +75,6 @@ public class MyPlantsAdapter extends RecyclerView.Adapter<MyPlantsHolder> {
         return listPlants.size();
     }
 
-    public void updateList(List<PlantProfileCard> newList) {
-        listPlants = new ArrayList<PlantProfileCard>();
-        listPlants.addAll(newList);
-        notifyDataSetChanged();
-    }
 
 
 }

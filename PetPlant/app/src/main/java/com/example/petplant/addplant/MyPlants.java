@@ -1,25 +1,16 @@
 package com.example.petplant.addplant;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
 import android.support.design.widget.BottomNavigationView;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
+import android.widget.LinearLayout;
 
-import com.example.petplant.Experts.OneExpert;
-import com.example.petplant.Experts.RecyclerViewAdapter;
 import com.example.petplant.R;
-import com.example.petplant.reminders.CreateEditReminder;
-import com.example.petplant.reminders.adapters.ReminderAdapter;
-import com.example.petplant.reminders.reminders;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -30,23 +21,29 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyPlants extends AppCompatActivity implements SearchView.OnQueryTextListener {
+public class MyPlants extends AppCompatActivity {
 
-    private RecyclerView recyclerView;
-    private RecyclerView.LayoutManager layoutManager;
-    private RecyclerViewAdapter adapter;
-    private List<OneExpert> listExperts = new ArrayList<OneExpert>();
+    private RecyclerView mrecyclerView;
+    LinearLayout layout;
+    private RecyclerView.Adapter mAdapter;
+    private List<PlantProfileCard> listPlants = new ArrayList<PlantProfileCard>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_plants);
+
+        initPlants();
+        layout =  findViewById(R.id.plant_layout);
+        mrecyclerView = findViewById(R.id.plant_recycler);
+        mrecyclerView.setHasFixedSize(true);
+        mrecyclerView.setLayoutManager(new LinearLayoutManager(this));
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         BottomNavigationView navigation =  findViewById(R.id.navigation);
         navigation.setItemIconTintList(null);
 
-
+       setAdapterAndUpdateData();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -63,7 +60,7 @@ public class MyPlants extends AppCompatActivity implements SearchView.OnQueryTex
         //https://www.youtube.com/watch?v=h71Ia9iFWfI
         String json;
         try {
-            InputStream is = getAssets().open("experts_info.json");
+            InputStream is = getAssets().open("my_plants.json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
@@ -73,10 +70,11 @@ public class MyPlants extends AppCompatActivity implements SearchView.OnQueryTex
             JSONArray jsonArray = new JSONArray(json);
 
             // read all bear status
+
             for(int i = 0; i < jsonArray.length();i++){
                 JSONObject obj = jsonArray.getJSONObject(i);
                 int drawableId = getResources().getIdentifier(obj.getString("expert_img_filename"), "drawable", getPackageName());
-                listExperts.add(new OneExpert(drawableId, obj.getString("expert_name"), obj.getString("expert_title"), obj.getString("expert_specialties"), obj.getString("expert_img_filename")));
+                listPlants.add(new PlantProfileCard(drawableId, obj.getString("expert_name"), obj.getString("expert_title"),  obj.getString("expert_img_filename")));
             }
 
         } catch (IOException e) {
@@ -84,6 +82,13 @@ public class MyPlants extends AppCompatActivity implements SearchView.OnQueryTex
         } catch (JSONException e) {
             e.printStackTrace();
         }
+    }
+    private void setAdapterAndUpdateData() {
+
+        mAdapter = new MyPlantsAdapter(this, listPlants);
+        mrecyclerView.setAdapter(mAdapter);
+
+
     }
 
     @Override

@@ -656,6 +656,7 @@ color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
 color dim_foreground_material_light
+color emptyColour
 color error
 color error_color_material_dark
 color error_color_material_light
@@ -1124,6 +1125,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_myplants_24dp
 drawable ic_notifications_black_24dp
+drawable ic_notifications_black_empty
 drawable ic_notifications_white_24dp
 drawable ic_rectangle
 drawable ic_rectangle_2
@@ -1235,7 +1237,6 @@ id container
 id content
 id contentPanel
 id coordinator
-id coordinatorLayout
 id create_coordinator
 id custom
 id customPanel
@@ -1254,6 +1255,9 @@ id direct
 id disableHome
 id disease_info
 id edit_query
+id empty_icon
+id empty_text
+id empty_view
 id end
 id end_padder
 id enterAlways
@@ -1338,12 +1342,13 @@ id parentPanel
 id parent_matrix
 id percent
 id pin
+id plant_layout
+id plant_recycler
 id plantcard
 id profile_image
 id progress_circular
 id progress_horizontal
 id radio
-id recyclerView
 id recyclerViewMessage
 id reminder_title
 id remindersb
@@ -1647,6 +1652,7 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
 string mtrl_chip_close_icon_content_description
+string no_active
 string no_repeat
 string one
 string password_toggle_content_description

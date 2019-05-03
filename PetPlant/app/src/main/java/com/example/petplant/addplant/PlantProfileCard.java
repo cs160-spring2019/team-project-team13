@@ -1,10 +1,9 @@
-package com.example.petplant.addplant.adapters;
+package com.example.petplant.addplant;
 
 public class PlantProfileCard {
     public Integer picture;
     public String name;
     public String title;
-    public String specialties;
     public String image_filename;
 
     PlantProfileCard(Integer picture, String name, String title, String image_filename) {
@@ -28,4 +27,7 @@ public class PlantProfileCard {
 
 
     public String getImage_filename() { return image_filename; }
-}
+    PlantProfileCard() {
+
+    }
+    }

@@ -22,4 +22,5 @@
     <string name="time_now">Now</string>
     <string name="title_activity_add_plant">AddPlantActivity</string>
     <string name="title_activity_plant_profile">PlantProfile</string>
+    <string name="no_active">No active plants</string>
 </resources>

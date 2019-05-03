@@ -2,54 +2,46 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".addplant.MyPlants" >
+    android:orientation="vertical"
+    tools:context=".addplant.MyPlants">
 
-    <android.support.design.widget.CoordinatorLayout
+    <LinearLayout
+        android:id="@+id/plant_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".addplant.MyPlants">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recyclerView"
+        <LinearLayout
+            android:id="@+id/empty_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/header"
-            android:scrollbars="vertical"></android.support.v7.widget.RecyclerView>
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
 
-        <FrameLayout
-            android:id="@+id/header"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/empty_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.1"
+                android:paddingBottom="20dp"
+                android:src="@drawable/ic_notifications_black_empty" />
 
-            <LinearLayout
-                android:id="@+id/tab_header"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary"
-                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/empty_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:text="@string/no_active"
+                android:textColor="@color/emptyColour"
+                android:textSize="17sp" />
 
-                <android.support.v7.widget.Toolbar
-                    android:id="@+id/toolbar"
-                    android:layout_width="0dp"
-                    android:layout_height="?attr/actionBarSize"
-                    android:layout_weight="1"
-                    android:background="?attr/colorPrimary"
-                    android:theme="@style/Toolbar"
-                    app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        </LinearLayout>
 
-            </LinearLayout>
-
-            <View
-                android:id="@+id/toolbar_shadow"
-                android:layout_width="match_parent"
-                android:layout_height="10dp"
-                android:layout_marginTop="?attr/actionBarSize"
-                android:background="@drawable/toolbar_shadow" />
-
-        </FrameLayout>
-    </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
@@ -58,6 +50,6 @@
         android:background="?android:attr/windowBackground"
         app:itemTextColor="@color/text"
         app:labelVisibilityMode="labeled"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/plant_layout"
         app:menu="@menu/navigation" />
 </android.support.constraint.ConstraintLayout>

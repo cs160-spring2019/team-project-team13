@@ -1,565 +1,565 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:2:1-68:12
-INJECTED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:2:1-68:12
-INJECTED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:2:1-68:12
-INJECTED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:2:1-68:12
-MERGED from [com.android.support:design:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/37078f9078ec35b588ccef410e296ac4/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/4f89e6251df6ec64a85e54d0b206529f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/9ebfb063957e93f3ea364f4c7ce2239f/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/526aaf7da2d815cca6804924d8ec3ee7/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.firebase:firebase-database:16.0.6] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/54fc6ea4c079d1886b7ba6d37b8de46c/AndroidManifest.xml:15:1-27:12
-MERGED from [com.google.firebase:firebase-auth:16.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/894eefad682210f706e0d40b1c5829d8/AndroidManifest.xml:17:1-42:12
-MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/976b753320da189960ea1c4292bd014c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/8a3381801918999b029d3b535df9e1e9/AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.firebase:firebase-core:16.0.7] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/b5ccb040e1778cc81dbf28a000b993df/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d9405d19665c45c2140a71bd835ce117/AndroidManifest.xml:17:1-34:12
-MERGED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:17:1-55:12
-MERGED from [com.google.android.gms:play-services-measurement-api:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/476ff3bb55ac0806c0021efccfabbcdc/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/abbe34681d9c09825ad431a525ddfda3/AndroidManifest.xml:17:1-40:12
-MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:17:1-59:12
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dd11e3714029c7f4530c24add60dc580/AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/5af5732ed70eb69d4416c790bee181af/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.firebase:firebase-common:16.0.4] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/920765c8844531846ed5f98c57787b8d/AndroidManifest.xml:2:1-17:12
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/8e8a64ecab2da49f10338f024f2c981b/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-measurement-base:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/33bc9a53044303cd91dd4a41091b9058/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6cd0362e806a174ced24afd236e5c9b9/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/a8838243b1ae954534f650b9fbf87569/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/56168583cedd5d013a5b81cce0b9fdff/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dc18ed4f4515d06d6bc1e91c04a0157d/AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d22fa515e2b91eaffade542c33967eba/AndroidManifest.xml:17:1-22:12
-MERGED from [com.jakewharton:butterknife:8.1.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfb979b818f5941ca79178b0a72bf512/AndroidManifest.xml:2:1-7:12
-MERGED from [io.reactivex:rxandroid:1.1.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/70fa587687ee6f8610125fe5e2938ac3/AndroidManifest.xml:15:1-21:12
-MERGED from [com.tbruyelle.rxpermissions:rxpermissions:0.9.2] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/da2a2898bf876e65ff3c7dbe9bdd65c9/AndroidManifest.xml:2:1-13:12
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/1b30fad2e8b0ab8eab5ac12940db02c2/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/a13aee26aea4500d1cfcf87644106a00/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/2117d47fdca9fa3e42b81465c074d342/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d4d4a4c068027b34c8cc2ad9c4c24b7a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/c1ae309157ec4dd93fad0b131989a649/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/5679f8a52516d0cd350eed1f3e071f8a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/e7d50cfd347b3aa929d23b139939baff/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/146681e3712883ceac0f50791276b85e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/baaec28510467b4074106053ec31a3d1/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/9e585d358fae9f4d240ee76c9923a7dc/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/016524b7def3c2f150f9411f33bba7af/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6af0a2b2d1b9c82e63bc5f6acdbdbacc/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d74d554ae4128eaa7615368d98ab42e3/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/e604d3a6df0a9bc17e02c98dfced5bb8/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/fea515848fbebc95640662c0d7ea2475/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/b471d372f28aa0e559576b541399c5bd/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/ab06ffe47a6b26180a3942ece9e2886d/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/550f52df06204aa6adc5d78e2c04bf2f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/3042ef5a1d6674534899d97602079b74/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/95a493b84cecaf5fdefc28f7cea2aebc/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/3c18d8e9a7e48fe71646384d290b5de6/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/9250dd0a7641783aa50b9c789be21a8a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/c3253d43dcf7fd9a602eea6688693a2c/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/a78f9b2c25e24b3fbecad7cee21c5f13/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/f4a910906027ab18a09f6af854cb3ee4/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/e525a6eb9525822d1dd2335ce2c10afa/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/aa9b0dfe682ae81dcef0e66268ac56f6/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/1764d4d41968eba51e6695cf30202f55/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/0203999144eab448cc0fd4634701d185/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:2:1-68:12
-INJECTED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:2:1-68:12
-INJECTED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:2:1-68:12
+ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:2:1-68:12
+INJECTED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:2:1-68:12
+INJECTED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:2:1-68:12
+INJECTED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:2:1-68:12
+MERGED from [com.android.support:design:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\5bb441ca2d98bf5674c26471469551a9\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\c7b139fdacec9233f1db344d00741e0a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\ec1b08a81f9481ab83a15d5453ef57f4\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\c1579a14a7f7e733d63088013f657d92\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-database:16.0.6] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\0ccdb7ef7e4aa5674ce45801944b70f0\AndroidManifest.xml:15:1-27:12
+MERGED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\23fe7b135b13003541c9367b38ca938e\AndroidManifest.xml:17:1-42:12
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\e03f9ec8dec4f7efb4b322fb4fcf49d1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\64d310e60ff9522d890b3809823db917\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-core:16.0.7] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2c4e85d6c093d5673026ca0fe4a52bfd\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\76193fbc710aacb6e163b7a771853cd5\AndroidManifest.xml:17:1-34:12
+MERGED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.android.gms:play-services-measurement-api:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\b357eebb746b4d8b6540e4b465c0d684\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\3f1ecfcb19bcc8a6510c6541fe398b3d\AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:17:1-59:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\aa9d18dd109fa057df1044b680ed0652\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\ed4664b7ae0428fcb81d86ad11a70c00\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-common:16.0.4] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\e355446ed0648d5ea9c0fbc4f3b4f7c5\AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\d86cb1a82fceea4bd97b8f095f54053d\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-base:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\fb987a910483ab183588700c372fc7b2\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\ef1ad66007465192184e7d043ed9e31a\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\b7444ecca9e29f806ae60cca97a5d655\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\3b50915e25ff2a6601975d06e5506609\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\4a92dafb6a2165a23bbb5209ba9f5470\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\f753cea71038d550fb55f280f877ab98\AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton:butterknife:8.1.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\e3b157f96e5e225adbb6f76a3cb0f0b5\AndroidManifest.xml:2:1-7:12
+MERGED from [io.reactivex:rxandroid:1.1.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\af12ee00d7f741923a143f413a276c75\AndroidManifest.xml:15:1-21:12
+MERGED from [com.tbruyelle.rxpermissions:rxpermissions:0.9.2] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\828d2440a0eb05d0c9e9f109db9b97a2\AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\4e210301fb565322702b561cef305768\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\14f72493d6111dc70e47a51c3d24ac17\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\0013908e64a543297b5a2bb7c329d13c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\21613b0aa280633c3f92aad1146f7574\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\acdd984306849fddaace4ca00ef0e1bc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\5d98504772aa100d7e8a6451a6fbf44b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\e8dc7885a25c90fa1a7658a34b4ca483\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\78b48b0114702f5dcfd2220089118609\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\daa036263195a2d0c3b3c5211d7b8e29\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\d2782daabb3e1606c28ddbd4aa43aa0b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\673735a6af4824bb44d3b02212a817fd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\b5be1ab78c84ab4a92450ee161545950\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2c8cd9da2a40516e04e396e51eac918c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\d794e27e4ac0aefd349407bf9a76f502\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a5f437e60c27788b9cd364153874667e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\1ec3e234348c2f63e395cacc96713027\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9c308f71421cc0fb7767db766ea4e1a\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\f5a59f84fce0159ac6a763b598113004\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\940b3f533a1fa365d68daf089dad51a7\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\33638170e883512b43eb9645907f49b0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\7236e4427f3629105b24bd8a4fd67cd0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\73707a2e94f49d5db2fed26679fc05f0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2ccc8e8ef230306f587906769d8ac8ba\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\767278cfb69c3277f6317085d8d107ef\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\8e16a0531a00ab97574bacc9d1cf9966\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\ce57de8982e4e310e1d2ad5351665fbf\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\7c18c87ef1b3a611399b54dcfc9b2ffc\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\84c0f7001b3cd0c1c27f9e801c391236\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-database-collection:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\424234b877b5c74b187284db1a76bd0a\AndroidManifest.xml:2:1-7:12
+INJECTED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:2:1-68:12
+INJECTED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:2:1-68:12
+INJECTED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:2:1-68:12
 	package
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:3:5-35
-		INJECTED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:3:5-35
+		INJECTED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml
+		INJECTED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:2:1-68:12
-		INJECTED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
+		INJECTED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:2:1-68:12
+		INJECTED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:2:1-68:12
-		INJECTED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
+		INJECTED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:2:1-68:12
+		INJECTED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:5:5-81
+ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:5:5-81
 	android:name
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:5:22-78
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:5:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:6:5-80
+ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:6:5-80
 	android:name
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:6:22-77
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:6:22-77
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:7:5-84
+ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:7:5-84
 	android:name
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:7:22-81
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:7:22-81
 uses-permission#android.permission.CAMERA
-ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:8:5-65
+ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:8:5-65
 	android:name
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:8:22-62
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:8:22-62
 uses-permission#android.hradware.camera
-ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:9:5-63
+ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:9:5-63
 	android:name
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:9:22-60
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:9:22-60
 uses-permission#android.hradware.camera.autofocus
-ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:10:5-73
+ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:10:5-73
 	android:name
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:10:22-70
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:10:22-70
 application
-ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:12:5-66:19
-MERGED from [com.android.support:design:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/37078f9078ec35b588ccef410e296ac4/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/37078f9078ec35b588ccef410e296ac4/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/9ebfb063957e93f3ea364f4c7ce2239f/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/9ebfb063957e93f3ea364f4c7ce2239f/AndroidManifest.xml:9:5-20
-MERGED from [com.google.firebase:firebase-auth:16.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/894eefad682210f706e0d40b1c5829d8/AndroidManifest.xml:23:5-40:19
-MERGED from [com.google.firebase:firebase-auth:16.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/894eefad682210f706e0d40b1c5829d8/AndroidManifest.xml:23:5-40:19
-MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/8a3381801918999b029d3b535df9e1e9/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/8a3381801918999b029d3b535df9e1e9/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-core:16.0.7] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/b5ccb040e1778cc81dbf28a000b993df/AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-core:16.0.7] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/b5ccb040e1778cc81dbf28a000b993df/AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d9405d19665c45c2140a71bd835ce117/AndroidManifest.xml:26:5-32:19
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d9405d19665c45c2140a71bd835ce117/AndroidManifest.xml:26:5-32:19
-MERGED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:28:5-53:19
-MERGED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:28:5-53:19
-MERGED from [com.google.android.gms:play-services-measurement-api:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/476ff3bb55ac0806c0021efccfabbcdc/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-measurement-api:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/476ff3bb55ac0806c0021efccfabbcdc/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/abbe34681d9c09825ad431a525ddfda3/AndroidManifest.xml:28:5-38:19
-MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/abbe34681d9c09825ad431a525ddfda3/AndroidManifest.xml:28:5-38:19
-MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:28:5-57:19
-MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:28:5-57:19
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dd11e3714029c7f4530c24add60dc580/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dd11e3714029c7f4530c24add60dc580/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/5af5732ed70eb69d4416c790bee181af/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/5af5732ed70eb69d4416c790bee181af/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.firebase:firebase-common:16.0.4] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/920765c8844531846ed5f98c57787b8d/AndroidManifest.xml:9:5-15:19
-MERGED from [com.google.firebase:firebase-common:16.0.4] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/920765c8844531846ed5f98c57787b8d/AndroidManifest.xml:9:5-15:19
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/8e8a64ecab2da49f10338f024f2c981b/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/8e8a64ecab2da49f10338f024f2c981b/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-measurement-base:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/33bc9a53044303cd91dd4a41091b9058/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-measurement-base:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/33bc9a53044303cd91dd4a41091b9058/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6cd0362e806a174ced24afd236e5c9b9/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6cd0362e806a174ced24afd236e5c9b9/AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/a8838243b1ae954534f650b9fbf87569/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/a8838243b1ae954534f650b9fbf87569/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/56168583cedd5d013a5b81cce0b9fdff/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/56168583cedd5d013a5b81cce0b9fdff/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dc18ed4f4515d06d6bc1e91c04a0157d/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dc18ed4f4515d06d6bc1e91c04a0157d/AndroidManifest.xml:22:5-26:19
-MERGED from [com.tbruyelle.rxpermissions:rxpermissions:0.9.2] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/da2a2898bf876e65ff3c7dbe9bdd65c9/AndroidManifest.xml:11:5-20
-MERGED from [com.tbruyelle.rxpermissions:rxpermissions:0.9.2] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/da2a2898bf876e65ff3c7dbe9bdd65c9/AndroidManifest.xml:11:5-20
-MERGED from [com.android.support:support-compat:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/b471d372f28aa0e559576b541399c5bd/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/b471d372f28aa0e559576b541399c5bd/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/ab06ffe47a6b26180a3942ece9e2886d/AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/ab06ffe47a6b26180a3942ece9e2886d/AndroidManifest.xml:22:5-23:19
+ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:12:5-66:19
+MERGED from [com.android.support:design:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\5bb441ca2d98bf5674c26471469551a9\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\5bb441ca2d98bf5674c26471469551a9\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\ec1b08a81f9481ab83a15d5453ef57f4\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\ec1b08a81f9481ab83a15d5453ef57f4\AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\23fe7b135b13003541c9367b38ca938e\AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\23fe7b135b13003541c9367b38ca938e\AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\64d310e60ff9522d890b3809823db917\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\64d310e60ff9522d890b3809823db917\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-core:16.0.7] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2c4e85d6c093d5673026ca0fe4a52bfd\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:16.0.7] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2c4e85d6c093d5673026ca0fe4a52bfd\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\76193fbc710aacb6e163b7a771853cd5\AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\76193fbc710aacb6e163b7a771853cd5\AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\b357eebb746b4d8b6540e4b465c0d684\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\b357eebb746b4d8b6540e4b465c0d684\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\3f1ecfcb19bcc8a6510c6541fe398b3d\AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\3f1ecfcb19bcc8a6510c6541fe398b3d\AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\aa9d18dd109fa057df1044b680ed0652\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\aa9d18dd109fa057df1044b680ed0652\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\ed4664b7ae0428fcb81d86ad11a70c00\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\ed4664b7ae0428fcb81d86ad11a70c00\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-common:16.0.4] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\e355446ed0648d5ea9c0fbc4f3b4f7c5\AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.firebase:firebase-common:16.0.4] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\e355446ed0648d5ea9c0fbc4f3b4f7c5\AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\d86cb1a82fceea4bd97b8f095f54053d\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\d86cb1a82fceea4bd97b8f095f54053d\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\fb987a910483ab183588700c372fc7b2\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\fb987a910483ab183588700c372fc7b2\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\ef1ad66007465192184e7d043ed9e31a\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\ef1ad66007465192184e7d043ed9e31a\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\b7444ecca9e29f806ae60cca97a5d655\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\b7444ecca9e29f806ae60cca97a5d655\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\3b50915e25ff2a6601975d06e5506609\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\3b50915e25ff2a6601975d06e5506609\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\4a92dafb6a2165a23bbb5209ba9f5470\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\4a92dafb6a2165a23bbb5209ba9f5470\AndroidManifest.xml:22:5-26:19
+MERGED from [com.tbruyelle.rxpermissions:rxpermissions:0.9.2] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\828d2440a0eb05d0c9e9f109db9b97a2\AndroidManifest.xml:11:5-20
+MERGED from [com.tbruyelle.rxpermissions:rxpermissions:0.9.2] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\828d2440a0eb05d0c9e9f109db9b97a2\AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\1ec3e234348c2f63e395cacc96713027\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\1ec3e234348c2f63e395cacc96713027\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9c308f71421cc0fb7767db766ea4e1a\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9c308f71421cc0fb7767db766ea4e1a\AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/b471d372f28aa0e559576b541399c5bd/AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\1ec3e234348c2f63e395cacc96713027\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:18:9-35
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:18:9-35
 	android:label
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:16:9-41
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:16:9-41
 	android:roundIcon
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:17:9-54
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:17:9-54
 	android:icon
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:15:9-43
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:15:9-43
 	android:allowBackup
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:14:9-36
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:14:9-36
 	android:theme
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:19:9-40
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:19:9-40
 	android:name
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:13:9-51
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:13:9-51
 activity#com.example.petplant.addplant.PlantProfile
-ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:20:9-23:49
+ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:20:9-23:49
 	android:label
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:22:13-65
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:22:13-65
 	android:theme
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:23:13-46
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:23:13-46
 	android:name
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:21:13-50
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:21:13-50
 activity#com.example.petplant.addplant.AddPlantActivity
-ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:24:9-27:49
+ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:24:9-27:49
 	android:label
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:26:13-61
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:26:13-61
 	android:theme
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:27:13-46
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:27:13-46
 	android:name
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:25:13-54
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:25:13-54
 activity#com.example.petplant.addplant.MyPlants
-ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:28:9-31:49
+ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:28:9-31:49
 	android:label
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:30:13-51
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:30:13-51
 	android:theme
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:31:13-46
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:31:13-46
 	android:name
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:29:13-46
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:29:13-46
 activity#com.example.petplant.MainActivity
-ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:32:9-40:20
+ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:32:9-40:20
 	android:label
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:34:13-45
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:34:13-45
 	android:name
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:33:13-41
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:33:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:35:13-39:29
+ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:35:13-39:29
 action#android.intent.action.MAIN
-ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:36:17-69
+ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:36:17-69
 	android:name
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:36:25-66
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:36:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:38:17-77
+ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:38:17-77
 	android:name
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:38:27-74
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:38:27-74
 activity#com.example.petplant.camera.view.TakePhotoActivity
-ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:41:9-43:52
+ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:41:9-43:52
 	android:screenOrientation
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:43:13-49
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:43:13-49
 	android:name
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:42:13-58
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:42:13-58
 activity#com.example.petplant.camera.view.DiseaseActivity
-ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:44:9-46:39
+ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:44:9-46:39
 	android:label
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:46:13-36
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:46:13-36
 	android:name
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:45:13-56
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:45:13-56
 activity#com.example.petplant.Experts.ExpertMain
-ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:47:9-50:49
+ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:47:9-50:49
 	android:label
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:49:13-40
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:49:13-40
 	android:theme
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:50:13-46
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:50:13-46
 	android:name
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:48:13-47
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:48:13-47
 activity#com.example.petplant.reminders.calendar
-ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:51:9-53:63
+ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:51:9-53:63
 	android:label
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:53:13-60
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:53:13-60
 	android:name
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:52:13-47
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:52:13-47
 activity#com.example.petplant.reminders.reminders
-ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:54:9-57:49
+ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:54:9-57:49
 	android:label
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:56:13-61
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:56:13-61
 	android:theme
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:57:13-46
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:57:13-46
 	android:name
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:55:13-48
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:55:13-48
 activity#com.example.petplant.reminders.CreateEditReminder
-ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:58:9-61:49
+ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:58:9-61:49
 	android:label
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:60:13-62
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:60:13-62
 	android:theme
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:61:13-46
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:61:13-46
 	android:name
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:59:13-57
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:59:13-57
 activity#com.example.petplant.Experts.MessageActivity
-ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:62:9-65:49
+ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:62:9-65:49
 	android:label
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:64:13-42
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:64:13-42
 	android:theme
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:65:13-46
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:65:13-46
 	android:name
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml:63:13-52
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml:63:13-52
 uses-sdk
-INJECTED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
-INJECTED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:design:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/37078f9078ec35b588ccef410e296ac4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/37078f9078ec35b588ccef410e296ac4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/4f89e6251df6ec64a85e54d0b206529f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/4f89e6251df6ec64a85e54d0b206529f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/9ebfb063957e93f3ea364f4c7ce2239f/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/9ebfb063957e93f3ea364f4c7ce2239f/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/526aaf7da2d815cca6804924d8ec3ee7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/526aaf7da2d815cca6804924d8ec3ee7/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-database:16.0.6] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/54fc6ea4c079d1886b7ba6d37b8de46c/AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.firebase:firebase-database:16.0.6] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/54fc6ea4c079d1886b7ba6d37b8de46c/AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.firebase:firebase-auth:16.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/894eefad682210f706e0d40b1c5829d8/AndroidManifest.xml:21:5-44
-MERGED from [com.google.firebase:firebase-auth:16.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/894eefad682210f706e0d40b1c5829d8/AndroidManifest.xml:21:5-44
-MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/976b753320da189960ea1c4292bd014c/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/976b753320da189960ea1c4292bd014c/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/8a3381801918999b029d3b535df9e1e9/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/8a3381801918999b029d3b535df9e1e9/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-core:16.0.7] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/b5ccb040e1778cc81dbf28a000b993df/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-core:16.0.7] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/b5ccb040e1778cc81dbf28a000b993df/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d9405d19665c45c2140a71bd835ce117/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d9405d19665c45c2140a71bd835ce117/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-api:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/476ff3bb55ac0806c0021efccfabbcdc/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-api:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/476ff3bb55ac0806c0021efccfabbcdc/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/abbe34681d9c09825ad431a525ddfda3/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/abbe34681d9c09825ad431a525ddfda3/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dd11e3714029c7f4530c24add60dc580/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dd11e3714029c7f4530c24add60dc580/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/5af5732ed70eb69d4416c790bee181af/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/5af5732ed70eb69d4416c790bee181af/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-common:16.0.4] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/920765c8844531846ed5f98c57787b8d/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.firebase:firebase-common:16.0.4] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/920765c8844531846ed5f98c57787b8d/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/8e8a64ecab2da49f10338f024f2c981b/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/8e8a64ecab2da49f10338f024f2c981b/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-measurement-base:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/33bc9a53044303cd91dd4a41091b9058/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-measurement-base:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/33bc9a53044303cd91dd4a41091b9058/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6cd0362e806a174ced24afd236e5c9b9/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6cd0362e806a174ced24afd236e5c9b9/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/a8838243b1ae954534f650b9fbf87569/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/a8838243b1ae954534f650b9fbf87569/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/56168583cedd5d013a5b81cce0b9fdff/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/56168583cedd5d013a5b81cce0b9fdff/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dc18ed4f4515d06d6bc1e91c04a0157d/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dc18ed4f4515d06d6bc1e91c04a0157d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d22fa515e2b91eaffade542c33967eba/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d22fa515e2b91eaffade542c33967eba/AndroidManifest.xml:20:5-44
-MERGED from [com.jakewharton:butterknife:8.1.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfb979b818f5941ca79178b0a72bf512/AndroidManifest.xml:5:5-43
-MERGED from [com.jakewharton:butterknife:8.1.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfb979b818f5941ca79178b0a72bf512/AndroidManifest.xml:5:5-43
-MERGED from [io.reactivex:rxandroid:1.1.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/70fa587687ee6f8610125fe5e2938ac3/AndroidManifest.xml:19:5-43
-MERGED from [io.reactivex:rxandroid:1.1.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/70fa587687ee6f8610125fe5e2938ac3/AndroidManifest.xml:19:5-43
-MERGED from [com.tbruyelle.rxpermissions:rxpermissions:0.9.2] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/da2a2898bf876e65ff3c7dbe9bdd65c9/AndroidManifest.xml:7:5-9:41
-MERGED from [com.tbruyelle.rxpermissions:rxpermissions:0.9.2] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/da2a2898bf876e65ff3c7dbe9bdd65c9/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/1b30fad2e8b0ab8eab5ac12940db02c2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/1b30fad2e8b0ab8eab5ac12940db02c2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/a13aee26aea4500d1cfcf87644106a00/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/a13aee26aea4500d1cfcf87644106a00/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/2117d47fdca9fa3e42b81465c074d342/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/2117d47fdca9fa3e42b81465c074d342/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d4d4a4c068027b34c8cc2ad9c4c24b7a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d4d4a4c068027b34c8cc2ad9c4c24b7a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/c1ae309157ec4dd93fad0b131989a649/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/c1ae309157ec4dd93fad0b131989a649/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/5679f8a52516d0cd350eed1f3e071f8a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/5679f8a52516d0cd350eed1f3e071f8a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/e7d50cfd347b3aa929d23b139939baff/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/e7d50cfd347b3aa929d23b139939baff/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/146681e3712883ceac0f50791276b85e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/146681e3712883ceac0f50791276b85e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/baaec28510467b4074106053ec31a3d1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/baaec28510467b4074106053ec31a3d1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/9e585d358fae9f4d240ee76c9923a7dc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/9e585d358fae9f4d240ee76c9923a7dc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/016524b7def3c2f150f9411f33bba7af/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/016524b7def3c2f150f9411f33bba7af/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6af0a2b2d1b9c82e63bc5f6acdbdbacc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6af0a2b2d1b9c82e63bc5f6acdbdbacc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d74d554ae4128eaa7615368d98ab42e3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d74d554ae4128eaa7615368d98ab42e3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/e604d3a6df0a9bc17e02c98dfced5bb8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/e604d3a6df0a9bc17e02c98dfced5bb8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/fea515848fbebc95640662c0d7ea2475/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/fea515848fbebc95640662c0d7ea2475/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/b471d372f28aa0e559576b541399c5bd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/b471d372f28aa0e559576b541399c5bd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/ab06ffe47a6b26180a3942ece9e2886d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/ab06ffe47a6b26180a3942ece9e2886d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/550f52df06204aa6adc5d78e2c04bf2f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/550f52df06204aa6adc5d78e2c04bf2f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/3042ef5a1d6674534899d97602079b74/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/3042ef5a1d6674534899d97602079b74/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/95a493b84cecaf5fdefc28f7cea2aebc/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/95a493b84cecaf5fdefc28f7cea2aebc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/3c18d8e9a7e48fe71646384d290b5de6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/3c18d8e9a7e48fe71646384d290b5de6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/9250dd0a7641783aa50b9c789be21a8a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/9250dd0a7641783aa50b9c789be21a8a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/c3253d43dcf7fd9a602eea6688693a2c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/c3253d43dcf7fd9a602eea6688693a2c/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/a78f9b2c25e24b3fbecad7cee21c5f13/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/a78f9b2c25e24b3fbecad7cee21c5f13/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/f4a910906027ab18a09f6af854cb3ee4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/f4a910906027ab18a09f6af854cb3ee4/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/e525a6eb9525822d1dd2335ce2c10afa/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/e525a6eb9525822d1dd2335ce2c10afa/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/aa9b0dfe682ae81dcef0e66268ac56f6/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/aa9b0dfe682ae81dcef0e66268ac56f6/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/1764d4d41968eba51e6695cf30202f55/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/1764d4d41968eba51e6695cf30202f55/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/0203999144eab448cc0fd4634701d185/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/0203999144eab448cc0fd4634701d185/AndroidManifest.xml:5:5-44
-INJECTED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
-INJECTED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
+INJECTED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml
+INJECTED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\5bb441ca2d98bf5674c26471469551a9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\5bb441ca2d98bf5674c26471469551a9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\c7b139fdacec9233f1db344d00741e0a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\c7b139fdacec9233f1db344d00741e0a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\ec1b08a81f9481ab83a15d5453ef57f4\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\ec1b08a81f9481ab83a15d5453ef57f4\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\c1579a14a7f7e733d63088013f657d92\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\c1579a14a7f7e733d63088013f657d92\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database:16.0.6] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\0ccdb7ef7e4aa5674ce45801944b70f0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-database:16.0.6] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\0ccdb7ef7e4aa5674ce45801944b70f0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\23fe7b135b13003541c9367b38ca938e\AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\23fe7b135b13003541c9367b38ca938e\AndroidManifest.xml:21:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\e03f9ec8dec4f7efb4b322fb4fcf49d1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\e03f9ec8dec4f7efb4b322fb4fcf49d1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\64d310e60ff9522d890b3809823db917\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\64d310e60ff9522d890b3809823db917\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.7] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2c4e85d6c093d5673026ca0fe4a52bfd\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.7] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2c4e85d6c093d5673026ca0fe4a52bfd\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\76193fbc710aacb6e163b7a771853cd5\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\76193fbc710aacb6e163b7a771853cd5\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\b357eebb746b4d8b6540e4b465c0d684\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\b357eebb746b4d8b6540e4b465c0d684\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\3f1ecfcb19bcc8a6510c6541fe398b3d\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\3f1ecfcb19bcc8a6510c6541fe398b3d\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\aa9d18dd109fa057df1044b680ed0652\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\aa9d18dd109fa057df1044b680ed0652\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\ed4664b7ae0428fcb81d86ad11a70c00\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\ed4664b7ae0428fcb81d86ad11a70c00\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:16.0.4] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\e355446ed0648d5ea9c0fbc4f3b4f7c5\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-common:16.0.4] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\e355446ed0648d5ea9c0fbc4f3b4f7c5\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\d86cb1a82fceea4bd97b8f095f54053d\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\d86cb1a82fceea4bd97b8f095f54053d\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\fb987a910483ab183588700c372fc7b2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\fb987a910483ab183588700c372fc7b2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\ef1ad66007465192184e7d043ed9e31a\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\ef1ad66007465192184e7d043ed9e31a\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\b7444ecca9e29f806ae60cca97a5d655\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\b7444ecca9e29f806ae60cca97a5d655\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\3b50915e25ff2a6601975d06e5506609\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\3b50915e25ff2a6601975d06e5506609\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\4a92dafb6a2165a23bbb5209ba9f5470\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\4a92dafb6a2165a23bbb5209ba9f5470\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\f753cea71038d550fb55f280f877ab98\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\f753cea71038d550fb55f280f877ab98\AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton:butterknife:8.1.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\e3b157f96e5e225adbb6f76a3cb0f0b5\AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.1.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\e3b157f96e5e225adbb6f76a3cb0f0b5\AndroidManifest.xml:5:5-43
+MERGED from [io.reactivex:rxandroid:1.1.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\af12ee00d7f741923a143f413a276c75\AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex:rxandroid:1.1.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\af12ee00d7f741923a143f413a276c75\AndroidManifest.xml:19:5-43
+MERGED from [com.tbruyelle.rxpermissions:rxpermissions:0.9.2] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\828d2440a0eb05d0c9e9f109db9b97a2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.tbruyelle.rxpermissions:rxpermissions:0.9.2] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\828d2440a0eb05d0c9e9f109db9b97a2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\4e210301fb565322702b561cef305768\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\4e210301fb565322702b561cef305768\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\14f72493d6111dc70e47a51c3d24ac17\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\14f72493d6111dc70e47a51c3d24ac17\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\0013908e64a543297b5a2bb7c329d13c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\0013908e64a543297b5a2bb7c329d13c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\21613b0aa280633c3f92aad1146f7574\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\21613b0aa280633c3f92aad1146f7574\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\acdd984306849fddaace4ca00ef0e1bc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\acdd984306849fddaace4ca00ef0e1bc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\5d98504772aa100d7e8a6451a6fbf44b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\5d98504772aa100d7e8a6451a6fbf44b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\e8dc7885a25c90fa1a7658a34b4ca483\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\e8dc7885a25c90fa1a7658a34b4ca483\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\78b48b0114702f5dcfd2220089118609\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\78b48b0114702f5dcfd2220089118609\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\daa036263195a2d0c3b3c5211d7b8e29\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\daa036263195a2d0c3b3c5211d7b8e29\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\d2782daabb3e1606c28ddbd4aa43aa0b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\d2782daabb3e1606c28ddbd4aa43aa0b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\673735a6af4824bb44d3b02212a817fd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\673735a6af4824bb44d3b02212a817fd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\b5be1ab78c84ab4a92450ee161545950\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\b5be1ab78c84ab4a92450ee161545950\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2c8cd9da2a40516e04e396e51eac918c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2c8cd9da2a40516e04e396e51eac918c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\d794e27e4ac0aefd349407bf9a76f502\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\d794e27e4ac0aefd349407bf9a76f502\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a5f437e60c27788b9cd364153874667e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a5f437e60c27788b9cd364153874667e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\1ec3e234348c2f63e395cacc96713027\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\1ec3e234348c2f63e395cacc96713027\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9c308f71421cc0fb7767db766ea4e1a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9c308f71421cc0fb7767db766ea4e1a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\f5a59f84fce0159ac6a763b598113004\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\f5a59f84fce0159ac6a763b598113004\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\940b3f533a1fa365d68daf089dad51a7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\940b3f533a1fa365d68daf089dad51a7\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\33638170e883512b43eb9645907f49b0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\33638170e883512b43eb9645907f49b0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\7236e4427f3629105b24bd8a4fd67cd0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\7236e4427f3629105b24bd8a4fd67cd0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\73707a2e94f49d5db2fed26679fc05f0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\73707a2e94f49d5db2fed26679fc05f0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2ccc8e8ef230306f587906769d8ac8ba\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2ccc8e8ef230306f587906769d8ac8ba\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\767278cfb69c3277f6317085d8d107ef\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\767278cfb69c3277f6317085d8d107ef\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\8e16a0531a00ab97574bacc9d1cf9966\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\8e16a0531a00ab97574bacc9d1cf9966\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\ce57de8982e4e310e1d2ad5351665fbf\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\ce57de8982e4e310e1d2ad5351665fbf\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\7c18c87ef1b3a611399b54dcfc9b2ffc\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\7c18c87ef1b3a611399b54dcfc9b2ffc\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\84c0f7001b3cd0c1c27f9e801c391236\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\84c0f7001b3cd0c1c27f9e801c391236\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database-collection:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\424234b877b5c74b187284db1a76bd0a\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-collection:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\424234b877b5c74b187284db1a76bd0a\AndroidManifest.xml:5:5-44
+INJECTED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml
+INJECTED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
+		INJECTED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml
+		INJECTED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/jvtran/Documents/GitHub/CS160/team-project-team13/PetPlant/app/src/main/AndroidManifest.xml
+		INJECTED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml
+		ADDED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml
+		INJECTED from D:\jvtran\Github\CS160\Final Project\team-project-team13\PetPlant\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-database:16.0.6] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/54fc6ea4c079d1886b7ba6d37b8de46c/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d9405d19665c45c2140a71bd835ce117/AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d9405d19665c45c2140a71bd835ce117/AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/abbe34681d9c09825ad431a525ddfda3/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/abbe34681d9c09825ad431a525ddfda3/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:22:5-79
+ADDED from [com.google.firebase:firebase-database:16.0.6] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\0ccdb7ef7e4aa5674ce45801944b70f0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\76193fbc710aacb6e163b7a771853cd5\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\76193fbc710aacb6e163b7a771853cd5\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\3f1ecfcb19bcc8a6510c6541fe398b3d\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\3f1ecfcb19bcc8a6510c6541fe398b3d\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from [com.google.firebase:firebase-database:16.0.6] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/54fc6ea4c079d1886b7ba6d37b8de46c/AndroidManifest.xml:24:22-76
+		ADDED from [com.google.firebase:firebase-database:16.0.6] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\0ccdb7ef7e4aa5674ce45801944b70f0\AndroidManifest.xml:24:22-76
 uses-permission#android.permission.INTERNET
-ADDED from [com.google.firebase:firebase-database:16.0.6] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/54fc6ea4c079d1886b7ba6d37b8de46c/AndroidManifest.xml:25:5-67
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d9405d19665c45c2140a71bd835ce117/AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d9405d19665c45c2140a71bd835ce117/AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/abbe34681d9c09825ad431a525ddfda3/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/abbe34681d9c09825ad431a525ddfda3/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:23:5-67
+ADDED from [com.google.firebase:firebase-database:16.0.6] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\0ccdb7ef7e4aa5674ce45801944b70f0\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\76193fbc710aacb6e163b7a771853cd5\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\76193fbc710aacb6e163b7a771853cd5\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\3f1ecfcb19bcc8a6510c6541fe398b3d\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\3f1ecfcb19bcc8a6510c6541fe398b3d\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from [com.google.firebase:firebase-database:16.0.6] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/54fc6ea4c079d1886b7ba6d37b8de46c/AndroidManifest.xml:25:22-64
+		ADDED from [com.google.firebase:firebase-database:16.0.6] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\0ccdb7ef7e4aa5674ce45801944b70f0\AndroidManifest.xml:25:22-64
 activity#com.google.firebase.auth.internal.FederatedSignInActivity
-ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/894eefad682210f706e0d40b1c5829d8/AndroidManifest.xml:24:9-31:50
+ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\23fe7b135b13003541c9367b38ca938e\AndroidManifest.xml:24:9-31:50
 	android:excludeFromRecents
-		ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/894eefad682210f706e0d40b1c5829d8/AndroidManifest.xml:26:13-46
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\23fe7b135b13003541c9367b38ca938e\AndroidManifest.xml:26:13-46
 	android:launchMode
-		ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/894eefad682210f706e0d40b1c5829d8/AndroidManifest.xml:28:13-44
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\23fe7b135b13003541c9367b38ca938e\AndroidManifest.xml:28:13-44
 	android:exported
-		ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/894eefad682210f706e0d40b1c5829d8/AndroidManifest.xml:27:13-36
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\23fe7b135b13003541c9367b38ca938e\AndroidManifest.xml:27:13-36
 	android:permission
-		ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/894eefad682210f706e0d40b1c5829d8/AndroidManifest.xml:29:13-102
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\23fe7b135b13003541c9367b38ca938e\AndroidManifest.xml:29:13-102
 	android:theme
-		ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/894eefad682210f706e0d40b1c5829d8/AndroidManifest.xml:30:13-72
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\23fe7b135b13003541c9367b38ca938e\AndroidManifest.xml:30:13-72
 	tools:replace
-		ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/894eefad682210f706e0d40b1c5829d8/AndroidManifest.xml:31:13-47
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\23fe7b135b13003541c9367b38ca938e\AndroidManifest.xml:31:13-47
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/894eefad682210f706e0d40b1c5829d8/AndroidManifest.xml:25:13-85
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\23fe7b135b13003541c9367b38ca938e\AndroidManifest.xml:25:13-85
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/894eefad682210f706e0d40b1c5829d8/AndroidManifest.xml:33:9-39:19
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d9405d19665c45c2140a71bd835ce117/AndroidManifest.xml:27:9-31:19
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d9405d19665c45c2140a71bd835ce117/AndroidManifest.xml:27:9-31:19
-MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:29:9-35:19
-MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:29:9-35:19
+ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\23fe7b135b13003541c9367b38ca938e\AndroidManifest.xml:33:9-39:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\76193fbc710aacb6e163b7a771853cd5\AndroidManifest.xml:27:9-31:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\76193fbc710aacb6e163b7a771853cd5\AndroidManifest.xml:27:9-31:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:29:9-35:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/894eefad682210f706e0d40b1c5829d8/AndroidManifest.xml:35:13-37
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\23fe7b135b13003541c9367b38ca938e\AndroidManifest.xml:35:13-37
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/894eefad682210f706e0d40b1c5829d8/AndroidManifest.xml:34:13-84
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\23fe7b135b13003541c9367b38ca938e\AndroidManifest.xml:34:13-84
 meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
-ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/894eefad682210f706e0d40b1c5829d8/AndroidManifest.xml:36:13-38:85
+ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\23fe7b135b13003541c9367b38ca938e\AndroidManifest.xml:36:13-38:85
 	android:value
-		ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/894eefad682210f706e0d40b1c5829d8/AndroidManifest.xml:38:17-82
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\23fe7b135b13003541c9367b38ca938e\AndroidManifest.xml:38:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/894eefad682210f706e0d40b1c5829d8/AndroidManifest.xml:37:17-109
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\23fe7b135b13003541c9367b38ca938e\AndroidManifest.xml:37:17-109
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d9405d19665c45c2140a71bd835ce117/AndroidManifest.xml:24:5-68
-MERGED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:25:5-68
-MERGED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:25:5-68
-MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/abbe34681d9c09825ad431a525ddfda3/AndroidManifest.xml:25:5-68
-MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/abbe34681d9c09825ad431a525ddfda3/AndroidManifest.xml:25:5-68
-MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:24:5-68
-MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:24:5-68
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\76193fbc710aacb6e163b7a771853cd5\AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\3f1ecfcb19bcc8a6510c6541fe398b3d\AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\3f1ecfcb19bcc8a6510c6541fe398b3d\AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:24:5-68
 	android:name
-		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d9405d19665c45c2140a71bd835ce117/AndroidManifest.xml:24:22-65
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\76193fbc710aacb6e163b7a771853cd5\AndroidManifest.xml:24:22-65
 meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
-ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d9405d19665c45c2140a71bd835ce117/AndroidManifest.xml:28:13-30:85
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\76193fbc710aacb6e163b7a771853cd5\AndroidManifest.xml:28:13-30:85
 	android:value
-		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d9405d19665c45c2140a71bd835ce117/AndroidManifest.xml:30:17-82
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\76193fbc710aacb6e163b7a771853cd5\AndroidManifest.xml:30:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/d9405d19665c45c2140a71bd835ce117/AndroidManifest.xml:29:17-139
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\76193fbc710aacb6e163b7a771853cd5\AndroidManifest.xml:29:17-139
 uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
-ADDED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:26:5-110
-MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/abbe34681d9c09825ad431a525ddfda3/AndroidManifest.xml:26:5-110
-MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/abbe34681d9c09825ad431a525ddfda3/AndroidManifest.xml:26:5-110
+ADDED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\3f1ecfcb19bcc8a6510c6541fe398b3d\AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\3f1ecfcb19bcc8a6510c6541fe398b3d\AndroidManifest.xml:26:5-110
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:26:22-107
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:26:22-107
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:29:9-33:20
+ADDED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:29:9-33:20
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:31:13-35
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:31:13-35
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:32:13-37
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:30:13-85
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:30:13-85
 receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
-ADDED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:34:9-42:20
-MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/abbe34681d9c09825ad431a525ddfda3/AndroidManifest.xml:29:9-37:20
-MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/abbe34681d9c09825ad431a525ddfda3/AndroidManifest.xml:29:9-37:20
+ADDED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:34:9-42:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\3f1ecfcb19bcc8a6510c6541fe398b3d\AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\3f1ecfcb19bcc8a6510c6541fe398b3d\AndroidManifest.xml:29:9-37:20
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:36:13-35
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:36:13-35
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:37:13-36
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:37:13-36
 	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:38:13-69
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:38:13-69
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:35:13-100
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:35:13-100
 intent-filter#action:name:com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:39:13-41:29
+ADDED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:39:13-41:29
 action#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:40:17-79
+ADDED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:40:17-79
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:40:25-76
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:40:25-76
 service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:44:9-47:40
+ADDED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:44:9-47:40
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:46:13-35
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:46:13-35
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:47:13-37
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:47:13-37
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:45:13-84
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:45:13-84
 service#com.google.android.gms.measurement.AppMeasurementJobService
-ADDED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:48:9-52:72
+ADDED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:48:9-52:72
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:50:13-35
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:50:13-35
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:51:13-37
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:51:13-37
 	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:52:13-69
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:52:13-69
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/6de4746377853f98888f47ed91cabd83/AndroidManifest.xml:49:13-87
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\2b26d14b6c8b6698a433dccfc40cccf7\AndroidManifest.xml:49:13-87
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:26:5-82
+ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:26:5-82
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:26:22-79
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:26:22-79
 meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
-ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:32:13-34:85
+ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:32:13-34:85
 	android:value
-		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:34:17-82
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:34:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:33:17-96
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:33:17-96
 receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:37:9-44:20
+ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:37:9-44:20
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:39:13-36
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:39:13-36
 	android:permission
-		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:40:13-73
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:40:13-73
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:38:13-78
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:38:13-78
 intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:41:13-43:29
+ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:41:13-43:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:42:17-81
+ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:42:17-81
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:42:25-78
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:42:25-78
 service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:50:9-56:19
+ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:50:9-56:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:52:13-36
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:52:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:51:13-77
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:51:13-77
 intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:53:13-55:29
+ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:53:13-55:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:53:28-51
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:53:28-51
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:54:17-80
+ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:54:17-80
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dfd9508b7a8ae96afc4d491cdda319d2/AndroidManifest.xml:54:25-77
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\a9910a93c359dcfb945fc664cb9acd9d\AndroidManifest.xml:54:25-77
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/5af5732ed70eb69d4416c790bee181af/AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\ed4664b7ae0428fcb81d86ad11a70c00\AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/5af5732ed70eb69d4416c790bee181af/AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\ed4664b7ae0428fcb81d86ad11a70c00\AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/5af5732ed70eb69d4416c790bee181af/AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\ed4664b7ae0428fcb81d86ad11a70c00\AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/5af5732ed70eb69d4416c790bee181af/AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\ed4664b7ae0428fcb81d86ad11a70c00\AndroidManifest.xml:24:13-79
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:16.0.4] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/920765c8844531846ed5f98c57787b8d/AndroidManifest.xml:10:9-14:39
+ADDED from [com.google.firebase:firebase-common:16.0.4] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\e355446ed0648d5ea9c0fbc4f3b4f7c5\AndroidManifest.xml:10:9-14:39
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:16.0.4] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/920765c8844531846ed5f98c57787b8d/AndroidManifest.xml:12:13-72
+		ADDED from [com.google.firebase:firebase-common:16.0.4] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\e355446ed0648d5ea9c0fbc4f3b4f7c5\AndroidManifest.xml:12:13-72
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:16.0.4] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/920765c8844531846ed5f98c57787b8d/AndroidManifest.xml:13:13-37
+		ADDED from [com.google.firebase:firebase-common:16.0.4] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\e355446ed0648d5ea9c0fbc4f3b4f7c5\AndroidManifest.xml:13:13-37
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:16.0.4] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/920765c8844531846ed5f98c57787b8d/AndroidManifest.xml:14:13-36
+		ADDED from [com.google.firebase:firebase-common:16.0.4] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\e355446ed0648d5ea9c0fbc4f3b4f7c5\AndroidManifest.xml:14:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-common:16.0.4] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/920765c8844531846ed5f98c57787b8d/AndroidManifest.xml:11:13-77
+		ADDED from [com.google.firebase:firebase-common:16.0.4] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\e355446ed0648d5ea9c0fbc4f3b4f7c5\AndroidManifest.xml:11:13-77
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:16.1.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dc18ed4f4515d06d6bc1e91c04a0157d/AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\4a92dafb6a2165a23bbb5209ba9f5470\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:16.1.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dc18ed4f4515d06d6bc1e91c04a0157d/AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\4a92dafb6a2165a23bbb5209ba9f5470\AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:16.1.0] /Users/jvtran/.gradle/caches/transforms-2/files-2.1/dc18ed4f4515d06d6bc1e91c04a0157d/AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\jvtran\.gradle\caches\transforms-2\files-2.1\4a92dafb6a2165a23bbb5209ba9f5470\AndroidManifest.xml:24:13-58
