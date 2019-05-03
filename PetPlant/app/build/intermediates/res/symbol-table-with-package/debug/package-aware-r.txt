@@ -656,6 +656,7 @@ color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
 color dim_foreground_material_light
+color emptyColour
 color error
 color error_color_material_dark
 color error_color_material_light
@@ -1063,6 +1064,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable background_left
 drawable background_right
+drawable black_and_white_leaf_icon
 drawable button_icon_camera
 drawable button_icon_photo_close
 drawable button_shape_camera
@@ -1074,6 +1076,7 @@ drawable camera_flash_open
 drawable camera_ok
 drawable camera_switch_normal
 drawable camera_switch_press
+drawable check
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1156,6 +1159,11 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable p1
+drawable p2
+drawable p3
+drawable p4
+drawable p5
 drawable rena
 drawable selected_icon_flash
 drawable toolbar_shadow
@@ -1177,6 +1185,7 @@ id action_bar_root
 id action_bar_spinner
 id action_bar_subtitle
 id action_bar_title
+id action_confirm
 id action_container
 id action_content
 id action_context_bar
@@ -1187,6 +1196,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_search
 id action_settings
 id action_text
 id actions
@@ -1255,6 +1265,9 @@ id disableHome
 id disease_img
 id disease_info
 id edit_query
+id empty_icon
+id empty_text
+id empty_view
 id end
 id end_padder
 id enterAlways
@@ -1268,6 +1281,7 @@ id expanded_menu
 id expertb
 id expertcard
 id fab
+id fab2
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1338,6 +1352,10 @@ id parentPanel
 id parent_matrix
 id percent
 id pin
+id plant_layout
+id plantcard
+id popup_Search
+id popup_scan
 id profile_image
 id progress_circular
 id progress_horizontal
@@ -1369,6 +1387,7 @@ id search_edit_frame
 id search_go_btn
 id search_icon
 id search_mag_icon
+id search_plant
 id search_plate
 id search_src_text
 id search_voice_btn
@@ -1510,10 +1529,15 @@ layout activity_create
 layout activity_expert
 layout activity_main
 layout activity_message
+layout activity_my_plants
+layout activity_plant_info
 layout activity_reminders
+layout activity_search_plant
 layout activity_take_photo
 layout chat_item_left
 layout chat_item_right
+layout content_my_plants
+layout content_search_plant
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1548,13 +1572,18 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout plantcard
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu menu_confirm
+menu menu_main
 menu menu_reminders
+menu menu_search
 menu nav
 menu navigation
+menu popup_menu
 menu toolbar_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -1637,7 +1666,9 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
+string hint
 string mtrl_chip_close_icon_content_description
+string no_active
 string no_repeat
 string one
 string password_toggle_content_description
@@ -1655,7 +1686,9 @@ string times
 string title
 string title_activity_calendar
 string title_activity_createedit
+string title_activity_plant_profile
 string title_activity_reminders
+string title_activity_search_plant
 string title_expert
 string title_myplants
 string title_reminders

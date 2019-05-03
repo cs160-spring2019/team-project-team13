@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/zivon/Desktop/260/team-project-team13/PetPlant/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml",
+            "outputFile": "D:\\jvtran\\Github\\CS160\\Final Project\\team-project-team13\\PetPlant\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rIN\\values-en-rIN.xml",
             "map": [
                 {
-                    "source": "/Users/zivon/.gradle/caches/transforms-2/files-2.1/f9392f9e2d680084a2aa3896f9633cc3/res/values-en-rIN/values-en-rIN.xml",
+                    "source": "C:\\Users\\jvtran\\.gradle\\caches\\transforms-2\\files-2.1\\1ec3e234348c2f63e395cacc96713027\\res\\values-en-rIN\\values-en-rIN.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/zivon/.gradle/caches/transforms-2/files-2.1/927e53aa92bc7824b85aa6aeb4590482/res/values-en-rIN/values-en-rIN.xml",
+                    "source": "C:\\Users\\jvtran\\.gradle\\caches\\transforms-2\\files-2.1\\c7b139fdacec9233f1db344d00741e0a\\res\\values-en-rIN\\values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

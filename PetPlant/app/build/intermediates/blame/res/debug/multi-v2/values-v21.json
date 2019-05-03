@@ -1,10 +1,29 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/zivon/Desktop/260/team-project-team13/PetPlant/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "D:\\jvtran\\Github\\CS160\\Final Project\\team-project-team13\\PetPlant\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
-                    "source": "/Users/zivon/.gradle/caches/transforms-2/files-2.1/f9392f9e2d680084a2aa3896f9633cc3/res/values-v21/values-v21.xml",
+                    "source": "C:\\Users\\jvtran\\.gradle\\caches\\transforms-2\\files-2.1\\e8dc7885a25c90fa1a7658a34b4ca483\\res\\values-v21\\values-v21.xml",
+                    "from": {
+                        "startLines": "2,5,8,11",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,223,386,554",
+                        "endLines": "4,7,10,13",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "218,381,549,716"
+                    },
+                    "to": {
+                        "startLines": "265,268,272,276",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "19504,19672,19961,20257",
+                        "endLines": "267,270,274,278",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "19667,19830,20124,20419"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\jvtran\\.gradle\\caches\\transforms-2\\files-2.1\\1ec3e234348c2f63e395cacc96713027\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "/Users/zivon/.gradle/caches/transforms-2/files-2.1/927e53aa92bc7824b85aa6aeb4590482/res/values-v21/values-v21.xml",
+                    "source": "C:\\Users\\jvtran\\.gradle\\caches\\transforms-2\\files-2.1\\c7b139fdacec9233f1db344d00741e0a\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,19,20,21,22,24,26,27,28,29,30,32,34,36,38,40,42,43,48,50,52,53,54,56,58,59,60,61,62,63,107,110,154,157,160,162,164,166,169,171,174,175,176,179,180,181,182,183,184,187,188,190,192,194,196,200,202,203,204,205,207,211,213,215,216,217,218,219,221,222,223,233,234,235,247",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -42,7 +61,7 @@
                     }
                 },
                 {
-                    "source": "/Users/zivon/.gradle/caches/transforms-2/files-2.1/d63238c8b90410f4054a2cbb0e9a8b7f/res/values-v21/values-v21.xml",
+                    "source": "C:\\Users\\jvtran\\.gradle\\caches\\transforms-2\\files-2.1\\5bb441ca2d98bf5674c26471469551a9\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,10,18,26",
                         "startColumns": "4,4,4,4",
@@ -58,25 +77,6 @@
                         "endLines": "286,294,302,310",
                         "endColumns": "10,10,10,10",
                         "endOffsets": "20848,21274,21697,22132"
-                    }
-                },
-                {
-                    "source": "/Users/zivon/.gradle/caches/transforms-2/files-2.1/490b16d6f3a4d43b9f831b57ffba6203/res/values-v21/values-v21.xml",
-                    "from": {
-                        "startLines": "2,5,8,11",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,223,386,554",
-                        "endLines": "4,7,10,13",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "218,381,549,716"
-                    },
-                    "to": {
-                        "startLines": "265,268,272,276",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "19504,19672,19961,20257",
-                        "endLines": "267,270,274,278",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "19667,19830,20124,20419"
                     }
                 }
             ]

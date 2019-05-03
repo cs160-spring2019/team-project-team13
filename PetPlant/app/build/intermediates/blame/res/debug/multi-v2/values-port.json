@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/zivon/Desktop/260/team-project-team13/PetPlant/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+            "outputFile": "D:\\jvtran\\Github\\CS160\\Final Project\\team-project-team13\\PetPlant\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
             "map": [
                 {
-                    "source": "/Users/zivon/.gradle/caches/transforms-2/files-2.1/927e53aa92bc7824b85aa6aeb4590482/res/values-port/values-port.xml",
+                    "source": "C:\\Users\\jvtran\\.gradle\\caches\\transforms-2\\files-2.1\\c7b139fdacec9233f1db344d00741e0a\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

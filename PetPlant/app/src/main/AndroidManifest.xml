@@ -28,6 +28,18 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".addplant.PlantInfoActivity"
+            android:label="@string/title_activity_plant_profile"
+            android:theme="@style/StartTheme" />
+        <activity
+            android:name=".addplant.SearchPlantActivity"
+            android:label="@string/title_activity_search_plant"
+            android:theme="@style/StartTheme" />
+        <activity
+            android:name=".addplant.MyPlants"
+            android:label="@string/title_myplants"
+            android:theme="@style/StartTheme" />
+        <activity
             android:name=".camera.view.TakePhotoActivity"
             android:screenOrientation="portrait"></activity>
         <activity
