@@ -1,8 +1,10 @@
 package com.example.petplant.camera.view;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.hardware.Camera;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -123,8 +125,6 @@ public class TakePhotoActivity extends Activity implements CameraFocusView.IAuto
         cameraSurfaceView.setAutoFocus((int)x,(int)y);
     }
 
-
-
     private void takePhoto() {
         cameraSurfaceView.takePicture(new Camera.PictureCallback() {
             @Override
@@ -169,14 +169,23 @@ public class TakePhotoActivity extends Activity implements CameraFocusView.IAuto
                                 @Override
                                 public String call(byte[] bytes) {
                                     String path = mCameraModel.handlePhoto(bytes, cameraSurfaceView.getCameraId());
+
                                     return path;
+                                }
+                            })
+                            .subscribeOn(Schedulers.io())
+                            .subscribeOn(AndroidSchedulers.mainThread())
+                            .subscribe(new Action1<String>() {
+                                @Override
+                                public void call(String path) {
+                                    onResult(path);
                                 }
                             });
                 }
             }
         });
-        Intent intent = new Intent(TakePhotoActivity.this, DiseaseActivity.class);
-        startActivity(intent);
+//        Intent intent = new Intent(TakePhotoActivity.this, DiseaseActivity.class);
+//        startActivity(intent);
     }
 
     private void openFlash() {

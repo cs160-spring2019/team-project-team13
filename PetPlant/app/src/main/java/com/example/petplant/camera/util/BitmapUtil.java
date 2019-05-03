@@ -114,7 +114,7 @@ public class BitmapUtil {
         image.compress(Bitmap.CompressFormat.JPEG, 100, os);
         if (os.toByteArray().length / 1024 > 1024) {//判断如果图片大于1M,进行压缩避免在生成图片（BitmapFactory.decodeStream）时溢出
             os.reset();//重置baos即清空baos
-            image.compress(Bitmap.CompressFormat.JPEG, 50, os);//这里压缩50%，把压缩后的数据存放到baos中
+            image.compress(Bitmap.CompressFormat.JPEG, 70, os);//这里压缩50%，把压缩后的数据存放到baos中
         }
         ByteArrayInputStream is = new ByteArrayInputStream(os.toByteArray());
         BitmapFactory.Options newOpts = new BitmapFactory.Options();
@@ -199,7 +199,7 @@ public class BitmapUtil {
         }
         ByteArrayInputStream isBm = new ByteArrayInputStream(os.toByteArray());// 把压缩后的数据baos存放到ByteArrayInputStream中
         Bitmap bitmap = BitmapFactory.decodeStream(isBm, null, null);// 把ByteArrayInputStream数据生成图片
-        saveBitmap(bitmap,outPath);
+        saveBitmap(bitmap, outPath);
     }
 
     /**

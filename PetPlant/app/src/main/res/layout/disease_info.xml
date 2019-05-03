@@ -8,7 +8,7 @@
         android:id="@+id/topBar2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/ic_app_bar" />
+        android:background="@drawable/ic_app_bar_2" />
 
     <ImageView
         android:id="@+id/back2"
@@ -62,12 +62,11 @@
         android:src="@drawable/ic_more_vert" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="130dp"
-        android:background="@drawable/leaf" />
+        android:id="@+id/disease_img"
+        android:layout_width="140dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="135dp" />
 
     <TextView
         android:id="@+id/name"

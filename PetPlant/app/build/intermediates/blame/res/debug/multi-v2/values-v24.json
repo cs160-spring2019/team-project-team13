@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/Users/zivon/Desktop/260/team-project-team13/PetPlant/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/arjenw/.gradle/caches/transforms-2/files-2.1/28dff16d90eea2755d202af8318ca2cb/res/values-v24/values-v24.xml",
+                    "source": "/Users/zivon/.gradle/caches/transforms-2/files-2.1/927e53aa92bc7824b85aa6aeb4590482/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/arjenw/.gradle/caches/transforms-2/files-2.1/6b8e89904530f818b26aeb18e6de37e5/res/values-v24/values-v24.xml",
+                    "source": "/Users/zivon/.gradle/caches/transforms-2/files-2.1/490b16d6f3a4d43b9f831b57ffba6203/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

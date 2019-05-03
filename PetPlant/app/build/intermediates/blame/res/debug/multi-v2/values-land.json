@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "outputFile": "/Users/zivon/Desktop/260/team-project-team13/PetPlant/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/arjenw/.gradle/caches/transforms-2/files-2.1/09ce43bc918e2202eec0dcd76da08898/res/values-land/values-land.xml",
+                    "source": "/Users/zivon/.gradle/caches/transforms-2/files-2.1/d63238c8b90410f4054a2cbb0e9a8b7f/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/arjenw/.gradle/caches/transforms-2/files-2.1/28dff16d90eea2755d202af8318ca2cb/res/values-land/values-land.xml",
+                    "source": "/Users/zivon/.gradle/caches/transforms-2/files-2.1/927e53aa92bc7824b85aa6aeb4590482/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

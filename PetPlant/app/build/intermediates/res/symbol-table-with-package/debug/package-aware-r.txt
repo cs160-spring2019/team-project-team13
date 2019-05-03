@@ -1104,6 +1104,7 @@ drawable googleg_standard_color_18
 drawable ic_access_time_white_24dp
 drawable ic_add_white_24dp
 drawable ic_app_bar
+drawable ic_app_bar_2
 drawable ic_back
 drawable ic_baseline_search_24px
 drawable ic_brightness
@@ -1251,6 +1252,7 @@ id design_navigation_view
 id dimensions
 id direct
 id disableHome
+id disease_img
 id disease_info
 id edit_query
 id end
@@ -1286,7 +1288,6 @@ id icon_only
 id icon_select
 id ifRoom
 id image
-id imageView
 id info
 id invisible
 id italic

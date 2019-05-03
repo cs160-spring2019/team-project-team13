@@ -1,15 +1,15 @@
 #Internal package file, do not edit.
-#Tue Apr 30 21:37:15 PDT 2019
-1.base=/Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/build/intermediates/dex/debug/mergeExtDexDebug/out
-2.path=experts_info.json
+#Fri May 03 04:36:04 PDT 2019
+1.base=/Users/zivon/Desktop/260/team-project-team13/PetPlant/app/build/intermediates/dex/debug/mergeProjectDexDebug/out
+2.path=classes.dex
 0.baseType=DIRECTORY
-2.base=/Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/build/intermediates/merged_assets/debug/out
-2.set=ASSET
+2.base=/Users/zivon/Desktop/260/team-project-team13/PetPlant/app/build/intermediates/dex/debug/mergeExtDexDebug/out
+2.set=DEX
 1.baseType=DIRECTORY
 count=3
 1.set=DEX
-0.path=classes.dex
-0.set=DEX
-0.base=/Users/arjenw/AndroidStudioProjects/team-project-team13/PetPlant/app/build/intermediates/dex/debug/mergeProjectDexDebug/out
+0.path=experts_info.json
+0.set=ASSET
+0.base=/Users/zivon/Desktop/260/team-project-team13/PetPlant/app/build/intermediates/merged_assets/debug/out
 2.baseType=DIRECTORY
 1.path=classes.dex

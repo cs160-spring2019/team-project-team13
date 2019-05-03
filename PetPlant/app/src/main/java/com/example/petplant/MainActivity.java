@@ -5,12 +5,15 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.petplant.Experts.ExpertMain;
+import com.example.petplant.camera.view.DiseaseActivity;
 import com.example.petplant.reminders.reminders;
 import com.example.petplant.scanDiseases.CameraDemoApp;
 import com.example.petplant.camera.model.PermissionsModel;
@@ -59,8 +62,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onPermission(boolean isPermission) {
                 if (isPermission) {
-                    Intent intent = new Intent(MainActivity.this, TakePhotoActivity.class);
-                    startActivityForResult(intent, TakePhotoActivity.REQUEST_CAPTRUE_CODE);
+                    Intent intent = new Intent(MainActivity.this, DiseaseActivity.class);
+                    startActivity(intent);
+//                    startActivityForResult(intent, TakePhotoActivity.REQUEST_CAPTRUE_CODE);
                 }
             }
         });

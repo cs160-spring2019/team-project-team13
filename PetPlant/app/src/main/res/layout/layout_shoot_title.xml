@@ -44,7 +44,7 @@
         android:layout_width="22.7dp"
         android:layout_height="22.7dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="11dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="130dp"
         android:src="@drawable/ic_brightness" />
 

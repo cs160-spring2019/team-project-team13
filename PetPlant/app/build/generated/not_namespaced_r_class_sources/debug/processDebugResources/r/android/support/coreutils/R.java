@@ -62,18 +62,18 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int notification_action_background = 0x7f0700af;
-        public static final int notification_bg = 0x7f0700b0;
-        public static final int notification_bg_low = 0x7f0700b1;
-        public static final int notification_bg_low_normal = 0x7f0700b2;
-        public static final int notification_bg_low_pressed = 0x7f0700b3;
-        public static final int notification_bg_normal = 0x7f0700b4;
-        public static final int notification_bg_normal_pressed = 0x7f0700b5;
-        public static final int notification_icon_background = 0x7f0700b6;
-        public static final int notification_template_icon_bg = 0x7f0700b7;
-        public static final int notification_template_icon_low_bg = 0x7f0700b8;
-        public static final int notification_tile_bg = 0x7f0700b9;
-        public static final int notify_panel_notification_icon_bg = 0x7f0700ba;
+        public static final int notification_action_background = 0x7f0700b0;
+        public static final int notification_bg = 0x7f0700b1;
+        public static final int notification_bg_low = 0x7f0700b2;
+        public static final int notification_bg_low_normal = 0x7f0700b3;
+        public static final int notification_bg_low_pressed = 0x7f0700b4;
+        public static final int notification_bg_normal = 0x7f0700b5;
+        public static final int notification_bg_normal_pressed = 0x7f0700b6;
+        public static final int notification_icon_background = 0x7f0700b7;
+        public static final int notification_template_icon_bg = 0x7f0700b8;
+        public static final int notification_template_icon_low_bg = 0x7f0700b9;
+        public static final int notification_tile_bg = 0x7f0700ba;
+        public static final int notify_panel_notification_icon_bg = 0x7f0700bb;
     }
     public static final class id {
         private id() {}
@@ -86,9 +86,9 @@ public final class R {
         public static final int async = 0x7f080024;
         public static final int blocking = 0x7f08002a;
         public static final int chronometer = 0x7f08003f;
-        public static final int forever = 0x7f08006e;
-        public static final int icon = 0x7f080077;
-        public static final int icon_group = 0x7f080078;
+        public static final int forever = 0x7f08006f;
+        public static final int icon = 0x7f080078;
+        public static final int icon_group = 0x7f080079;
         public static final int info = 0x7f08007e;
         public static final int italic = 0x7f080080;
         public static final int line1 = 0x7f080087;
