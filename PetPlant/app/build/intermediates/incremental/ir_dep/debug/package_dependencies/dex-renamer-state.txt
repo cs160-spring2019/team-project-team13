@@ -1,4 +1,0 @@
-#Fri May 03 07:47:47 PDT 2019
-base.0=D\:\\jvtran\\Github\\CS160\\Final Project\\team-project-team13\\PetPlant\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
-path.0=classes.dex
-renamed.0=classes.dex

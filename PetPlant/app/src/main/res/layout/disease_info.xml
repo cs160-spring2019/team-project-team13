@@ -1,181 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".camera.view.DiseaseActivity">
 
-    <ImageView
-        android:id="@+id/topBar2"
+    <LinearLayout
+        android:id="@+id/tab_header"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ic_app_bar_2" />
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <ImageView
-        android:id="@+id/back2"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="12dp"
-        android:layout_marginLeft="15dp"
-        android:background="@color/color_00"
-        android:src="@drawable/ic_back" />
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarDisease"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/Toolbar"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
 
-    <TextView
-        android:id="@+id/disease_info"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:textColor="@color/color_white"
-        android:textSize="20sp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="12.5dp"
-        android:layout_marginLeft="80dp"
-        android:text="Disease Info" />
-
-    <ImageView
-        android:id="@+id/thumb_up"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="12dp"
-        android:layout_marginLeft="300dp"
-        android:background="@color/color_00"
-        android:src="@drawable/ic_thumb_up" />
-
-    <ImageView
-        android:id="@+id/star"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="12dp"
-        android:layout_marginLeft="340dp"
-        android:background="@color/color_00"
-        android:src="@drawable/ic_star" />
-
-    <ImageView
-        android:id="@+id/more_vert"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="12dp"
-        android:layout_marginLeft="375dp"
-        android:background="@color/color_00"
-        android:src="@drawable/ic_more_vert" />
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/disease_img"
-        android:layout_width="180dp"
-        android:layout_height="220dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginLeft="115dp" />
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_header" />
 
     <TextView
-        android:id="@+id/name"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
+        android:id="@+id/plant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Name:"
         android:textColor="#000000"
         android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/disease_img" />
+
+
+    <TextView
+        android:id="@+id/condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="300dp"
-        android:layout_marginLeft="50dp"
-        android:text="Name:" />
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Condition:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plant_name" />
+
+
+    <TextView
+        android:id="@+id/confidence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Prediction Confidence:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/condition" />
 
     <TextView
         android:id="@+id/name_content"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
         android:typeface="serif"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="300dp"
-        android:layout_marginLeft="180dp"
-        android:text="Bacterial Blight" />
+        app:layout_constraintStart_toEndOf="@+id/plant_name"
+        app:layout_constraintTop_toBottomOf="@+id/disease_img" />
 
-    <ImageView
-        android:id="@+id/line"
-        android:layout_width="300dp"
+    <TextView
+        android:id="@+id/condition_content"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="350dp"
-        android:layout_marginLeft="55dp"
-        android:background="@drawable/ic_line" />
-
-    <TextView
-        android:id="@+id/cause"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:textColor="#8fd52d"
-        android:textSize="20sp"
-        android:textStyle="italic"
-        android:typeface="sans"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="390dp"
-        android:layout_marginLeft="50dp"
-        android:text="What Causes It" />
-
-    <TextView
-        android:id="@+id/cause_content"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
         android:textColor="#000000"
-        android:textSize="16sp"
-        android:textStyle="normal"
-        android:typeface="normal"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="420dp"
-        android:layout_marginLeft="50dp"
-        android:text="Cool, wet weather" />
-
-    <TextView
-        android:id="@+id/looks"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:textColor="#8fd52d"
         android:textSize="20sp"
-        android:textStyle="italic"
-        android:typeface="sans"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="460dp"
-        android:layout_marginLeft="50dp"
-        android:text="What It Looks Like" />
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintStart_toEndOf="@+id/condition"
+        app:layout_constraintTop_toBottomOf="@+id/name_content" />
 
     <TextView
-        android:id="@+id/looks_content"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
+        android:id="@+id/confidence_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="%"
         android:textColor="#000000"
-        android:textSize="16sp"
-        android:textStyle="normal"
-        android:typeface="normal"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="490dp"
-        android:layout_marginLeft="50dp"
-        android:text="Large, yellow spots on leaves that eventually turn brown" />
-
-    <TextView
-        android:id="@+id/action"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:textColor="#8fd52d"
         android:textSize="20sp"
-        android:textStyle="italic"
-        android:typeface="sans"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="550dp"
-        android:layout_marginLeft="50dp"
-        android:text="What You Can Do" />
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintStart_toEndOf="@+id/confidence"
+        app:layout_constraintTop_toBottomOf="@+id/condition_content" />
 
-    <TextView
-        android:id="@+id/action_content"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        android:textStyle="normal"
-        android:typeface="normal"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="580dp"
-        android:layout_marginLeft="50dp"
-        android:text="Remove infected plants and ensure proper spacing between them" />
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:labelVisibilityMode="labeled"
+        app:itemTextColor="@color/text"
+        app:menu="@menu/navigation" />
 
-</FrameLayout>
+</android.support.constraint.ConstraintLayout>

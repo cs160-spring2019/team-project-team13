@@ -9,6 +9,8 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.hradware.camera" />
     <uses-permission android:name="android.hradware.camera.autofocus" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:name=".scanDiseases.CameraDemoApp"
@@ -17,6 +19,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
@@ -44,7 +47,8 @@
             android:screenOrientation="portrait"></activity>
         <activity
             android:name=".camera.view.DiseaseActivity"
-            android:label="Disease"></activity>
+            android:label="Disease"
+            android:theme="@style/StartTheme"/>
         <activity
             android:name=".Experts.ExpertMain"
             android:label="expert_main"

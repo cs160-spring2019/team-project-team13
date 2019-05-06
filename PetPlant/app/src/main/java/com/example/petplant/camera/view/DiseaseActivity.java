@@ -8,38 +8,69 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
-import android.hardware.Camera;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.util.Base64;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
+import android.widget.TextView;
 
-import com.example.petplant.MainActivity;
 import com.example.petplant.R;
 import com.example.petplant.camera.model.PermissionsModel;
 import com.example.petplant.camera.util.BitmapUtil;
 
-public class DiseaseActivity extends Activity{
+import java.io.ByteArrayOutputStream;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
+
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.RequestBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
+public class DiseaseActivity extends AppCompatActivity{
 
     private ImageView back;
     private ImageView diseaseImg;
+    private TextView name_content;
+    private TextView condition_content;
+    private TextView confidence_content;
     private ProgressDialog progress;
-    private AsyncTask<String, Void, String> analyze = new DiseaseActivity.analyzeTask();
+    private String url = "http://10.0.2.2:8000/";
+    private AsyncTask<String, Void, DiseaseInfo> analyze = new DiseaseActivity.analyzeTask();
+    private JsonPlaceHoldeApi jsonPlaceHoldeApi;
+    private String path;
+    private DiseaseInfo diseaseInfo;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.disease_info);
-        init();
 
         diseaseImg = (ImageView) findViewById(R.id.disease_img);
+        name_content = (TextView) findViewById(R.id.name_content);
+        condition_content = (TextView) findViewById(R.id.condition_content);
+        confidence_content = (TextView) findViewById(R.id.confidence_content);
+
+        toolbar = (Toolbar) findViewById(R.id.toolbarDisease);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setTitle("Disease Identification");
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         PermissionsModel permissionsModel = new PermissionsModel(this);
         permissionsModel.checkCameraPermission(new PermissionsModel.PermissionListener() {
@@ -58,7 +89,7 @@ public class DiseaseActivity extends Activity{
         if (resultCode == RESULT_OK) {
             switch (requestCode) {
                 case TakePhotoActivity.REQUEST_CAPTRUE_CODE: {
-                    String path = data.getStringExtra(TakePhotoActivity.RESULT_PHOTO_PATH);
+                    path = data.getStringExtra(TakePhotoActivity.RESULT_PHOTO_PATH);
                     String[] paths = {path};
 
                     progress = new ProgressDialog(DiseaseActivity.this);
@@ -67,7 +98,6 @@ public class DiseaseActivity extends Activity{
                     progress.setCancelable(true);
                     progress.setTitle("Analyzing, please wait...");
                     progress.setMessage("Want faster speed? Join our membership NOW for only $28.88/month!");
-
                     analyze.execute(paths);
 
 //                    diseaseImg.setImageBitmap(BitmapUtil.getBitmap(path));
@@ -76,16 +106,6 @@ public class DiseaseActivity extends Activity{
             }
         }
         super.onActivityResult(requestCode, resultCode, data);
-    }
-
-    private void init(){
-        back = (ImageView)findViewById(R.id.back2);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
     }
 
     private Bitmap createCircleBitmap(Bitmap resource)
@@ -111,7 +131,7 @@ public class DiseaseActivity extends Activity{
         return circleBitmap;
     }
 
-    private class analyzeTask extends AsyncTask<String, Void, String> {
+    private class analyzeTask extends AsyncTask<String, Void, DiseaseInfo> {
 
         @Override
         protected void onPreExecute() {
@@ -120,32 +140,81 @@ public class DiseaseActivity extends Activity{
         }
 
         @Override
-        protected void onPostExecute(String path) {
-            super.onPostExecute(path);
+        protected void onPostExecute(DiseaseInfo diseaseInfo) {
+
+
             Bitmap bitmap = BitmapUtil.getBitmap(path);
             diseaseImg.setImageBitmap(createCircleBitmap(bitmap));
-            progress.dismiss();
 
-//            if (!DiseaseActivity.this.isFinishing() && progress != null) {
-//                progress.dismiss();
-//            }
+            String string = diseaseInfo.getData();
+            String[] parts = string.split("___");
+            String name = parts[0];
+            String condition = parts[1];
+
+            name_content.setText(name);
+            condition_content.setText(condition);
+            confidence_content.setText(diseaseInfo.getProb());
+            progress.dismiss();
         }
 
-//        @Override
-//        protected void onCancelled() {
-//            super.onCancelled();
-//            progress.dismiss();
-//        }
-
         @Override
-        protected String doInBackground(String... params) {
-//            Log.i("Analyzing", "Analyzing..");
+        protected DiseaseInfo doInBackground(String... params) {
+            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+            Bitmap bitmap = BitmapUtil.getBitmap(params[0]);
+
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream);
+            byte[] byteArray = byteArrayOutputStream.toByteArray();
+            String encoded = Base64.encodeToString(byteArray, Base64.DEFAULT);
+
+            OkHttpClient okHttpClient = new OkHttpClient().newBuilder()
+                    .connectTimeout(200, TimeUnit.SECONDS)
+                    .readTimeout(200, TimeUnit.SECONDS)
+                    .writeTimeout(200, TimeUnit.SECONDS)
+                    .build();
+
+            Retrofit retrofit = new Retrofit.Builder()
+                    .baseUrl(url)
+                    .client(okHttpClient)
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
+
+            jsonPlaceHoldeApi = retrofit.create(JsonPlaceHoldeApi.class);
+            //PictureQuery pictureQuery = new PictureQuery("data:image/jpeg;base64," + encoded);
+            //String request=new Gson().toJson(pictureQuery);
+            RequestBody body = RequestBody.create(MediaType.parse("text/plain"), encoded);
+            Map<String, RequestBody> PostParams = new HashMap<>();
+            PostParams.put("plant_image", body);
+
+            //System.out.println("================");
+
+            Call<DiseaseInfo> call = jsonPlaceHoldeApi.createPost(PostParams);
+            call.enqueue(new Callback<DiseaseInfo>() {
+                @Override
+                public void onResponse(Call<DiseaseInfo> call, Response<DiseaseInfo> response) {
+
+                    if (!response.isSuccessful()) {
+                        System.out.println("404");
+                        return;
+                    }
+                    diseaseInfo = (DiseaseInfo) response.body();
+//                    System.out.println("error"+ diseaseInfo.getError());
+//                    System.out.println("data"+ diseaseInfo.getData());
+//                    System.out.println(diseaseInfo.getMessage());
+                }
+
+                @Override
+                public void onFailure(Call<DiseaseInfo> call, Throwable t) {
+                    System.out.println(t);
+                }
+            });
+
             try {
                 Thread.sleep(5000);
             } catch (InterruptedException e) {
-                return null;
+                e.printStackTrace();
             }
-            return params[0];
+
+            return diseaseInfo;
         }
     }
 }
