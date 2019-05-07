@@ -1,5 +1,6 @@
 package com.example.petplant.addplant;
 
+import android.app.FragmentTransaction;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -37,6 +38,8 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import static android.app.Activity.RESULT_OK;
+
 public class PlantInfoActivity extends AppCompatActivity {
     public View img;
     private ImageView plantImg;
@@ -47,12 +50,18 @@ public class PlantInfoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plant_info);
+        if(savedInstanceState == null) {
+            FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+            fragmentTransaction.add(R.id.fragment_container, new MainFragment(), "MainFragment");
+            fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+            fragmentTransaction.commit();
+        }
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        plantImg = (ImageView) findViewById(R.id.plant_img);
+        //plantImg = (ImageView) findViewById(R.id.plant_img);
 
         if(getInfo() == 1) {
             Intent intent = new Intent(PlantInfoActivity.this, TakePhotoActivity.class);
