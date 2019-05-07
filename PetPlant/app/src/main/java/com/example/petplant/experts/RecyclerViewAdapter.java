@@ -1,4 +1,4 @@
-package com.example.petplant.Experts;
+package com.example.petplant.experts;
 
 import android.content.Context;
 import android.content.Intent;

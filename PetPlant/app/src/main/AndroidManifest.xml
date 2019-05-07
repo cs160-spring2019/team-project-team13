@@ -50,7 +50,7 @@
             android:label="Disease"
             android:theme="@style/StartTheme"/>
         <activity
-            android:name=".Experts.ExpertMain"
+            android:name=".experts.ExpertMain"
             android:label="expert_main"
             android:theme="@style/StartTheme" />
         <activity
@@ -65,7 +65,7 @@
             android:label="@string/title_activity_createedit"
             android:theme="@style/StartTheme" />
         <activity
-            android:name=".Experts.MessageActivity"
+            android:name=".experts.MessageActivity"
             android:label="ExpertMessage"
             android:theme="@style/StartTheme" />
     </application>
