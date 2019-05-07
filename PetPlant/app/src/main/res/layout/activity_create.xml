@@ -38,21 +38,18 @@
                 android:paddingBottom="14dp">
 
                 <TextView
+                    android:id="@+id/action_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/title"
+                    android:layout_marginStart="7dp"
+                    android:text="@string/action"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="#F8F8F9" />
 
-                <EditText
-                    android:id="@+id/reminder_title"
+                <Spinner
+                    android:id="@+id/reminder_actions_spinner"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textCapSentences|textAutoCorrect"
-                    android:textColor="@color/NotificationTitle"
-                    android:textColorHighlight="@color/accentLight"
-                    android:textSize="28sp"
-                    android:theme="@style/TitleEditText" />
+                    android:layout_height="wrap_content" />
 
             </LinearLayout>
 
@@ -76,39 +73,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:animateLayoutChanges="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="@dimen/table_row_default_horizontal_padding"
-                    android:paddingEnd="@dimen/table_row_default_padding_side"
-                    android:paddingRight="@dimen/table_row_default_padding_side"
-                    android:paddingTop="22dp"
-                    android:weightSum="1">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/image_margin_side"
-                        android:layout_marginLeft="@dimen/image_margin_side"
-                        android:src="@drawable/ic_subject_white_24dp"
-                        android:tint="@color/iconTint" />
-
-                    <EditText
-                        android:id="@+id/notification_content"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="@dimen/text_margin_side"
-                        android:layout_marginStart="@dimen/text_margin_side"
-                        android:background="@android:color/transparent"
-                        android:hint="@string/content_hint"
-                        android:inputType="textMultiLine|textCapSentences|textAutoCorrect"
-                        android:textColorHighlight="@color/accentLight"
-                        android:textColorHint="@color/textLightGray"
-                        android:textSize="16sp" />
-
-                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
@@ -349,6 +313,40 @@
                     android:background="@color/lightGray" />
 
                 <LinearLayout
+                    android:id="@+id/notes_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="22dp"
+                    android:paddingEnd="@dimen/table_row_default_padding_side"
+                    android:paddingRight="@dimen/table_row_default_padding_side"
+                    android:paddingBottom="@dimen/table_row_default_horizontal_padding"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/image_margin_side"
+                        android:layout_marginLeft="@dimen/image_margin_side"
+                        android:src="@drawable/ic_subject_white_24dp"
+                        android:tint="@color/iconTint" />
+
+                    <EditText
+                        android:id="@+id/notification_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/text_margin_side"
+                        android:layout_marginLeft="@dimen/text_margin_side"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/content_hint"
+                        android:inputType="textMultiLine|textCapSentences|textAutoCorrect"
+                        android:textColorHighlight="@color/accentLight"
+                        android:textColorHint="@color/textLightGray"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:id="@+id/forever_row"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -471,6 +469,21 @@
                 <Space
                     android:layout_width="match_parent"
                     android:layout_height="16dp"/>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/save_button_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/save_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/save_reminder"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </android.support.constraint.ConstraintLayout>
 
             </LinearLayout>
 

@@ -7,42 +7,56 @@
     android:fitsSystemWindows="true"
     tools:context=".reminders.reminders">
 
-    <android.support.design.widget.CoordinatorLayout
+    <FrameLayout
+        android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <FrameLayout
-            android:id="@+id/header"
+        <LinearLayout
+            android:id="@+id/tab_header"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:orientation="horizontal">
 
-            <LinearLayout
-                android:id="@+id/tab_header"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/remindersHeaderText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:text="May"
+                android:textSize="30sp" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="0dp"
                 android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
                 android:background="?attr/colorPrimary"
-                android:orientation="horizontal">
+                android:theme="@style/Toolbar"
+                app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar" />
 
-                <android.support.v7.widget.Toolbar
-                    android:id="@+id/toolbar"
-                    android:layout_width="0dp"
-                    android:layout_height="?attr/actionBarSize"
-                    android:layout_weight="1"
-                    android:background="?attr/colorPrimary"
-                    android:theme="@style/Toolbar"
-                    app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        </LinearLayout>
 
-            </LinearLayout>
+        <View
+            android:id="@+id/toolbar_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:background="@drawable/toolbar_shadow" />
 
-            <View
-                android:id="@+id/toolbar_shadow"
-                android:layout_width="match_parent"
-                android:layout_height="10dp"
-                android:layout_marginTop="?attr/actionBarSize"
-                android:background="@drawable/toolbar_shadow" />
+    </FrameLayout>
 
-        </FrameLayout>
-    </android.support.design.widget.CoordinatorLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvNumbers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -62,9 +76,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?android:attr/windowBackground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:labelVisibilityMode="labeled"
         app:itemTextColor="@color/text"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/navigation" />
 
 </android.support.constraint.ConstraintLayout>

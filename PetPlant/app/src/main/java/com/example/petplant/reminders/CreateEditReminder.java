@@ -7,6 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.format.DateFormat;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.example.petplant.R;
@@ -15,7 +18,7 @@ import java.util.Calendar;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-public class CreateEditReminder extends AppCompatActivity {
+public class CreateEditReminder extends AppCompatActivity{
 
 
     @BindView(R.id.time)
@@ -38,7 +41,13 @@ public class CreateEditReminder extends AppCompatActivity {
         }
 
         calendar = Calendar.getInstance();
-   }
+
+        Spinner reminderActionsSpinner = (Spinner) findViewById(R.id.reminder_actions_spinner);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.reminder_options, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        reminderActionsSpinner.setAdapter(adapter);
+    }
 
     @OnClick(R.id.time_row)
     public void timePicker() {
@@ -64,5 +73,9 @@ public class CreateEditReminder extends AppCompatActivity {
             }
         }, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
         DatePicker.show();
+    }
+    @OnClick(R.id.save_button)
+    public void saveReminder() {
+        //TODO
     }
 }
