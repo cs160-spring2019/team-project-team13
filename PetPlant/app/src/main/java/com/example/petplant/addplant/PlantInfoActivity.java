@@ -1,8 +1,6 @@
 package com.example.petplant.addplant;
 
-import android.app.FragmentTransaction;
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -12,13 +10,11 @@ import android.graphics.PorterDuffXfermode;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.util.Base64;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.os.AsyncTask;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -30,24 +26,9 @@ import javax.ws.rs.core.MediaType;
 
 import com.example.petplant.R;
 import com.example.petplant.camera.util.BitmapUtil;
-import com.example.petplant.camera.view.DiseaseActivity;
 import com.example.petplant.camera.view.TakePhotoActivity;
-import com.google.android.gms.common.api.Api;
-import com.google.android.gms.common.api.GoogleApiClient;
 
-import java.io.BufferedOutputStream;
-import java.io.BufferedWriter;
 import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-
-import de.hdodenhof.circleimageview.CircleImageView;
-
-import static android.app.Activity.RESULT_OK;
 
 public class PlantInfoActivity extends AppCompatActivity {
     public View img;
@@ -58,6 +39,8 @@ public class PlantInfoActivity extends AppCompatActivity {
     private ProgressDialog progress;
     private AsyncTask<String, Void, PlantInfo> analyze = new PlantInfoActivity.analyzeTask();
     private PlantInfo plantInfo;
+    private static final String identifyURL = "https://api.plant.id/identify";
+    private static final String suggestionURL = "https://private-anon-79238c3314-plantid.apiary-proxy.com/check_identifications";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -185,9 +168,11 @@ public class PlantInfoActivity extends AppCompatActivity {
 
         @Override
         protected PlantInfo doInBackground(String... params) {
-            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-            Bitmap bitmap = BitmapUtil.getBitmap(params[0]);
+            String path = params[0];
+            PlantPostJson plantPostJson = new PlantPostJson();
 
+            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+            Bitmap bitmap = BitmapUtil.getBitmap(path);
 //            Bitmap bitmap = BitmapFactory.decodeStream(getClass().getResourceAsStream("/res/drawable/plant1.jpg"));
 
             bitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream);
@@ -195,33 +180,37 @@ public class PlantInfoActivity extends AppCompatActivity {
             String encoded = Base64.encodeToString(byteArray, Base64.NO_WRAP);
 
             Client client = ClientBuilder.newClient();
-            Entity plantImage = Entity.json("{" +
-                    "\"key\": \"Tc2uLB6qixr1IfRQGbkCAmNJjvuHnvAl9agxGpDT1fbkOM74lc\"," +
-                    "\"images\": [" + "\"" + encoded + "\"" + "]}");
 
-            Response response = client.target("https://api.plant.id/identify")
+            // Put the encoded image into post Json
+            plantPostJson.setIdentJson(encoded);
+            Entity plantImage = Entity.json(plantPostJson.getIdentJson());
+
+            Response response = client.target(identifyURL)
                     .request(MediaType.APPLICATION_JSON_TYPE)
                     .post(plantImage);
 
+            // Get the reference ID for requesting suggestions
             String entity = response.readEntity(String.class);
             String[] parts = entity.split(",");
             String id_chaos = parts[0];
             String[] parts2 = id_chaos.split(" ");
             String id = parts2[1];
 
+            // Pause for a while to wait for the analyzing result (suggestions)
             try {
                 Thread.sleep(5000);
             } catch (InterruptedException e) {
                 return null;
             }
 
-            Entity resultId = Entity.json("{" +
-                    "\"key\": \"Tc2uLB6qixr1IfRQGbkCAmNJjvuHnvAl9agxGpDT1fbkOM74lc\", " +
-                    "\"ids\": [" + id + "]}");
-            Response suggestion = client.target("https://private-anon-79238c3314-plantid.apiary-proxy.com/check_identifications")
+            // Put the reference ID into post Json
+            plantPostJson.setSuggeJson(id);
+            Entity resultId = Entity.json(plantPostJson.getSuggeJson());
+            Response suggestion = client.target(suggestionURL)
                     .request(MediaType.APPLICATION_JSON_TYPE)
                     .post(resultId);
 
+            // Get all the results
             String result = suggestion.readEntity(String.class);
             int suggestionStart = result.indexOf("suggestion");
             int nameStart = result.indexOf("name", suggestionStart + 1);
@@ -237,7 +226,7 @@ public class PlantInfoActivity extends AppCompatActivity {
             int confidenceEnd = result.indexOf(",", confidenceStart + 1);
             String confidence = result.substring(confidenceStart + 13, confidenceEnd);
 
-            plantInfo = new PlantInfo(params[0], name, probability, confidence);
+            plantInfo = new PlantInfo(path, name, probability, confidence);
 //            Log.d("!!!!!!status", status_str);
 //            Log.d("!!!!!!!!!!response", result);
             return plantInfo;
