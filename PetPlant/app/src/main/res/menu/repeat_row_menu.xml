@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/one"
+        android:enabled="true"
+        android:title="@string/repeat_menu_1"
+        android:visible="true" />
+    <item
+        android:id="@+id/two"
+        android:enabled="true"
+        android:title="@string/repeat_menu_2"
+        android:visible="true" />
+    <item
+        android:id="@+id/three"
+        android:checkable="false"
+        android:enabled="true"
+        android:title="@string/repeat_menu_3"
+        android:visible="true" />
+    <item
+        android:id="@+id/four"
+        android:enabled="true"
+        android:title="@string/repeat_menu_4"
+        android:visible="true" />
+    <item
+        android:id="@+id/five"
+        android:enabled="true"
+        android:title="@string/repeat_menu_5"
+        android:visible="true" />
+</menu>

@@ -1,5 +1,6 @@
 package com.example.petplant.addplant;
 
+import android.app.FragmentTransaction;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -46,21 +47,21 @@ public class PlantInfoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plant_info);
-//        if(savedInstanceState == null) {
-//            FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-//            fragmentTransaction.add(R.id.fragment_container, new MainFragment(), "MainFragment");
-//            fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-//            fragmentTransaction.commit();
-//        }
+       if(savedInstanceState == null) {
+           FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+            fragmentTransaction.add(R.id.fragment_container, new MainFragment(), "MainFragment");
+          fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+           fragmentTransaction.commit();
+       }
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        plantImg = (ImageView) findViewById(R.id.plant_img);
-        plantName = (TextView) findViewById(R.id.plant_name);
-        probability = (TextView) findViewById(R.id.probability);
-        confidence = (TextView) findViewById(R.id.confidence);
+        //plantImg = (ImageView) findViewById(R.id.plant_img);
+        //plantName = (TextView) findViewById(R.id.plant_name);
+        //probability = (TextView) findViewById(R.id.probability);
+        //confidence = (TextView) findViewById(R.id.confidence);
 
         if(getInfo() == 1) {
             Intent intent = new Intent(PlantInfoActivity.this, TakePhotoActivity.class);

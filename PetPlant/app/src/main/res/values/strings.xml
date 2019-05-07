@@ -35,6 +35,20 @@
         <item>Trim plant</item>
     </string-array>
 
+    <string-array name="repeat_menu_options">
+        <item>Does not repeat</item>
+        <item>Daily</item>
+        <item>Every other day</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+
+    <string name="repeat_menu_1">Does not repeat</string>
+    <string name="repeat_menu_2">Daily</string>
+    <string name="repeat_menu_3">Every other day</string>
+    <string name="repeat_menu_4">Weekly</string>
+    <string name="repeat_menu_5">Monthly</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
