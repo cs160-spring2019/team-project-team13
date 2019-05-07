@@ -63,6 +63,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder
 
     @Override
     public void onBindViewHolder(RecyclerViewHolder holder, int position) {
+        //System.out.println(listExperts.get(position).getPicture());
         holder.imageView.setImageResource(listExperts.get(position).getPicture());
         holder.textName.setText(listExperts.get(position).getName());
         holder.textTitle.setText(listExperts.get(position).getTitle());

@@ -72,19 +72,20 @@ public class MessageActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 mchat = new ArrayList<Chat>();
-                Integer drawableId;
                 for (DataSnapshot data : dataSnapshot.getChildren()) {
                     String oneMessage = data.child("message").getValue(String.class);
                     String oneSender = data.child("sender").getValue(String.class);
                     String oneReceiver = data.child("receiver").getValue(String.class);
                     if (oneSender.equals("TestUser") && oneReceiver.equals(expertname)){
-                        drawableId = getResources().getIdentifier("ic_launcher_round", "drawable", getPackageName());
+                        int drawableId = getResources().getIdentifier("rena", "drawable", getPackageName());
+                        System.out.println("===");
+                        System.out.println(drawableId);
                         Chat chat = new Chat(oneSender, oneReceiver, oneMessage, drawableId);
                         mchat.add(chat);
                     } else if (oneReceiver.equals("TestUser") && oneSender.equals(expertname))
                     {
                         String[] splited = oneSender.split("\\s+");
-                        drawableId = getResources().getIdentifier(splited[0].toLowerCase(), "drawable", getPackageName());
+                        int drawableId = getResources().getIdentifier(splited[0].toLowerCase(), "drawable", getPackageName());
                         Chat chat = new Chat(oneSender, oneReceiver, oneMessage, drawableId);
                         mchat.add(chat);
                     }

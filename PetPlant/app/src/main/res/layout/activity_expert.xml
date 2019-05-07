@@ -7,53 +7,48 @@
     android:fitsSystemWindows="true"
     tools:context=".Experts.ExpertMain">
 
-    <RelativeLayout
+    <FrameLayout
+        android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <FrameLayout
-            android:id="@+id/header"
+        <LinearLayout
+            android:id="@+id/tab_header"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:orientation="horizontal">
 
-            <LinearLayout
-                android:id="@+id/tab_header"
-                android:layout_width="match_parent"
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarExpert"
+                android:layout_width="0dp"
                 android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
                 android:background="?attr/colorPrimary"
-                android:orientation="horizontal">
+                android:theme="@style/Toolbar"
+                app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+                android:elevation="4dp"/>
 
-                <android.support.v7.widget.Toolbar
-                    android:id="@+id/toolbarExpert"
-                    android:layout_width="0dp"
-                    android:layout_height="?attr/actionBarSize"
-                    android:layout_weight="1"
-                    android:background="?attr/colorPrimary"
-                    android:theme="@style/Toolbar"
-                    app:popupTheme="@style/AppTheme.PopupOverlay"
-                    android:elevation="4dp"/>
+        </LinearLayout>
 
-            </LinearLayout>
-
-            <View
-                android:id="@+id/toolbar_shadow"
-                android:layout_width="match_parent"
-                android:layout_height="10dp"
-                android:layout_marginTop="?attr/actionBarSize"
-                android:background="@drawable/toolbar_shadow" />
-
-        </FrameLayout>
-
-        <android.support.v7.widget.RecyclerView
+        <View
+            android:id="@+id/toolbar_shadow"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/header"
-            android:id="@+id/recyclerView"
-            android:scrollbars="vertical">
-        </android.support.v7.widget.RecyclerView>
+            android:layout_height="10dp"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:background="@drawable/toolbar_shadow" />
 
-    </RelativeLayout>
+    </FrameLayout>
 
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/recyclerView"
+        android:scrollbars="vertical">
+    </android.support.v7.widget.RecyclerView>
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"

@@ -97,6 +97,8 @@ public class ExpertMain extends AppCompatActivity implements SearchView.OnQueryT
             for(int i = 0; i < jsonArray.length();i++){
                 JSONObject obj = jsonArray.getJSONObject(i);
                 int drawableId = getResources().getIdentifier(obj.getString("expert_img_filename"), "drawable", getPackageName());
+                System.out.println("===");
+                System.out.println(drawableId);
                 listExperts.add(new OneExpert(drawableId, obj.getString("expert_name"), obj.getString("expert_title"), obj.getString("expert_specialties"), obj.getString("expert_img_filename")));
             }
 

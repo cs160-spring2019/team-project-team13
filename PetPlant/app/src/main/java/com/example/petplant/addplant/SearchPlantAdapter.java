@@ -29,11 +29,9 @@ class SearchPlantHolder extends RecyclerView.ViewHolder{
     public SearchPlantHolder(View itemView) {
         super(itemView);
         pc = itemView.findViewById(R.id.plantcard);
-//        imageView = itemView.findViewById(R.id.thumbnail);
-//        textName = itemView.findViewById(R.id.name);
-//        textTitle = itemView.findViewById(R.id.title);
-//        line = itemView.findViewById(R.id.line);
-
+        imageView = itemView.findViewById(R.id.thumbnail);
+        textName = itemView.findViewById(R.id.name);
+        textTitle = itemView.findViewById(R.id.title);
 
         pc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,7 +45,6 @@ class SearchPlantHolder extends RecyclerView.ViewHolder{
 
     }
 }
-
 
 
 public class SearchPlantAdapter extends RecyclerView.Adapter<SearchPlantHolder> {

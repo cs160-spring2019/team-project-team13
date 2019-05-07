@@ -59,6 +59,8 @@ public class MessageViewAdapter extends RecyclerView.Adapter<MessageViewHolder>{
         Chat chat = mChat.get(position);
         holder.show_message.setText(chat.getMessage());
         holder.profile_image.setImageResource(chat.getImage());
+
+        //System.out.println(chat.getImage());
     }
 
     @Override

@@ -43,7 +43,6 @@
         android:layout_marginLeft="80dp"
         android:text="Scanning" />
 
-    <!-- 顶部按钮-->
     <include layout="@layout/layout_shoot_title" />
 
     <RelativeLayout

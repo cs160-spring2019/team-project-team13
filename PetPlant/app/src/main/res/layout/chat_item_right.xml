@@ -7,7 +7,8 @@
     <RelativeLayout
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:padding="8dp">
+        android:padding="8dp"
+        android:layout_alignParentEnd="true">
 
         <ImageView
             android:id="@+id/profile_image"
@@ -15,19 +16,16 @@
             android:layout_height="@dimen/thumbnail"
             android:layout_centerVertical="true"
             android:layout_marginRight="@dimen/row_padding"
-            android:layout_alignParentEnd="true"
-            android:visibility="gone"/>
+            android:layout_alignParentEnd="true"/>
 
         <TextView
             android:id="@+id/show_message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/profile_image"
-            android:layout_marginLeft="8dp"
-            android:textSize="18sp"
+            android:layout_toStartOf="@+id/profile_image"
+            android:background="@drawable/background_right"
             android:text="Hello"
-            android:layout_alignParentEnd="true"
-            android:background="@drawable/background_right"  />
+            android:textSize="18sp" />
 
 
     </RelativeLayout>
