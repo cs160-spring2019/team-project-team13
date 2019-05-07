@@ -62,7 +62,8 @@ public class MyPlants extends AppCompatActivity {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
                         if(item.getTitle().equals("Scan")){
-                            Intent intent = new Intent(MyPlants.this, TakePhotoActivity.class);
+                            Intent intent = new Intent(MyPlants.this, PlantInfoActivity.class);
+                            intent.putExtra("ifScan", 1);
 
                             startActivity(intent);
                             return true;

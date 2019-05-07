@@ -1,4 +1,4 @@
-package com.example.petplant.Experts;
+package com.example.petplant.experts;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -62,7 +62,7 @@ public class ExpertMain extends AppCompatActivity implements SearchView.OnQueryT
             }
         });
 
-        setTitle("Experts");
+        setTitle("experts");
 
     }
 
