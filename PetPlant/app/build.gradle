@@ -23,6 +23,11 @@ android {
             targetCompatibility = "8"
             sourceCompatibility = "8"
         }
+        packagingOptions {
+            exclude 'META-INF/NOTICE.md'
+            exclude 'META-INF/LICENSE.md'
+            exclude 'META-INF/NOTICE.markdown'
+        }
     }
 }
 
@@ -55,4 +60,8 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-scalars:2.5.0:'
     implementation 'com.squareup.okhttp3:okhttp:3.14.1'
     implementation 'de.hdodenhof:circleimageview:3.0.0'
+
+    implementation group: 'org.glassfish.jersey.core', name: 'jersey-client', version: '2.28'
+    implementation group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '2.28'
+    implementation group: 'org.glassfish.jersey.inject', name: 'jersey-hk2', version: '2.28'
 }
