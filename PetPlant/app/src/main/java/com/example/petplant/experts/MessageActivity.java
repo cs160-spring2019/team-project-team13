@@ -73,7 +73,7 @@ public class MessageActivity extends AppCompatActivity {
                     String oneSender = data.child("sender").getValue(String.class);
                     String oneReceiver = data.child("receiver").getValue(String.class);
                     if (oneSender.equals("TestUser") && oneReceiver.equals(expertname)){
-                        int drawableId = getResources().getIdentifier("rena", "drawable", getPackageName());
+                        int drawableId = getResources().getIdentifier("thenos", "drawable", getPackageName());
                         System.out.println("===");
                         System.out.println(drawableId);
                         Chat chat = new Chat(oneSender, oneReceiver, oneMessage, drawableId);

@@ -10,6 +10,7 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Base64;
@@ -43,7 +44,7 @@ public class DiseaseActivity extends AppCompatActivity{
     private TextView condition_content;
     private TextView confidence_content;
     private ProgressDialog progress;
-    private String url = "http://10.0.2.2:8000/";
+    private String url = "http://35.247.41.9:80/";
     private AsyncTask<String, Void, DiseaseInfo> analyze = new DiseaseActivity.analyzeTask();
     private JsonPlaceHoldeApi jsonPlaceHoldeApi;
     private String path;
@@ -59,6 +60,9 @@ public class DiseaseActivity extends AppCompatActivity{
         name_content = (TextView) findViewById(R.id.name_content);
         condition_content = (TextView) findViewById(R.id.condition_content);
         confidence_content = (TextView) findViewById(R.id.confidence_content);
+
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation.setItemIconTintList(null);
 
         toolbar = (Toolbar) findViewById(R.id.toolbarDisease);
         setSupportActionBar(toolbar);
