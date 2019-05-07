@@ -232,39 +232,6 @@
                     android:layout_marginStart="@dimen/line_separator_margin_side_large"
                     android:background="@color/lightGray" />
 
-                <LinearLayout
-                    android:id="@+id/colour_select"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="?attr/selectableItemBackground"
-                    android:paddingBottom="@dimen/table_row_default_horizontal_padding"
-                    android:paddingEnd="@dimen/table_row_default_padding_side"
-                    android:paddingRight="@dimen/table_row_default_padding_side"
-                    android:paddingTop="@dimen/table_row_default_horizontal_padding"
-                    android:weightSum="1">
-
-                    <ImageView
-                        android:id="@+id/colour_icon"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/image_margin_side"
-                        android:layout_marginStart="@dimen/image_margin_side"
-                        android:tint="@color/default_colour_grey"
-                        android:src="@drawable/ic_color_lens_white_24dp"/>
-
-                    <TextView
-                        android:id="@+id/select_colour_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="22dp"
-                        android:layout_marginStart="22dp"
-                        android:text="@string/default_colour"
-                        android:textColor="@android:color/black"
-                        android:textSize="16sp" />
-
-                </LinearLayout>
-
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/line_separator_height"

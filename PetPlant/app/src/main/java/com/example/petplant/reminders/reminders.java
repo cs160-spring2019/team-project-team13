@@ -94,4 +94,8 @@ public class reminders extends AppCompatActivity implements ReminderRecyclerAdap
     public void onItemClick(View view, int position) {
         Log.i("TAG", "You clicked number " + adapter.getItem(position) + ", which is at cell position " + position);
     }
+
+    public static void createNewReminder(Calendar time, String title, String notes, RepeatOption repeatOption) {
+
+    }
 }
