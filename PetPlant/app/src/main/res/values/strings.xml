@@ -20,12 +20,19 @@
     <string name="times">times</string>
     <string name="one" translatable="false">1</string>
     <string name="time_now">Now</string>
-
+    <string name="action">Action:</string>
+    <string name="save_reminder">Save</string>
 
 
     <string name="title_activity_search_plant">Search for a Plant</string>
     <string name="title_activity_plant_profile">Plant Profile</string>
     <string name="no_active">No active plants</string>
     <string name="hint">Name:</string>
+
+    <string-array name="reminder_options">
+        <item>Water plant</item>
+        <item>Repot plant</item>
+        <item>Trim plant</item>
+    </string-array>
 
 </resources>
