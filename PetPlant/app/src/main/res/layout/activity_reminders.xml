@@ -20,16 +20,6 @@
             android:background="?attr/colorPrimary"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/remindersHeaderText"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="6dp"
-                android:layout_weight="1"
-                android:text="May"
-                android:textSize="30sp" />
-
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="0dp"
@@ -37,7 +27,8 @@
                 android:layout_weight="1"
                 android:background="?attr/colorPrimary"
                 android:theme="@style/Toolbar"
-                app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar" />
+                app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+                app:title="Upcoming Reminders" />
 
         </LinearLayout>
 
@@ -51,7 +42,7 @@
     </FrameLayout>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/rvNumbers"
+        android:id="@+id/reminders_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="?attr/actionBarSize"

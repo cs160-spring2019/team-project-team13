@@ -27,8 +27,7 @@
                 android:background="?attr/colorPrimary"
                 android:theme="@style/Toolbar"
                 app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
-                app:title="New Reminder" />
-
+                app:title="Edit Reminder" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -442,6 +441,14 @@
                     android:id="@+id/save_button_row"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/delete_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="Delete"
+                        app:layout_constraintStart_toStartOf="parent" />
 
                     <Button
                         android:id="@+id/save_button"

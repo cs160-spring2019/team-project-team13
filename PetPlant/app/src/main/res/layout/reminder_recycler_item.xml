@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
     android:orientation="horizontal"
-    android:padding="5dp"
-    android:layout_width="200dp"
-    android:layout_height="75dp">
+    android:padding="5dp">
 
     <TextView
-        android:id="@+id/info_text"
+        android:id="@+id/reminder_text_on_reminder_home_screen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
         android:background="@color/accent"
         android:gravity="center"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="5dp" />
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
