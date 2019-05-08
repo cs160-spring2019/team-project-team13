@@ -11,7 +11,15 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="3c6647b8-869a-4d71-a919-9cb9cc8c2954" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="3c6647b8-869a-4d71-a919-9cb9cc8c2954" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/PlantInfoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/PlantInfoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_plant_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_plant_info.xml" afterDir="false" />
+    </list>
+>>>>>>> 6fc0b133bdb5a2c7e9697f2529bc17de22807fb7
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +34,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/MainFragment.java">
@@ -111,6 +120,76 @@
         </entry>
       </file>
     </leaf>
+=======
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml">
+              <provider editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="8" selection-start-line="8" selection-end-line="8" />
+                </state>
+              </provider>
+              <provider selected="true" editor-type-id="android-designer2" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/profile.xml">
+              <provider editor-type-id="text-editor">
+                <state relative-caret-position="493">
+                  <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+                </state>
+              </provider>
+              <provider selected="true" editor-type-id="android-designer2" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_plant_info.xml">
+              <provider editor-type-id="text-editor">
+                <state relative-caret-position="-160">
+                  <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+                </state>
+              </provider>
+              <provider selected="true" editor-type-id="android-designer2" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/photo_header.xml">
+              <provider editor-type-id="text-editor">
+                <state relative-caret-position="170">
+                  <caret line="10" selection-start-line="10" selection-end-line="10" />
+                </state>
+              </provider>
+              <provider selected="true" editor-type-id="android-designer2" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/PlantInfoActivity.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1921">
+                  <caret line="151" column="42" selection-start-line="151" selection-start-column="42" selection-end-line="151" selection-end-column="42" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/MainFragment.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="238">
+                  <caret line="21" selection-start-line="21" selection-end-line="21" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+>>>>>>> 6fc0b133bdb5a2c7e9697f2529bc17de22807fb7
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -124,15 +203,18 @@
       <find>BLAH</find>
       <find>profile</find>
       <find>R.id</find>
-      <find>center</find>
       <find>savedInstanceState</find>
       <find>fragment</find>
       <find>plant</find>
       <find>fab</find>
       <find>doinba</find>
+<<<<<<< HEAD
       <find>access</find>
       <find>plantImg</find>
       <find>plantI</find>
+=======
+      <find>center</find>
+>>>>>>> 6fc0b133bdb5a2c7e9697f2529bc17de22807fb7
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,11 +228,11 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/profile.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/MyPlants.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_plant_info.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/photo_header.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/PlantInfo.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/PlantInfoActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_plant_info.xml" />
       </list>
     </option>
   </component>
@@ -368,7 +450,11 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.23462088" />
+=======
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.13646056" />
+>>>>>>> 6fc0b133bdb5a2c7e9697f2529bc17de22807fb7
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -376,6 +462,7 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="0" weight="0.25581396" />
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Logcat" order="2" weight="0.32968536" />
@@ -386,6 +473,18 @@
       <window_info anchor="bottom" id="Android Profiler" order="7" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.32917964" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.32831737" />
+=======
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Logcat" order="1" />
+      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.3286517" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50043595" side_tool="true" weight="0.3286517" />
+      <window_info active="true" anchor="bottom" id="Build" order="5" sideWeight="0.49956408" visible="true" weight="0.22845276" />
+      <window_info anchor="bottom" id="Android Profiler" order="6" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.3286517" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.32917964" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.32917964" />
+>>>>>>> 6fc0b133bdb5a2c7e9697f2529bc17de22807fb7
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
@@ -393,6 +492,7 @@
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Preview" order="5" weight="0.32904148" />
     </layout>
+<<<<<<< HEAD
     <layout-to-restore>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2431835" />
@@ -420,6 +520,8 @@
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout-to-restore>
+=======
+>>>>>>> 6fc0b133bdb5a2c7e9697f2529bc17de22807fb7
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/build.gradle">
@@ -430,14 +532,6 @@
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/app/FragmentTransaction.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/background.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/petplant/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -513,6 +607,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/photo_header.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
@@ -537,6 +632,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/PlantPostJson.java">
+=======
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/os/Looper.java">
+>>>>>>> 6fc0b133bdb5a2c7e9697f2529bc17de22807fb7
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
@@ -572,13 +670,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/MainFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/profile.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/PlantInfoActivity.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="164">
           <caret line="189" column="48" selection-start-line="189" selection-start-column="48" selection-end-line="189" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="1921">
+          <caret line="151" column="42" selection-start-line="151" selection-start-column="42" selection-end-line="151" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/photo_header.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_plant_info.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-160">
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+>>>>>>> 6fc0b133bdb5a2c7e9697f2529bc17de22807fb7
         </state>
       </provider>
     </entry>
