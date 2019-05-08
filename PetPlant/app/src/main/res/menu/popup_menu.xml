@@ -6,7 +6,6 @@
         android:title = "Scan"/>
     <item
         android:id="@+id/popup_Search"
-        android:title="Search"
-        android:visible="false" />
+        android:title="Search" />
 
 </menu>

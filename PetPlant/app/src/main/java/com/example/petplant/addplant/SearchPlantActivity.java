@@ -37,8 +37,8 @@ public class SearchPlantActivity extends AppCompatActivity implements SearchView
     private AsyncTask<String, Void, String> analyze = new SearchPlantActivity.analyzeTask();
     private RecyclerView mrecyclerView;
     public ArrayList<PlantProfileCard> listPlant = new ArrayList<>();
-
-    private SearchPlantAdapter lpadapter;
+    public searchClient client;
+    public SearchPlantAdapter lpadapter;
     private static final String plantURL = "https://trefle.io/api/plants?token=aUVNSXhKdTZFbGZ2cGprbzRFRkZSZz09&q=";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,27 +77,29 @@ public class SearchPlantActivity extends AppCompatActivity implements SearchView
         return true;
     }
     public void fetchData(String query) {
-        searchClient client = new searchClient();
+        client = new searchClient();
 
         client.getSearch(query, new JsonHttpResponseHandler()  {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
                 JSONArray obj = response;
-                List<PlantProfileCard> lp = new ArrayList<>();
+                ArrayList<PlantProfileCard> lp = new ArrayList<>();
+                PlantInfo pinfo = new PlantInfo();
                 try {
                     for(int i=0;i<obj.length();i++) {
-                        PlantInfo pinfo = new PlantInfo();
+
                         JSONObject jsonObject1 = obj.getJSONObject(i);
                         pinfo.setCommon(jsonObject1.optString("common_name"));
                         pinfo.setName(jsonObject1.optString("scientific_name"));
                         lp.add(new PlantProfileCard(pinfo));
-                    } lpadapter.updateList(lp);
+                    } client.lp = lp;
+                    SearchPlantActivity.this.lpadapter.updateList(lp);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
             }
         });
-
+int k = client.lp.size();
 
 
     }

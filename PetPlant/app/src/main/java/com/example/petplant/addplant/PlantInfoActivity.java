@@ -60,6 +60,10 @@ import com.example.petplant.reminders.reminders;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -327,13 +331,18 @@ public class PlantInfoActivity extends AppCompatActivity {
 
 
 
+            String myURL = plantURL + name;
 
             Response response1 = client.target(plantURL + name).request().get();
             String r = response1.readEntity(String.class);
             String comm = null;
             try {
-
-                JSONArray obj = new JSONArray(r);
+                URL url = new URL(myURL);
+                String nullFragment = null;
+                URI uri = new URI(url.getProtocol(), url.getHost(), url.getPath(), url.getQuery(), nullFragment);
+                Response rr = client.target(uri).request().get();
+                String r2 = rr.readEntity(String.class);
+                JSONArray obj = new JSONArray(r2);
                 for(int i=0;i<obj.length();i++)
                 {
                     JSONObject jsonObject1 = obj.getJSONObject(i);
@@ -352,8 +361,12 @@ public class PlantInfoActivity extends AppCompatActivity {
 
                 }
                 Log.d("My App", obj.toString());
-
-            } catch (Throwable t) {
+            }catch (MalformedURLException e) {
+                System.out.println("URL " + myURL + " is a malformed URL");
+            } catch (URISyntaxException e) {
+                System.out.println("URI " + myURL + " is a malformed URL");
+            }
+             catch (Throwable t) {
                 Log.e("My App", "Could not parse malformed JSON: \"" + r + "\"");
             }
             plantInfo.setCommon(comm);
