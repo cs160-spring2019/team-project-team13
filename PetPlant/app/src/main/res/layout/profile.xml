@@ -82,54 +82,20 @@
         <Button
             android:layout_width="110dp"
             android:layout_height="40dp"
-            android:layout_toRightOf="@id/spaceHolder"
-            android:layout_toEndOf="@id/spaceHolder"
             android:layout_below="@id/common_name"
             android:layout_marginBottom="16dp"
-            android:paddingStart="10dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingEnd="10dp"
+            android:layout_toEndOf="@id/spaceHolder"
+            android:layout_toRightOf="@id/spaceHolder"
             android:background="@drawable/connect_button"
-            android:textColor="@android:color/white"
-            android:text="Diseases"
-            android:textSize="16sp"
-            android:fontFamily="sans-serif-medium"/>
-
-        <Button
-            android:id="@+id/btnMessage2"
-            android:layout_width="110dp"
-            android:layout_height="40dp"
-            android:layout_alignTop="@+id/btnMessage"
-            android:layout_marginTop="62dp"
-            android:layout_marginEnd="-55dp"
-            android:layout_marginRight="-55dp"
-            android:layout_marginBottom="16dp"
-            android:layout_toStartOf="@id/spaceHolder"
-            android:layout_toLeftOf="@id/spaceHolder"
-            android:background="@drawable/message_button"
             android:fontFamily="sans-serif-medium"
             android:paddingStart="10dp"
             android:paddingLeft="10dp"
             android:paddingEnd="10dp"
             android:paddingRight="10dp"
-            android:text="Reminder"
-            android:textColor="@color/colorButton"
+            android:text="Reminders"
+            android:textColor="@android:color/white"
             android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/tvSummary"
-            android:layout_width="310dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/btnMessage"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="65dp"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif-medium"
-            android:gravity="center"
-            android:lines="2"
-            android:text="BLAH BLAH BLAH BLAH BLAH"
-            android:textSize="14sp" />
     </RelativeLayout>
 
     <include
