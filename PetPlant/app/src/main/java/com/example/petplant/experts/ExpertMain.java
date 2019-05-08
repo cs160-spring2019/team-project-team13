@@ -66,7 +66,7 @@ public class ExpertMain extends AppCompatActivity implements SearchView.OnQueryT
             }
         });
 
-        setTitle("experts");
+        setTitle("Experts");
 
     }
 

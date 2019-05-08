@@ -17,7 +17,6 @@
             android:id="@+id/tab_header"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
             android:orientation="horizontal">
 
             <android.support.v7.widget.Toolbar
@@ -25,7 +24,7 @@
                 android:layout_width="0dp"
                 android:layout_height="?attr/actionBarSize"
                 android:layout_weight="1"
-                android:background="?attr/colorPrimary"
+                android:background="@color/accentPrimary"
                 android:theme="@style/Toolbar"
                 app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
                 android:elevation="4dp"/>

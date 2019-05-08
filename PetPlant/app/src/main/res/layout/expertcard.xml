@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/name"
         android:layout_toRightOf="@id/thumbnail"
-        android:textColor="@color/contact_title"
+        android:textColor="@color/accentPrimary"
         android:textSize="@dimen/contact_title" />
 
     <TextView
