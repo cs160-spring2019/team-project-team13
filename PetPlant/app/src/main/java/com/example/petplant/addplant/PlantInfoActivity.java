@@ -87,6 +87,10 @@ public class PlantInfoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plant_info);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
         myDialog = new Dialog(this);
         mContext = getApplicationContext();
         layout = findViewById(R.id.la);
@@ -97,10 +101,7 @@ public class PlantInfoActivity extends AppCompatActivity {
             fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
             fragmentTransaction.commit();
         }
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
 
         //plantImg =  findViewById(R.id.civProfilePic);
         //plantName =  findViewById(R.id.tvAddress);
@@ -142,7 +143,11 @@ public class PlantInfoActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.home) {
+        if (item.getItemId() == android.R.id.home) {
+
+            finish();
+        }
+        if (item.getItemId() == R.id.action_confirm) {
 
             finish();
         }
