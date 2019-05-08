@@ -58,8 +58,8 @@ public class PlantInfoActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        //plantImg = (ImageView) findViewById(R.id.plant_img);
-        //plantName = (TextView) findViewById(R.id.plant_name);
+        plantImg = (ImageView) findViewById(R.id.civProfilePic);
+        plantName = (TextView) findViewById(R.id.plant_name);
         //probability = (TextView) findViewById(R.id.probability);
         //confidence = (TextView) findViewById(R.id.confidence);
 
@@ -150,10 +150,17 @@ public class PlantInfoActivity extends AppCompatActivity {
         protected void onPostExecute(PlantInfo plantInfo) {
             super.onPostExecute(plantInfo);
             Bitmap bitmap = BitmapUtil.getBitmap(plantInfo.getPath());
-            plantImg.setImageBitmap(createCircleBitmap(bitmap));
-            plantName.setText(plantInfo.getName());
-            probability.setText(plantInfo.getProbability());
-            confidence.setText(plantInfo.getConfidence());
+            View inflatedView = getLayoutInflater().inflate(R.layout.photo_header, null);
+            plantImg = inflatedView.findViewById(R.id.civProfilePic);
+            plantImg.setImageBitmap(bitmap);
+            //plantImg.setImageBitmap(createCircleBitmap(bitmap));
+            //plantName.setText(plantInfo.getName());
+            //probability.setText(plantInfo.getProbability());
+            //confidence.setText(plantInfo.getConfidence());
+            FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+            fragmentTransaction.add(R.id.fragment_container, new MainFragment(), "MainFragment");
+            fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+            fragmentTransaction.commit();
             progress.dismiss();
 
 //            if (!DiseaseActivity.this.isFinishing() && progress != null) {
