@@ -143,7 +143,7 @@ public class CreateEditReminder extends AppCompatActivity{
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
 
         // notificationId is a unique int for each notification that you must define
-        notificationManager.notify(new Random().nextInt(), builder.build());
+        //TODO notificationManager.notify(new Random().nextInt(), builder.build());
         // /end Notification
 
         Intent i = new Intent(this, reminders.class);
