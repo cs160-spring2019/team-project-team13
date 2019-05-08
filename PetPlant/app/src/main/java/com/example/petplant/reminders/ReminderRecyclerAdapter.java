@@ -1,7 +1,7 @@
 package com.example.petplant.reminders;
 
 import android.content.Context;
-import android.support.annotation.ColorInt;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -11,70 +11,55 @@ import android.widget.TextView;
 
 import com.example.petplant.R;
 
+import java.util.ArrayList;
+
 public class ReminderRecyclerAdapter extends RecyclerView.Adapter<ReminderRecyclerAdapter.RecyclerViewHolder> {
+    private ArrayList<Reminder> dataset;
+    private LayoutInflater layoutInflater;
+    private ItemClickListener itemClickListener;
 
-    private ReminderScreenDataset dataset;
-    private LayoutInflater mInflater;
-    private ItemClickListener mClickListener;
-
-    // data is passed into the constructor
-    ReminderRecyclerAdapter(Context context, ReminderScreenDataset dataset) {
-        this.mInflater = LayoutInflater.from(context);
-        this.dataset = dataset;
-    }
-
-    // inflates the cell layout from xml when needed
-    @Override
-    @NonNull
-    public RecyclerViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = mInflater.inflate(R.layout.reminder_recycler_item, parent, false);
-        return new RecyclerViewHolder(view);
-    }
-
-    // binds the data to the TextView in each cell
-    @Override
-    public void onBindViewHolder(@NonNull RecyclerViewHolder holder, int position) {
-        String theText = this.dataset.components.get(position);
-        holder.myTextView.setText(theText);
-        if (theText.equals("")) {
-            holder.myTextView.setBackgroundColor(0);
-        }//TODO
-    }
-
-    // total number of cells
-    @Override
-    public int getItemCount() {
-        return this.dataset.components.size();
-    } //TODO
-
-
-    // stores and recycles views as they are scrolled off screen
     public class RecyclerViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView myTextView;
+        TextView textView;
 
         RecyclerViewHolder(View itemView) {
             super(itemView);
-            myTextView = itemView.findViewById(R.id.info_text);
-            itemView.setOnClickListener(this);
+            textView = itemView.findViewById(R.id.reminder_text_on_reminder_home_screen);
         }
 
         @Override
         public void onClick(View view) {
-            if (mClickListener != null) mClickListener.onItemClick(view, getAdapterPosition());
+            System.exit(909);
+            if (itemClickListener != null) {
+                itemClickListener.onItemClick(view, getAdapterPosition());
+            }
         }
     }
 
-    // convenience method for getting data at click position
-    String getItem(int id) {
-        return this.dataset.components.get(id); //TODO
+    public ReminderRecyclerAdapter(Context context, ArrayList<Reminder> dataset) {
+        layoutInflater = LayoutInflater.from(context);
+        this.dataset = dataset;
     }
 
-    // allows clicks events to be caught
+    @Override
+    public RecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = layoutInflater.inflate(R.layout.reminder_recycler_item, parent, false);
+        return new RecyclerViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(RecyclerViewHolder holder, int position) {
+        holder.textView.setText(ReminderUtilities.reminderDisplayText(dataset.get(position)));
+    }
+
+    @Override
+    public int getItemCount() {
+        return dataset.size();
+    }
+
     void setClickListener(ItemClickListener itemClickListener) {
-        this.mClickListener = itemClickListener;
+        this.itemClickListener = itemClickListener;
     }
 
-    // parent activity will implement this method to respond to click events
     public interface ItemClickListener {
         void onItemClick(View view, int position);
     }

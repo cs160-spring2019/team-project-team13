@@ -1,14 +1,18 @@
 package com.example.petplant.reminders;
 
-import java.sql.Time;
+import java.io.Serializable;
 import java.util.Calendar;
 
-public class Reminder {
+public class Reminder implements Serializable {
+    Calendar calendar;
     String title;
-    Calendar time;
+    String notes;
+    RepeatOption repeatOption;
 
-    public Reminder(String title, Calendar time) {
+    public Reminder(Calendar calendar, String title, String notes, RepeatOption repeatOption) {
+        this.calendar = calendar;
         this.title = title;
-        this.time = time;
+        this.notes = notes;
+        this.repeatOption = repeatOption;
     }
 }

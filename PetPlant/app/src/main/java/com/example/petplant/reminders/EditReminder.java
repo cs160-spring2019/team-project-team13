@@ -1,19 +1,9 @@
 package com.example.petplant.reminders;
 
-import android.app.AlarmManager;
 import android.app.DatePickerDialog;
-import android.app.Notification;
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.app.TimePickerDialog;
-import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.SystemClock;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.app.NotificationManagerCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.format.DateFormat;
@@ -29,13 +19,12 @@ import android.widget.TextView;
 
 import com.example.petplant.R;
 
+import java.io.ObjectOutputStream;
 import java.util.Calendar;
-import java.util.Random;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-public class CreateEditReminder extends AppCompatActivity{
+public class EditReminder extends AppCompatActivity{
 
 
     @BindView(R.id.time)
@@ -45,12 +34,13 @@ public class CreateEditReminder extends AppCompatActivity{
     private Spinner reminderActionsSpinner;
     private TextView repeatOptionTextView;
     private LinearLayout repeatRow;
+    private int placementInDataset;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create);
+        setContentView(R.layout.edit_reminder);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ButterKnife.bind(this);
@@ -68,10 +58,14 @@ public class CreateEditReminder extends AppCompatActivity{
 
         repeatOptionTextView = findViewById(R.id.repeat_day);
         repeatRow = findViewById(R.id.repeat_row);
+
+        Intent intent = getIntent();
+        placementInDataset = intent.getIntExtra("placementInDataset", 0);
+        Reminder theReminder = (Reminder) intent.getSerializableExtra("reminder");
     }
     @OnClick(R.id.time_row)
     public void timePicker() {
-        TimePickerDialog TimePicker = new TimePickerDialog(CreateEditReminder.this, new TimePickerDialog.OnTimeSetListener() {
+        TimePickerDialog TimePicker = new TimePickerDialog(EditReminder.this, new TimePickerDialog.OnTimeSetListener() {
             @Override
             public void onTimeSet(android.widget.TimePicker timePicker, int hour, int minute) {
                 calendar.set(Calendar.HOUR_OF_DAY, hour);
@@ -83,7 +77,7 @@ public class CreateEditReminder extends AppCompatActivity{
     }
     @OnClick(R.id.date_row)
     public void datePicker(View view) {
-        DatePickerDialog DatePicker = new DatePickerDialog(CreateEditReminder.this, new DatePickerDialog.OnDateSetListener() {
+        DatePickerDialog DatePicker = new DatePickerDialog(EditReminder.this, new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(android.widget.DatePicker DatePicker, int year, int month, int dayOfMonth) {
                 calendar.set(Calendar.YEAR, year);
@@ -119,35 +113,14 @@ public class CreateEditReminder extends AppCompatActivity{
         String notes = ((EditText)findViewById(R.id.notification_content)).getText().toString();
         RepeatOption repeatOption = RepeatOption.fromString(repeatOptionTextView.getText().toString());
         Reminder newReminder = new Reminder(calendar, task, notes, repeatOption);
-
-        // Notification
-        String CHANNEL_ID = "PetPlantNotificationChannel";
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
-                .setSmallIcon(R.drawable.leaf)
-                .setContentTitle(newReminder.title)
-                .setContentText(newReminder.notes)
-                .setPriority(NotificationCompat.PRIORITY_DEFAULT);
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            CharSequence name = "Pet Plant Notification Channel";
-            String description = "For Pet Plant Reminders";
-            int importance = NotificationManager.IMPORTANCE_DEFAULT;
-            NotificationChannel channel = new NotificationChannel(CHANNEL_ID, name, importance);
-            channel.setDescription(description);
-            // Register the channel with the system; you can't change the importance
-            // or other notification behaviors after this
-            NotificationManager notificationManager = getSystemService(NotificationManager.class);
-            notificationManager.createNotificationChannel(channel);
-        }
-
-        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
-
-        // notificationId is a unique int for each notification that you must define
-        notificationManager.notify(new Random().nextInt(), builder.build());
-        // /end Notification
-
         Intent i = new Intent(this, reminders.class);
         i.putExtra("newReminder", newReminder);
+        startActivity(i);
+    }
+    @OnClick(R.id.delete_button)
+    public void deleteReminder() {
+        Intent i = new Intent(this, reminders.class);
+        i.putExtra("deleteReminder", placementInDataset);
         startActivity(i);
     }
 }
