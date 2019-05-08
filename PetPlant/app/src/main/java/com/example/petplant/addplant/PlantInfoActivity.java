@@ -17,6 +17,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import javax.ws.rs.client.Client;
@@ -40,6 +41,7 @@ public class PlantInfoActivity extends AppCompatActivity {
     private ProgressDialog progress;
     private AsyncTask<String, Void, PlantInfo> analyze = new PlantInfoActivity.analyzeTask();
     private PlantInfo plantInfo;
+    private LinearLayout layout;
     private static final String identifyURL = "https://api.plant.id/identify";
     private static final String suggestionURL = "https://private-anon-79238c3314-plantid.apiary-proxy.com/check_identifications";
 
@@ -47,19 +49,14 @@ public class PlantInfoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plant_info);
-       if(savedInstanceState == null) {
-           FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-            fragmentTransaction.add(R.id.fragment_container, new MainFragment(), "MainFragment");
-          fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-           fragmentTransaction.commit();
-       }
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        plantImg = (ImageView) findViewById(R.id.civProfilePic);
-        plantName = (TextView) findViewById(R.id.plant_name);
+        plantImg =  findViewById(R.id.civProfilePic);
+        plantName =  findViewById(R.id.tvAddress);
         //probability = (TextView) findViewById(R.id.probability);
         //confidence = (TextView) findViewById(R.id.confidence);
 
@@ -150,17 +147,13 @@ public class PlantInfoActivity extends AppCompatActivity {
         protected void onPostExecute(PlantInfo plantInfo) {
             super.onPostExecute(plantInfo);
             Bitmap bitmap = BitmapUtil.getBitmap(plantInfo.getPath());
-            View inflatedView = getLayoutInflater().inflate(R.layout.photo_header, null);
-            plantImg = inflatedView.findViewById(R.id.civProfilePic);
+            plantName.setText("Common Name: " + plantInfo.getName());
+
             plantImg.setImageBitmap(bitmap);
-            //plantImg.setImageBitmap(createCircleBitmap(bitmap));
-            //plantName.setText(plantInfo.getName());
             //probability.setText(plantInfo.getProbability());
             //confidence.setText(plantInfo.getConfidence());
-            FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-            fragmentTransaction.add(R.id.fragment_container, new MainFragment(), "MainFragment");
-            fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-            fragmentTransaction.commit();
+
+
             progress.dismiss();
 
 //            if (!DiseaseActivity.this.isFinishing() && progress != null) {
@@ -237,6 +230,7 @@ public class PlantInfoActivity extends AppCompatActivity {
             plantInfo = new PlantInfo(path, name, probability, confidence);
 //            Log.d("!!!!!!status", status_str);
 //            Log.d("!!!!!!!!!!response", result);
+
             return plantInfo;
         }
     }
