@@ -39,7 +39,7 @@ public class MyPlants extends AppCompatActivity implements BottomNavigationView.
 
     public FloatingActionButton fab;
     private MyPlantsAdapter mAdapter;
-    private List<PlantProfileCard> listPlants = new ArrayList<PlantProfileCard>();
+    private ArrayList<PlantProfileCard> listPlants = new ArrayList<PlantProfileCard>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

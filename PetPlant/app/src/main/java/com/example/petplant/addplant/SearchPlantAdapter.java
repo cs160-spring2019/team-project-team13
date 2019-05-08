@@ -49,8 +49,8 @@ class SearchPlantHolder extends RecyclerView.ViewHolder{
 
 public class SearchPlantAdapter extends RecyclerView.Adapter<SearchPlantHolder> {
     public static Context mContext;
-    private List<PlantProfileCard> listPlants;
-    public SearchPlantAdapter(Context context, List<PlantProfileCard> listPlants) {
+    private ArrayList<PlantProfileCard> listPlants;
+    public SearchPlantAdapter(Context context, ArrayList<PlantProfileCard> listPlants) {
         mContext = context;
         this.listPlants = listPlants;
 
@@ -79,10 +79,11 @@ public class SearchPlantAdapter extends RecyclerView.Adapter<SearchPlantHolder> 
 
     public void updateList(List<PlantProfileCard> newList)
     {
-        listPlants = new ArrayList<PlantProfileCard>();
+        listPlants.clear();
         listPlants.addAll(newList);
         notifyDataSetChanged();
     }
 
 }
+
 

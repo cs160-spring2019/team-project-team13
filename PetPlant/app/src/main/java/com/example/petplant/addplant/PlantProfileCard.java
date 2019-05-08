@@ -12,7 +12,12 @@ public class PlantProfileCard {
         this.title = title;
         this.image_filename = image_filename;
     }
-
+    PlantProfileCard(PlantInfo info) {
+        this.name = info.getCommon();
+        //this.picture = picture;
+        this.title = info.getName();
+        //this.image_filename = image_filename;
+    }
     public String getName() {
         return name;
     }
@@ -30,4 +35,5 @@ public class PlantProfileCard {
     PlantProfileCard() {
 
     }
+
     }
