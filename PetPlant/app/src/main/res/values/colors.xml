@@ -7,7 +7,8 @@
     <color name="primary">#92CD00</color>
     <color name="primaryDark">#2D6700</color>
 
-    <color name="accent">#709E77</color>
+    <!--<color name="accent">#709E77</color>-->
+    <color name="accent">#60B26B</color>
     <color name="accentLight">#87BF91</color>
     <color name="accentPrimary">#709E77</color>
     <color name="accentDark">#3E5842</color>
