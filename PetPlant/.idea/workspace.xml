@@ -7,10 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca3f3342-ac9b-4b7f-8cca-83ad2f3f1201" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/PlantInfoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/PlantInfoActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/SearchPlantActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/SearchPlantActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/searchClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/searchClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/popup_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/popup_menu.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,11 +56,11 @@
           <provider selected="true" editor-type-id="android-designer2" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/PlantInfoActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="344" column="48" selection-start-line="344" selection-start-column="48" selection-end-line="344" selection-end-column="48" />
+            <state relative-caret-position="137">
+              <caret line="337" column="31" selection-start-line="337" selection-start-column="31" selection-end-line="337" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#6163#6164#0" expanded="true" />
@@ -95,7 +91,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/popup_menu.xml">
           <provider editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -148,10 +144,10 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/MyPlantsAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/MyPlants.java" />
         <option value="$PROJECT_DIR$/app/src/main/assets/my_plants.json" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/popup_menu.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/searchClient.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/SearchPlantActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/PlantInfoActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/popup_menu.xml" />
       </list>
     </option>
   </component>
@@ -805,10 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_confirm.xml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/app/Activity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-202">
@@ -841,14 +833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/popup_menu.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/SearchPlantActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1309">
@@ -861,8 +845,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/petplant/addplant/PlantInfoActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="344" column="48" selection-start-line="344" selection-start-column="48" selection-end-line="344" selection-end-column="48" />
+        <state relative-caret-position="137">
+          <caret line="337" column="31" selection-start-line="337" selection-start-column="31" selection-end-line="337" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#6163#6164#0" expanded="true" />
@@ -873,6 +857,18 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_confirm.xml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/popup_menu.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
   </component>
   <component name="masterDetails">
