@@ -18,8 +18,10 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import javax.ws.rs.client.Client;
@@ -33,11 +35,6 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 import com.example.petplant.R;
 import com.example.petplant.camera.util.BitmapUtil;
 import com.example.petplant.camera.view.TakePhotoActivity;
@@ -45,32 +42,41 @@ import com.example.petplant.camera.view.TakePhotoActivity;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class PlantInfoActivity extends AppCompatActivity {
     public View img;
     private ImageView plantImg;
     private TextView plantName;
     private TextView probability;
     private TextView confidence;
+    private LinearLayout layout;
     private ProgressDialog progress;
     private AsyncTask<String, Void, PlantInfo> analyze = new PlantInfoActivity.analyzeTask();
     private PlantInfo plantInfo;
-    private LinearLayout layout;
     private static final String identifyURL = "https://api.plant.id/identify";
     private static final String suggestionURL = "https://private-anon-79238c3314-plantid.apiary-proxy.com/check_identifications";
+    private static final String plantURL = "https://trefle.io/api/plants?token=aUVNSXhKdTZFbGZ2cGprbzRFRkZSZz09&q=";
     private String wikiURL = "https://en.wikipedia.org/wiki/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plant_info);
-
+        layout = findViewById(R.id.la);
+        if(savedInstanceState == null) {
+            FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+            fragmentTransaction.add(R.id.fragment_container, new MainFragment(), "MainFragment");
+            fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+            fragmentTransaction.commit();
+        }
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        plantImg =  findViewById(R.id.civProfilePic);
-        plantName =  findViewById(R.id.tvAddress);
+        //plantImg =  findViewById(R.id.civProfilePic);
+        //plantName =  findViewById(R.id.tvAddress);
         //probability = (TextView) findViewById(R.id.probability);
         //confidence = (TextView) findViewById(R.id.confidence);
 
@@ -161,13 +167,22 @@ public class PlantInfoActivity extends AppCompatActivity {
         protected void onPostExecute(PlantInfo plantInfo) {
             super.onPostExecute(plantInfo);
             Bitmap bitmap = BitmapUtil.getBitmap(plantInfo.getPath());
-            plantName.setText("Common Name: " + plantInfo.getName());
+            RelativeLayout f = findViewById(R.id.relativeLayout);
+            FrameLayout fr = findViewById(R.id.photoHeader);
+            TextView comm_name = f.findViewById(R.id.common_name);
+            TextView scientific_name = f.findViewById(R.id.sci_name);
+            ImageView plantPic = fr.findViewById(R.id.plantProfPic);
+            scientific_name.setText("Scientific Name: " + plantInfo.getGenus());
+            comm_name.setText("Common Name: " + plantInfo.getName());
 
-            plantImg.setImageBitmap(bitmap);
+            plantPic.setImageBitmap(bitmap);
+            //plantName.setText("Common Name: " + plantInfo.getName());
+
+            //plantImg.setImageBitmap(bitmap);
             //probability.setText(plantInfo.getProbability());
             //confidence.setText(plantInfo.getConfidence());
 
-
+            layout.invalidate();
             progress.dismiss();
 
 //            if (!DiseaseActivity.this.isFinishing() && progress != null) {
@@ -188,7 +203,7 @@ public class PlantInfoActivity extends AppCompatActivity {
 
             ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
             Bitmap bitmap = BitmapUtil.getBitmap(path);
-//            Bitmap bitmap = BitmapFactory.decodeStream(getClass().getResourceAsStream("/res/drawable/plant1.jpg"));
+            //Bitmap bitmap = BitmapFactory.decodeStream(getClass().getResourceAsStream("/res/drawable/plant1.jpg"));
 
             bitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream);
             byte[] byteArray = byteArrayOutputStream.toByteArray();
@@ -247,7 +262,7 @@ public class PlantInfoActivity extends AppCompatActivity {
             Log.d("wiki", wikiURL);
             try {
                 Document doc = Jsoup.connect(wikiURL).get();
-                plantInfo = parseHtml(doc);
+                plantInfo = new PlantInfo(parseHtml(doc));
             } catch (IOException ioe){
                 return null;
             }
@@ -257,13 +272,15 @@ public class PlantInfoActivity extends AppCompatActivity {
             plantInfo.setProbability(probability);
             plantInfo.setConfidence(confidence);
 
-            plantInfo = new PlantInfo(path, name, probability, confidence);
+            //plantInfo = new PlantInfo(path, name, probability, confidence);
 //            Log.d("!!!!!!status", status_str);
 //            Log.d("!!!!!!!!!!response", result);
-            Response response1 = client.target("https://en.wikipedia.org/api/rest_v1/page/mobile-sections/tomato?redirect=false").request().get();
+
+            Response response1 = client.target(plantURL + name).request().get();
             String r = response1.readEntity(String.class);
-            int binomial_nameStart = r.indexOf("sections");
+            int binomial_nameStart = r.indexOf("common_name");
             int binomial_nameEnd = r.indexOf(",", binomial_nameStart + 1);
+            String common_name = result.substring(binomial_nameStart + 14, binomial_nameEnd);
 
             return plantInfo;
         }

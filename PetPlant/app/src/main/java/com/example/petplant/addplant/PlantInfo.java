@@ -9,11 +9,14 @@ public class PlantInfo {
     private String genus;
     private String species;
 
-    PlantInfo (String path, String name, String probability, String confidence){
-        this.name = name;
-        this.path = path;
-        this.probability = probability;
-        this.confidence = confidence;
+    PlantInfo (PlantInfo plantInfo){
+        this.name = plantInfo.getName();
+        this.path = plantInfo.getPath();
+        this.probability = plantInfo.getProbability();
+        this.confidence = plantInfo.getConfidence();
+        this.family = plantInfo.getFamily();
+        this.genus = plantInfo.getGenus();
+        this.species = plantInfo.getSpecies();
     }
 
     PlantInfo (){
