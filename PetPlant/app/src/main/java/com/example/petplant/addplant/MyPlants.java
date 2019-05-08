@@ -2,6 +2,7 @@ package com.example.petplant.addplant;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -16,7 +17,10 @@ import android.widget.PopupMenu;
 import android.widget.Toast;
 
 import com.example.petplant.R;
+import com.example.petplant.camera.view.DiseaseActivity;
 import com.example.petplant.camera.view.TakePhotoActivity;
+import com.example.petplant.experts.ExpertMain;
+import com.example.petplant.reminders.reminders;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -28,7 +32,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyPlants extends AppCompatActivity {
+public class MyPlants extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
     private LinearLayout linearLayout;
     private RecyclerView mrecyclerView;
@@ -52,6 +56,7 @@ public class MyPlants extends AppCompatActivity {
 
         BottomNavigationView navigation =  findViewById(R.id.navigation);
         navigation.setItemIconTintList(null);
+        navigation.setOnNavigationItemSelectedListener(this);
         fab = findViewById(R.id.fab2);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -154,5 +159,21 @@ public class MyPlants extends AppCompatActivity {
     }
 
 
-
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        if (menuItem.getTitle() == getString(R.string.title_myplants)) {
+            Intent i = new Intent(this, MyPlants.class);
+            startActivity(i);
+        } else if (menuItem.getTitle() == getString(R.string.title_reminders)) {
+            Intent i = new Intent(this, reminders.class);
+            startActivity(i);
+        } else if (menuItem.getTitle() == getString(R.string.title_scan)) {
+            Intent i = new Intent(this, DiseaseActivity.class);
+            startActivity(i);
+        } else if (menuItem.getTitle() == getString(R.string.title_expert)) {
+            Intent i = new Intent(this, ExpertMain.class);
+            startActivity(i);
+        }
+        return true;
+    }
 }
