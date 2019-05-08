@@ -45,6 +45,7 @@ public class CreateEditReminder extends AppCompatActivity{
     private Spinner reminderActionsSpinner;
     private TextView repeatOptionTextView;
     private LinearLayout repeatRow;
+    private LinearLayout choosePlantRow;
 
 
     @Override
@@ -68,6 +69,7 @@ public class CreateEditReminder extends AppCompatActivity{
 
         repeatOptionTextView = findViewById(R.id.repeat_day);
         repeatRow = findViewById(R.id.repeat_row);
+        choosePlantRow = findViewById(R.id.choose_plant_row);
     }
     @OnClick(R.id.time_row)
     public void timePicker() {
@@ -115,7 +117,6 @@ public class CreateEditReminder extends AppCompatActivity{
     @OnClick(R.id.save_button)
     public void saveReminder() {
         String task = reminderActionsSpinner.getSelectedItem().toString();
-        task = task.substring(0, task.length() - 6);
         String notes = ((EditText)findViewById(R.id.notification_content)).getText().toString();
         RepeatOption repeatOption = RepeatOption.fromString(repeatOptionTextView.getText().toString());
         Reminder newReminder = new Reminder(calendar, task, notes, repeatOption);

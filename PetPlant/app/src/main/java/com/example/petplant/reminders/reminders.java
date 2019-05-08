@@ -85,7 +85,45 @@ public class reminders extends AppCompatActivity implements ReminderRecyclerAdap
         Intent intent = getIntent();
         Serializable newObject = intent.getSerializableExtra("newReminder");
         if (newObject != null) {
-            dataset.add((Reminder)newObject);
+            Reminder theNewReminder = (Reminder)newObject;
+            dataset.add(theNewReminder);
+            Calendar nextDate = (Calendar)theNewReminder.calendar.clone();
+            switch (theNewReminder.repeatOption) {
+                case NONE:
+                    break;
+                case DAILY:
+                    for (int i = 0; i < 6; i++) {
+                        nextDate = (Calendar)nextDate.clone();
+                        nextDate.add(Calendar.DAY_OF_YEAR, 1);
+                        dataset.add(new Reminder(nextDate,
+                                theNewReminder.title, theNewReminder.notes, theNewReminder.repeatOption));
+                    }
+                    break;
+                case EVERY_OTHER_DAY:
+                    for (int i = 0; i < 6; i++) {
+                        nextDate = (Calendar)nextDate.clone();
+                        nextDate.add(Calendar.DAY_OF_YEAR, 2);
+                        dataset.add(new Reminder(nextDate,
+                                theNewReminder.title, theNewReminder.notes, theNewReminder.repeatOption));
+                    }
+                    break;
+                case WEEKLY:
+                    for (int i = 0; i < 6; i++) {
+                        nextDate = (Calendar)nextDate.clone();
+                        nextDate.add(Calendar.DAY_OF_YEAR, 7);
+                        dataset.add(new Reminder(nextDate,
+                                theNewReminder.title, theNewReminder.notes, theNewReminder.repeatOption));
+                    }
+                    break;
+                case MONTHLY:
+                    for (int i = 0; i < 6; i++) {
+                        nextDate = (Calendar)nextDate.clone();
+                        nextDate.add(Calendar.MONTH, 1);
+                        dataset.add(new Reminder(nextDate,
+                                theNewReminder.title, theNewReminder.notes, theNewReminder.repeatOption));
+                    }
+                    break;
+            }
         } else {
             int itemToDelete = intent.getIntExtra("deleteReminder", -1);
             if (itemToDelete != -1) {

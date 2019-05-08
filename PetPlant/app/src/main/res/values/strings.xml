@@ -30,9 +30,9 @@
     <string name="hint">Name:</string>
 
     <string-array name="reminder_options">
-        <item>Water plant</item>
-        <item>Repot plant</item>
-        <item>Trim plant</item>
+        <item>Water plants</item>
+        <item>Repot plants</item>
+        <item>Trim plants</item>
     </string-array>
 
     <string-array name="repeat_menu_options">

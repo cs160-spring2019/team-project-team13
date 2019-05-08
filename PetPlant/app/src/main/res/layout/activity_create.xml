@@ -26,8 +26,7 @@
                 android:layout_height="?attr/actionBarSize"
                 android:background="?attr/colorPrimary"
                 android:theme="@style/Toolbar"
-                app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
-                app:title="New Reminder" />
+                app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -81,39 +80,6 @@
                     android:layout_marginLeft="@dimen/line_separator_margin_side_large"
                     android:layout_marginStart="@dimen/line_separator_margin_side_large"
                     android:background="@color/lightGray" />
-
-                <LinearLayout
-                    android:id="@+id/icon_select"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="?attr/selectableItemBackground"
-                    android:paddingTop="@dimen/table_row_default_horizontal_padding"
-                    android:paddingEnd="@dimen/table_row_default_padding_side"
-                    android:paddingRight="@dimen/table_row_default_padding_side"
-                    android:paddingBottom="@dimen/table_row_default_horizontal_padding"
-                    android:weightSum="1">
-
-                    <ImageView
-                        android:id="@+id/selected_icon"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/image_margin_side"
-                        android:layout_marginLeft="@dimen/image_margin_side"
-                        android:src="@drawable/ic_myplants_24dp"
-                        android:tint="@color/iconTint" />
-
-                    <TextView
-                        android:id="@+id/select_icon_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="22dp"
-                        android:layout_marginLeft="22dp"
-                        android:text="@string/default_plant"
-                        android:textColor="@android:color/black"
-                        android:textSize="16sp" />
-
-                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
