@@ -62,7 +62,7 @@
             android:layout_centerHorizontal="true" />
 
         <Button
-            android:id="@+id/btnMessage"
+            android:id="@+id/infob"
             android:layout_width="110dp"
             android:layout_height="40dp"
             android:layout_toLeftOf="@id/spaceHolder"
@@ -80,6 +80,7 @@
             android:fontFamily="sans-serif-medium"/>
 
         <Button
+            android:id="@+id/remindersb"
             android:layout_width="110dp"
             android:layout_height="40dp"
             android:layout_below="@id/common_name"

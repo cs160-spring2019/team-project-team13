@@ -1,26 +1,38 @@
 package com.example.petplant.addplant;
 
+import android.app.Dialog;
 import android.app.FragmentTransaction;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
+import android.graphics.drawable.ColorDrawable;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Base64;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -43,6 +55,8 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.example.petplant.R;
 import com.example.petplant.camera.util.BitmapUtil;
 import com.example.petplant.camera.view.TakePhotoActivity;
+import com.example.petplant.reminders.CreateEditReminder;
+import com.example.petplant.reminders.reminders;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -55,6 +69,9 @@ public class PlantInfoActivity extends AppCompatActivity {
     private TextView plantName;
     private TextView probability;
     private TextView confidence;
+    private WebView wikiInfo;
+    private Button info;
+    private Button remindersb;
     private LinearLayout layout;
     private ProgressDialog progress;
     private AsyncTask<String, Void, PlantInfo> analyze = new PlantInfoActivity.analyzeTask();
@@ -63,12 +80,17 @@ public class PlantInfoActivity extends AppCompatActivity {
     private static final String suggestionURL = "https://private-anon-79238c3314-plantid.apiary-proxy.com/check_identifications";
     private static final String plantURL = "https://trefle.io/api/plants?token=aUVNSXhKdTZFbGZ2cGprbzRFRkZSZz09&q=";
     private String wikiURL = "https://en.wikipedia.org/wiki/";
-
+    private Dialog myDialog;
+    private Context mContext;
+    private PlantInfo pinfo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plant_info);
+        myDialog = new Dialog(this);
+        mContext = getApplicationContext();
         layout = findViewById(R.id.la);
+        wikiInfo = findViewById(R.id.wikiView);
         if(savedInstanceState == null) {
             FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
             fragmentTransaction.add(R.id.fragment_container, new MainFragment(), "MainFragment");
@@ -179,8 +201,29 @@ public class PlantInfoActivity extends AppCompatActivity {
             ImageView plantPic = fr.findViewById(R.id.plantProfPic);
             scientific_name.setText("Scientific Name: " + plantInfo.getName());
             comm_name.setText("Common Name: " + plantInfo.getCommon());
+            info = f.findViewById(R.id.infob);
+            info.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View v) {
+                    ShowPopup(v, plantInfo);
+                }
+            });
+            remindersb = f.findViewById(R.id.remindersb);
+            remindersb.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(PlantInfoActivity.this, CreateEditReminder.class);
 
+                    startActivity(intent);
+                }
+            });
+
+
+
+            remindersb = f.findViewById(R.id.remindersb);
             plantPic.setImageBitmap(bitmap);
+
+
             //plantName.setText("Common Name: " + plantInfo.getName());
 
             //plantImg.setImageBitmap(bitmap);
@@ -200,9 +243,25 @@ public class PlantInfoActivity extends AppCompatActivity {
 //            super.onCancelled();
 //            progress.dismiss();
 //        }
-
+        public void ShowPopup(View v, PlantInfo plantInfo) {
+            ImageButton txtclose;
+            myDialog.setContentView(R.layout.custom_layout);
+            txtclose = myDialog.findViewById(R.id.ib_close);
+            wikiInfo = myDialog.findViewById(R.id.wikiView);
+            wikiInfo.setWebViewClient(new WebViewClient());
+            wikiInfo.loadUrl(wikiURL);
+            txtclose.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    myDialog.dismiss();
+                }
+            });
+            myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            myDialog.show();
+        }
         @Override
         protected PlantInfo doInBackground(String... params) {
+
             String path = params[0];
             PlantPostJson plantPostJson = new PlantPostJson();
 

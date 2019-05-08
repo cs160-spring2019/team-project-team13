@@ -44,7 +44,13 @@
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:visibility="visible"
         tools:context="androidbox.me.linkedin.MainActivity"></FrameLayout>
 
+    <WebView
+        android:id="@+id/wikiView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
 
 </LinearLayout>
