@@ -26,6 +26,8 @@ import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+
 import org.jsoup.*;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -254,6 +256,14 @@ public class PlantInfoActivity extends AppCompatActivity {
             plantInfo.setName(name);
             plantInfo.setProbability(probability);
             plantInfo.setConfidence(confidence);
+
+            plantInfo = new PlantInfo(path, name, probability, confidence);
+//            Log.d("!!!!!!status", status_str);
+//            Log.d("!!!!!!!!!!response", result);
+            Response response1 = client.target("https://en.wikipedia.org/api/rest_v1/page/mobile-sections/tomato?redirect=false").request().get();
+            String r = response1.readEntity(String.class);
+            int binomial_nameStart = r.indexOf("sections");
+            int binomial_nameEnd = r.indexOf(",", binomial_nameStart + 1);
 
             return plantInfo;
         }
