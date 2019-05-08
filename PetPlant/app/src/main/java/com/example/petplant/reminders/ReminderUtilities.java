@@ -142,8 +142,10 @@ public class ReminderUtilities {
             long minTime = Long.MAX_VALUE;
             int minIndex = -1;
             for (int i = 0; i < reminders.size(); i++) {
-                if (reminders.get(i).calendar.getTimeInMillis() < minTime) {
+                long thisTime = reminders.get(i).calendar.getTimeInMillis();
+                if (thisTime < minTime) {
                     minIndex = i;
+                    minTime = thisTime;
                 }
             }
             returnVal.add(reminders.get(minIndex));
