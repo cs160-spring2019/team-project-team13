@@ -119,8 +119,8 @@ public class MyPlants extends AppCompatActivity implements BottomNavigationView.
 
             for(int i = 0; i < jsonArray.length();i++){
                 JSONObject obj = jsonArray.getJSONObject(i);
-                int drawableId = getResources().getIdentifier(obj.getString("myplants_img_filename"), "drawable", getPackageName());
-                listPlants.add(new PlantProfileCard(drawableId, obj.getString("myplants_name"), obj.getString("myplants_title"),  obj.getString("myplants_img_filename")));
+                int drawableId = getResources().getIdentifier(obj.getString("plant_img_filename"), "drawable", getPackageName());
+                listPlants.add(new PlantProfileCard(drawableId, obj.getString("plant_name"), obj.getString("plant_title"),  obj.getString("plant_img_filename")));
             }
 
         } catch (IOException e) {

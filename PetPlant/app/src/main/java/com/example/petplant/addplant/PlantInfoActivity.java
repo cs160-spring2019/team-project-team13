@@ -142,7 +142,7 @@ public class PlantInfoActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.action_confirm) {
+        if (item.getItemId() == R.id.home) {
 
             finish();
         }

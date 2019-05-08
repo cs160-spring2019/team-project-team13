@@ -1,32 +1,3 @@
 [
-  {
-    "plant_name": "p1",
-    "plant_title": "Big Tree",
-    "plant_img_filename": "p1"
 
-  },
-  {
-    "plant_name": "p2",
-    "plant_title": "Small Tree",
-    "plant_img_filename": "p2"
-
-  },
-  {
-    "plant_name": "p3",
-    "plant_title": "Fat Tree",
-    "plant_img_filename": "p3"
-
-  },
-  {
-    "plant_name": "p4",
-    "plant_title": "Tall Tree",
-    "plant_img_filename": "p4"
-
-  },
-  {
-    "plant_name": "p5",
-    "plant_title": "Bush",
-    "plant_img_filename": "p5"
-
-  }
 ]

@@ -98,8 +98,7 @@ public class SearchPlantActivity extends AppCompatActivity implements SearchView
             }
         });
 
-        int k =  listPlant.size();
-        int j = k + k;
+
 
     }
     @Override

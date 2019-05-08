@@ -35,6 +35,7 @@ class MyPlantsHolder extends RecyclerView.ViewHolder{
             public void onClick(View view) {
                 Context mContext = view.getContext();
                 Intent i = new Intent(mContext, PlantInfoActivity.class);
+
                 i.putExtra("plantname",  textName.getText());
                 mContext.startActivity(i);
             }
