@@ -18,5 +18,5 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:background="@null"
-        android:src="@drawable/ic_thumb_up" />
+        android:src="@drawable/ic_baseline_close_24px" />
 </RelativeLayout>
