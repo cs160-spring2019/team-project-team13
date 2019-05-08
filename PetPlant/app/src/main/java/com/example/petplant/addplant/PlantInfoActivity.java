@@ -4,6 +4,7 @@ import android.app.FragmentTransaction;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
@@ -13,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Base64;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -24,7 +26,10 @@ import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
+import org.jsoup.*;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -36,6 +41,7 @@ import com.example.petplant.camera.util.BitmapUtil;
 import com.example.petplant.camera.view.TakePhotoActivity;
 
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 
 public class PlantInfoActivity extends AppCompatActivity {
     public View img;
@@ -49,6 +55,7 @@ public class PlantInfoActivity extends AppCompatActivity {
     private LinearLayout layout;
     private static final String identifyURL = "https://api.plant.id/identify";
     private static final String suggestionURL = "https://private-anon-79238c3314-plantid.apiary-proxy.com/check_identifications";
+    private String wikiURL = "https://en.wikipedia.org/wiki/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -232,14 +239,50 @@ public class PlantInfoActivity extends AppCompatActivity {
             int confidenceEnd = result.indexOf(",", confidenceStart + 1);
             String confidence = result.substring(confidenceStart + 13, confidenceEnd);
 
-            plantInfo = new PlantInfo(path, name, probability, confidence);
-//            Log.d("!!!!!!status", status_str);
-//            Log.d("!!!!!!!!!!response", result);
-            Response response1 = client.target("https://en.wikipedia.org/api/rest_v1/page/mobile-sections/tomato?redirect=false").request().get();
-            String r = response1.readEntity(String.class);
-            int binomial_nameStart = r.indexOf("sections");
-            int binomial_nameEnd = r.indexOf(",", binomial_nameStart + 1);
+            String name_wiki = name.replaceAll(" ", "_");
+
+            wikiURL += name_wiki;
+            Log.d("wiki", wikiURL);
+            try {
+                Document doc = Jsoup.connect(wikiURL).get();
+                plantInfo = parseHtml(doc);
+            } catch (IOException ioe){
+                return null;
+            }
+
+            plantInfo.setPath(path);
+            plantInfo.setName(name);
+            plantInfo.setProbability(probability);
+            plantInfo.setConfidence(confidence);
+
             return plantInfo;
         }
+    }
+
+    private PlantInfo parseHtml(Document document) {
+        Elements elements = document.select("table[class=infobox biota] > tbody > tr");
+        PlantInfo plantInfo = new PlantInfo();
+        for (Element element : elements) {
+            if (element.text().contains("Family:")){
+                int start = element.text().indexOf(":");
+                String family = element.text().substring(start + 2);
+                plantInfo.setFamily(family);
+//                Log.d("!!!", family);
+            }
+            if (element.text().contains("Genus:")){
+                int start = element.text().indexOf(":");
+                String genus = element.text().substring(start + 2);
+                plantInfo.setGenus(genus);
+//                Log.d("!!!", genus);
+            }
+            if (element.text().contains("Species:")){
+                int start = element.text().indexOf(":");
+                String species = element.text().substring(start + 2);
+                plantInfo.setSpecies(species);
+//                Log.d("!!!", species);
+            }
+        }
+
+        return plantInfo;
     }
 }

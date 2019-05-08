@@ -64,4 +64,5 @@ dependencies {
     implementation group: 'org.glassfish.jersey.core', name: 'jersey-client', version: '2.28'
     implementation group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '2.28'
     implementation group: 'org.glassfish.jersey.inject', name: 'jersey-hk2', version: '2.28'
+    implementation 'org.jsoup:jsoup:1.11.3'
 }
