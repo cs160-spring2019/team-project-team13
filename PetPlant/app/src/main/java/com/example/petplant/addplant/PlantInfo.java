@@ -8,7 +8,7 @@ public class PlantInfo {
     private String family;
     private String genus;
     private String species;
-
+    private String common_name;
     PlantInfo (PlantInfo plantInfo){
         this.name = plantInfo.getName();
         this.path = plantInfo.getPath();
@@ -17,6 +17,7 @@ public class PlantInfo {
         this.family = plantInfo.getFamily();
         this.genus = plantInfo.getGenus();
         this.species = plantInfo.getSpecies();
+        this.common_name = plantInfo.getCommon();
     }
 
     PlantInfo (){
@@ -32,9 +33,12 @@ public class PlantInfo {
     public String getFamily () { return family; }
     public String getGenus () { return genus; }
     public String getSpecies () { return species; }
-
+    public String getCommon () {return common_name;}
     public void setPath (String path){
         this.path = path;
+    }
+    public void setCommon (String common_name){
+        this.common_name = common_name;
     }
 
     public void setName (String name){

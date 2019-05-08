@@ -30,11 +30,16 @@ import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.jsoup.*;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import com.android.volley.Request;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.example.petplant.R;
 import com.example.petplant.camera.util.BitmapUtil;
 import com.example.petplant.camera.view.TakePhotoActivity;
@@ -172,8 +177,8 @@ public class PlantInfoActivity extends AppCompatActivity {
             TextView comm_name = f.findViewById(R.id.common_name);
             TextView scientific_name = f.findViewById(R.id.sci_name);
             ImageView plantPic = fr.findViewById(R.id.plantProfPic);
-            scientific_name.setText("Scientific Name: " + plantInfo.getGenus());
-            comm_name.setText("Common Name: " + plantInfo.getName());
+            scientific_name.setText("Scientific Name: " + plantInfo.getName());
+            comm_name.setText("Common Name: " + plantInfo.getCommon());
 
             plantPic.setImageBitmap(bitmap);
             //plantName.setText("Common Name: " + plantInfo.getName());
@@ -276,12 +281,38 @@ public class PlantInfoActivity extends AppCompatActivity {
 //            Log.d("!!!!!!status", status_str);
 //            Log.d("!!!!!!!!!!response", result);
 
+
+
+
             Response response1 = client.target(plantURL + name).request().get();
             String r = response1.readEntity(String.class);
-            int binomial_nameStart = r.indexOf("common_name");
-            int binomial_nameEnd = r.indexOf(",", binomial_nameStart + 1);
-            String common_name = result.substring(binomial_nameStart + 14, binomial_nameEnd);
+            String comm = null;
+            try {
 
+                JSONArray obj = new JSONArray(r);
+                for(int i=0;i<obj.length();i++)
+                {
+                    JSONObject jsonObject1 = obj.getJSONObject(i);
+                    if(comm == null) {
+
+                        comm = jsonObject1.optString("common_name");
+                        comm.replace("_", " ");
+                    }
+                    else {
+                        String holder = jsonObject1.optString("common_name");
+                        if (comm.length() > holder.length()){
+                            comm = holder;
+                            comm.replace("_", " ");
+                        }
+                    }
+
+                }
+                Log.d("My App", obj.toString());
+
+            } catch (Throwable t) {
+                Log.e("My App", "Could not parse malformed JSON: \"" + r + "\"");
+            }
+            plantInfo.setCommon(comm);
             return plantInfo;
         }
     }
