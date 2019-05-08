@@ -10,17 +10,22 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Base64;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.petplant.R;
+import com.example.petplant.addplant.MyPlants;
 import com.example.petplant.camera.model.PermissionsModel;
 import com.example.petplant.camera.util.BitmapUtil;
+import com.example.petplant.experts.ExpertMain;
+import com.example.petplant.reminders.reminders;
 
 import java.io.ByteArrayOutputStream;
 import java.util.HashMap;
@@ -36,7 +41,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class DiseaseActivity extends AppCompatActivity{
+public class DiseaseActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
     private ImageView back;
     private ImageView diseaseImg;
@@ -63,6 +68,7 @@ public class DiseaseActivity extends AppCompatActivity{
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setItemIconTintList(null);
+        navigation.setOnNavigationItemSelectedListener(this);
 
         toolbar = (Toolbar) findViewById(R.id.toolbarDisease);
         setSupportActionBar(toolbar);
@@ -220,5 +226,23 @@ public class DiseaseActivity extends AppCompatActivity{
 
             return diseaseInfo;
         }
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        if (menuItem.getTitle() == getString(R.string.title_myplants)) {
+            Intent i = new Intent(this, MyPlants.class);
+            startActivity(i);
+        } else if (menuItem.getTitle() == getString(R.string.title_reminders)) {
+            Intent i = new Intent(this, reminders.class);
+            startActivity(i);
+        } else if (menuItem.getTitle() == getString(R.string.title_scan)) {
+            Intent i = new Intent(this, DiseaseActivity.class);
+            startActivity(i);
+        } else if (menuItem.getTitle() == getString(R.string.title_expert)) {
+            Intent i = new Intent(this, ExpertMain.class);
+            startActivity(i);
+        }
+        return true;
     }
 }

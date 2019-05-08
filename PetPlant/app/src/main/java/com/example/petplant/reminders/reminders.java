@@ -2,6 +2,7 @@ package com.example.petplant.reminders;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -11,9 +12,13 @@ import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.example.petplant.R;
+import com.example.petplant.addplant.MyPlants;
+import com.example.petplant.camera.view.DiseaseActivity;
+import com.example.petplant.experts.ExpertMain;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -28,7 +33,7 @@ import java.util.Calendar;
 
 import butterknife.OnClick;
 
-public class reminders extends AppCompatActivity implements ReminderRecyclerAdapter.ItemClickListener {
+public class reminders extends AppCompatActivity implements ReminderRecyclerAdapter.ItemClickListener, BottomNavigationView.OnNavigationItemSelectedListener {
     private RecyclerView recyclerView;
     private ReminderRecyclerAdapter adapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -40,11 +45,14 @@ public class reminders extends AppCompatActivity implements ReminderRecyclerAdap
         setContentView(R.layout.activity_reminders);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("HI THERE");
+        getSupportActionBar().setDisplayShowTitleEnabled(true);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle(null);
         }
 
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        BottomNavigationView navigation = findViewById(R.id.navigation);
+        navigation.setOnNavigationItemSelectedListener(this);
         navigation.setItemIconTintList(null);
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -116,5 +124,24 @@ public class reminders extends AppCompatActivity implements ReminderRecyclerAdap
         i.putExtra("reminder", dataset.get(position));
         i.putExtra("placementInDataset", position);
         startActivity(i);
+    }
+
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        if (menuItem.getTitle() == getString(R.string.title_myplants)) {
+            Intent i = new Intent(this, MyPlants.class);
+            startActivity(i);
+        } else if (menuItem.getTitle() == getString(R.string.title_reminders)) {
+            Intent i = new Intent(this, reminders.class);
+            startActivity(i);
+        } else if (menuItem.getTitle() == getString(R.string.title_scan)) {
+            Intent i = new Intent(this, DiseaseActivity.class);
+            startActivity(i);
+        } else if (menuItem.getTitle() == getString(R.string.title_expert)) {
+            Intent i = new Intent(this, ExpertMain.class);
+            startActivity(i);
+        }
+        return true;
     }
 }
