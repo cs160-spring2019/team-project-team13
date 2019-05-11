@@ -189,7 +189,7 @@ public class PlantInfoActivity extends AppCompatActivity {
             TextView scientific_name = f.findViewById(R.id.sci_name);
             ImageView plantPic = fr.findViewById(R.id.plantProfPic);
             scientific_name.setText("Scientific Name: " + plantInfo.getName());
-            comm_name.setText("Common Name: " + plantInfo.getCommon());
+            comm_name.setText("Common Name: " + plantInfo.getGenus());
             info = f.findViewById(R.id.infob);
             info.setOnClickListener(new View.OnClickListener(){
                 @Override
@@ -333,7 +333,7 @@ public class PlantInfoActivity extends AppCompatActivity {
 
             String myURL = plantURL + name;
 
-            Response response1 = client.target(plantURL + name).request().get();
+            /*Response response1 = client.target(plantURL + name).request().get();
             String r = response1.readEntity(String.class);
             String comm = null;
             try {
@@ -349,13 +349,13 @@ public class PlantInfoActivity extends AppCompatActivity {
                     if(comm == null) {
 
                         comm = jsonObject1.optString("common_name");
-                        comm.replace("_", " ");
+                        comm.replace("_", "%20");
                     }
                     else {
                         String holder = jsonObject1.optString("common_name");
                         if (comm.length() > holder.length()){
                             comm = holder;
-                            comm.replace("_", " ");
+                            comm.replace("_", "%20");
                         }
                     }
 
@@ -369,7 +369,7 @@ public class PlantInfoActivity extends AppCompatActivity {
              catch (Throwable t) {
                 Log.e("My App", "Could not parse malformed JSON: \"" + r + "\"");
             }
-            plantInfo.setCommon(comm);
+            plantInfo.setCommon(comm);*/
             return plantInfo;
         }
     }
