@@ -36,7 +36,7 @@ class RecyclerViewHolder extends RecyclerView.ViewHolder{
             public void onClick(View view) {
                 Context mContext = view.getContext();
                 Intent i = new Intent(mContext, MessageActivity.class);
-                i.putExtra("expertname",  textName.getText());
+                i.putExtra("expertName",  textName.getText());
                 mContext.startActivity(i);
             }
         });

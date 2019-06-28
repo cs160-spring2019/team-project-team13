@@ -33,7 +33,7 @@ public class MessageActivity extends AppCompatActivity {
     EditText text_send;
 
     MessageViewAdapter messageViewAdapter;
-    List<Chat> mchat = new ArrayList<Chat>();
+    List<Chat> mChat = new ArrayList<Chat>();
 
     RecyclerView.LayoutManager layoutManager;
     RecyclerView recyclerView;
@@ -52,8 +52,8 @@ public class MessageActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         Intent i = getIntent();
-        final String expertname = i.getStringExtra("expertname");
-        setTitle(expertname);
+        final String expertName = i.getStringExtra("expertName");
+        setTitle(expertName);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,23 +67,23 @@ public class MessageActivity extends AppCompatActivity {
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                mchat = new ArrayList<Chat>();
+                mChat = new ArrayList<Chat>();
                 for (DataSnapshot data : dataSnapshot.getChildren()) {
                     String oneMessage = data.child("message").getValue(String.class);
                     String oneSender = data.child("sender").getValue(String.class);
                     String oneReceiver = data.child("receiver").getValue(String.class);
-                    if (oneSender.equals("TestUser") && oneReceiver.equals(expertname)){
+                    if (oneSender.equals("TestUser") && oneReceiver.equals(expertName)){
                         int drawableId = getResources().getIdentifier("thanos", "drawable", getPackageName());
                         System.out.println("===");
                         System.out.println(drawableId);
                         Chat chat = new Chat(oneSender, oneReceiver, oneMessage, drawableId);
-                        mchat.add(chat);
-                    } else if (oneReceiver.equals("TestUser") && oneSender.equals(expertname))
+                        mChat.add(chat);
+                    } else if (oneReceiver.equals("TestUser") && oneSender.equals(expertName))
                     {
                         String[] splited = oneSender.split("\\s+");
                         int drawableId = getResources().getIdentifier(splited[0].toLowerCase(), "drawable", getPackageName());
                         Chat chat = new Chat(oneSender, oneReceiver, oneMessage, drawableId);
-                        mchat.add(chat);
+                        mChat.add(chat);
                     }
                 }
                 setAdapterAndUpdateData();
@@ -101,7 +101,7 @@ public class MessageActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String msg = text_send.getText().toString();
                 if(!msg.equals("")){
-                    sendMessage("TestUser", expertname, msg);
+                    sendMessage("TestUser", expertName, msg);
                     text_send.setText("");
                 }
             }
@@ -134,14 +134,14 @@ public class MessageActivity extends AppCompatActivity {
     private void setAdapterAndUpdateData() {
         // create a new adapter with the updated mComments array
         // this will "refresh" our recycler view
-        messageViewAdapter = new MessageViewAdapter(mchat);
+        messageViewAdapter = new MessageViewAdapter(mChat);
         recyclerView.setAdapter(messageViewAdapter);
 
         // scroll to the last comment
-        if (mchat.size() == 0) {
+        if (mChat.size() == 0) {
             recyclerView.smoothScrollToPosition(0);
         } else {
-            recyclerView.smoothScrollToPosition(mchat.size() - 1);
+            recyclerView.smoothScrollToPosition(mChat.size() - 1);
         }
     }
 
